@@ -1,8 +1,10 @@
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import type { ChessPlayer } from '../types';
+import type { ChessPlayer, Database, Hero } from '../types';
 import type { ScoredLineup } from '../lib/recommend';
 import { cn } from '../lib/cn';
 import { LineupCard } from './LineupCard';
+import { HeroDetailModal } from './HeroDetailModal';
 
 /**
  * Step 3：推荐结果 + 本地收藏。
@@ -16,6 +18,7 @@ export function RecommendStep({
   onToggleFavorite,
   favOnly,
   onToggleFavOnly,
+  database,
 }: {
   scored: ScoredLineup[];
   bannedCount: number;
@@ -25,10 +28,24 @@ export function RecommendStep({
   onToggleFavorite: (id: string) => void;
   favOnly: boolean;
   onToggleFavOnly: () => void;
+  database?: Database;
 }) {
   const displayed = favOnly
     ? scored.filter((s) => favoriteIds.includes(s.lineup.id))
     : scored;
+
+  // 英雄头像 / 详情映射（用于站位棋盘与英雄详解）
+  const { heroThumbs, heroMap } = useMemo(() => {
+    const thumbs: Record<string, string> = {};
+    const map: Record<string, Hero> = {};
+    for (const h of database?.heroes ?? []) {
+      if (h.thumb || h.image) thumbs[h.name] = h.thumb || h.image;
+      map[h.name] = h;
+    }
+    return { heroThumbs: thumbs, heroMap: map };
+  }, [database]);
+
+  const [detailHero, setDetailHero] = useState<Hero | undefined>();
 
   return (
     <section>
@@ -94,6 +111,8 @@ export function RecommendStep({
               index={i}
               favorite={favoriteIds.includes(s.lineup.id)}
               onToggleFavorite={() => onToggleFavorite(s.lineup.id)}
+              heroThumbs={heroThumbs}
+              onHeroClick={(name) => setDetailHero(heroMap[name])}
             />
           ))}
         </div>
@@ -108,6 +127,12 @@ export function RecommendStep({
           重新开始
         </motion.button>
       </div>
+
+      <HeroDetailModal
+        hero={detailHero}
+        open={!!detailHero}
+        onClose={() => setDetailHero(undefined)}
+      />
     </section>
   );
 }

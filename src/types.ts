@@ -75,22 +75,48 @@ export type Lineup = {
   sources: Source[];
 };
 
+/** 棋手技能组中的单张关联卡 */
+export type LordTalentCard = {
+  name: string;
+  thumb: string;
+  desc: string;
+};
+
+/** 棋手技能（官方 talent 归一化） */
+export type LordTalent = {
+  name: string;
+  level: number;
+  icon: string;
+  /** 技能描述（关联卡 desc 合并清洗） */
+  desc: string;
+  /** 该技能关联的卡（效果/天赋等） */
+  cards: LordTalentCard[];
+};
+
 /** 棋手 */
 export type ChessPlayer = {
   id: string;
   name: string;
   type: FitType;
-  /** 专属技能描述 */
+  /** 专属技能描述（取自官方 talent[0]） */
   skill: string;
-  /** 天赋（可选） */
+  /** 天赋（技能组首名，可选） */
   talent?: string;
   desc: string;
   /** 棋手出处（有则填，无则 null） */
   source?: Source | null;
   /** 官方头像 / 海报图标（CDN） */
   icon?: string;
+  /** 棋手头像（touxiang，可选） */
+  avatar?: string;
+  /** 棋手半身像（可选） */
+  portrait?: string;
   /** 官方棋手 id */
   lordId?: number;
+  /** 技能组（含图标与关联卡，用于详解） */
+  talents?: LordTalent[];
+  /** 关联卡（效果/天赋等，可选） */
+  relatedCards?: { name: string; thumb: string }[];
   /** 示例占位（待官方数据替换）标记 */
   placeholder?: boolean;
 };
@@ -116,6 +142,14 @@ export type CardBase = {
 
 export type Hero = CardBase & {
   faction: string;
+  /** 购买费用（shopBuyCost.Count） */
+  cost?: number | null;
+  /** 效果类型描述（部分英雄为空） */
+  effectTypeDesc?: string;
+  /** 觉醒/进化形态（部分英雄无） */
+  evolution?: { name: string; image: string; desc: string } | null;
+  /** 关联卡名称（效果/装备/天赋，可选） */
+  relatedCards?: string[];
 };
 
 export type Faction = {
@@ -149,10 +183,48 @@ export type Database = {
   effectCards: CardBase[];
 };
 
+/* ============ 版本更新日志 ============ */
+
+export type ChangelogCat =
+  | 'heroes'
+  | 'lords'
+  | 'equipments'
+  | 'effectCards'
+  | 'talents';
+
+export type ChangelogChange = {
+  cat: ChangelogCat;
+  type: 'added' | 'removed' | 'changed';
+  name: string;
+  id: string | number;
+};
+
+export type ChangelogEntry = {
+  /** 版本标签（通常为日期 YYYY-MM-DD） */
+  version: string;
+  /** 日期 YYYY-MM-DD */
+  date: string;
+  /** 标题，如「官方数据更新」「数据库初始化」 */
+  title: string;
+  /** 是否为首次基线 */
+  baseline?: boolean;
+  /** 改动汇总：基线为 counts，更新为 added/removed/changed */
+  summary?: {
+    added?: Partial<Record<ChangelogCat, number>>;
+    removed?: Partial<Record<ChangelogCat, number>>;
+    changed?: Partial<Record<ChangelogCat, number>>;
+    counts?: Partial<Record<ChangelogCat, number>>;
+  };
+  /** 逐条改动（基线为空） */
+  changes: ChangelogChange[];
+};
+
 /** 一次完整的数据加载结果 */
 export type GameData = {
   lineups: Lineup[];
   chessPlayers: ChessPlayer[];
   /** 基础数据库（图鉴），可能为空（加载失败时） */
   database?: Database;
+  /** 版本更新日志（可选） */
+  changelog?: ChangelogEntry[];
 };

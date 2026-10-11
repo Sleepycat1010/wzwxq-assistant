@@ -1,342 +1,2006 @@
 [
   {
-    "id": "baige",
-    "name": "白歌",
-    "type": "经济运营型",
-    "skill": "棋手技【即兴创作】：每完成 4 次英雄合成，获得 1 张即兴创作牌，可随机复制场上 1 名已部署英雄，加速高阶核心英雄成型。",
-    "talent": "合成复制",
-    "desc": "刷牌/合成向棋手，适合需要快速成型核心、冲击高星的阵容（如三分倒转流）。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/63b4742b5a23950a558afc07e5622296.png",
-    "lordId": 33,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·白歌"
-    }
-  },
-  {
-    "id": "qiaoxi",
-    "name": "乔汐",
-    "type": "经济运营型",
-    "skill": "棋手技【温柔呼唤】：战斗开始时，随机获得 1 张 1-5 阶的转瞬英雄牌，提供独立于刷新池的高阶卡获取途径，可提前锁定核心 C 位。",
-    "talent": "收益运营",
-    "desc": "收益运营型棋手，稳定补充资源，适合慢节奏规划体系的阵容。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/1b87c6a9b387b9a6bd48cefaf2967209.png",
-    "lordId": 22,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·乔汐"
-    }
-  },
-  {
-    "id": "xiangxiang",
-    "name": "香香",
-    "type": "战斗增益型",
-    "skill": "棋手技【武器协同】：战斗开始时，根据场上 1-3 阶且等级不低于 10 的英雄数量，为英雄增加攻击力（基础 20，每满足 1 名 +20），前期过渡与中期压制的重要输出补充。",
-    "talent": "战力养成",
-    "desc": "战力养成型棋手，直接为棋子提供增益，操作简单、养成线性，适合轻松上分。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ee127a1c111ea90f739f985fb99b0040.png",
-    "lordId": 50,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·香香"
-    }
-  },
-  {
-    "id": "zhuangxiaoyu",
-    "name": "庄小鱼",
-    "type": "经济运营型",
-    "skill": "棋手技【灵感馈赠】：棋手等级每次提升时，随机获得 1 张效果牌，功能多样，为不同阶段战术选择提供极大灵活性。",
-    "talent": "收益运营",
-    "desc": "收益运营型棋手，持续补充功能性卡牌，适合雷霆战机嬴政等远程体系。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/93093539e579d83840f98dfb6e200adf.png",
-    "lordId": 31,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·庄小鱼"
-    }
-  },
-  {
-    "id": "yaomei",
-    "name": "瑶妹",
-    "type": "战斗增益型",
-    "skill": "棋手技【灵鹿协战】：召唤一只小鹿参战，其等级随回合数及胜负情况自动成长（每回合 +2，上回合胜利 +4），顺起来越滚越快。",
-    "talent": "战力养成",
-    "desc": "战力养成型棋手，独立战斗单位增强场面，适合牺牲流李信、大河图腾等。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b70ff9e54e3a0d76fba729a5bbb1c792.png",
-    "lordId": 11,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·瑶妹"
-    }
-  },
-  {
-    "id": "yuhuan",
-    "name": "玉环",
-    "type": "经济运营型",
-    "skill": "棋手技【琵琶三叠】：每打出 3 张非觉醒英雄牌，触发“扫佛”或“吟揉”，轮流为低等级英雄提供增益或给予随机转瞬英雄牌，兼顾战力强化与阵容拓展。",
-    "talent": "刷牌成长",
-    "desc": "刷牌型棋手，一边补成长一边补储备，适合需要大量出牌滚雪球的阵容。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/76faabc5c6c354f8221b789e17058253.png",
-    "lordId": 25,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·玉环"
-    }
-  },
-  {
-    "id": "make",
-    "name": "马可",
-    "type": "经济运营型",
-    "skill": "棋手技【宝藏猎人】：每打出 4 张 3 阶及以下的英雄牌，获得 1 张宝藏牌，效果多样，为中后期发展提供额外成长维度。",
-    "talent": "刷牌成长",
-    "desc": "刷牌型棋手，适配多低阶卡牌的体系（如三分倒转流）。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b3fd4e0aa4faaf1c23804e7a554e0ba3.png",
-    "lordId": 32,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·马可"
-    }
-  },
-  {
-    "id": "yixing",
-    "name": "弈星",
-    "type": "通用",
-    "skill": "棋手技【临摹之术】：战斗开始时，随机复制 1 名敌方英雄加入己方战场，出其不意地克制对手阵容。",
-    "talent": "收益运营",
-    "desc": "通用/容错型棋手，高风险高回报，适合灵活应对不同对手。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/d7b23b766a880df73d7d59f9c679cd40.png",
-    "lordId": 36,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·弈星"
-    }
-  },
-  {
-    "id": "xiaodaji",
+    "id": "10",
     "name": "小妲己",
     "type": "经济运营型",
-    "skill": "棋手技【牌库馈赠】：每购买 4 张牌，随机获得 1 张效果牌，稳定补充功能性卡牌，增强中后期战术应变。",
-    "talent": "牌库馈赠",
-    "desc": "经济运营型棋手，适合频繁使用效果牌、打牌流的阵容。",
+    "skill": "每购买4张牌，小妲己随机获得1张效果牌。",
+    "talent": "技能",
     "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/7e00b12adcc7c6a48bf625aa91e2454f.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/01c3968bd0ae109654ccb8a21aefae64.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/bc5c433997ab7f9ac5938d040b7406d2.png",
     "lordId": 10,
     "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·小妲己"
-    }
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/7e182ec521ccd4c95b2efb13d0fec90d.png",
+        "desc": "每购买4张牌，小妲己随机获得1张效果牌。",
+        "cards": [
+          {
+            "name": "怦然心动",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/7e182ec521ccd4c95b2efb13d0fec90d.png",
+            "desc": "每购买4张牌，小妲己随机获得1张效果牌。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "触发5/4/3次怦然心动，获得1张秘技牌心之引力。",
+        "cards": [
+          {
+            "name": "心动节拍",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "触发5/4/3次怦然心动，获得1张秘技牌心之引力。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d2c42bd355b98d78f554c8e540959a51.png",
+        "desc": "每回合打出的第1张效果牌会触发2次。",
+        "cards": [
+          {
+            "name": "魅力无限",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d2c42bd355b98d78f554c8e540959a51.png",
+            "desc": "每回合打出的第1张效果牌会触发2次。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "心之引力",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3979e321f356a62771ce9113f3d4327a.png"
+      }
+    ],
+    "placeholder": false
   },
   {
-    "id": "naonao",
-    "name": "闹闹",
-    "type": "经济运营型",
-    "skill": "棋手技【阵营抉择】：开局在两个随机阵营中选择其一，之后每次刷新商店都必定出现一张所选阵营的英雄牌，适合专注单一阵营或双核混搭的稳定运营。",
-    "talent": "阵营抉择",
-    "desc": "经济运营型棋手，稳定获取指定阵营卡，适合单一阵营体系。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b64c5e798a8705e1d0bb4077dde7fc5f.png",
-    "lordId": 40,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·闹闹"
-    }
-  },
-  {
-    "id": "jiangdao",
-    "name": "姜导",
+    "id": "11",
+    "name": "瑶妹",
     "type": "战斗增益型",
-    "skill": "棋手技【主角设定】：指定一名己方英雄为“主角”，之后每打出 2 张牌，该主角等级 +1，鼓励高频出牌，契合快攻流、连携流。",
-    "talent": "主角设定",
-    "desc": "战斗增益型棋手，靠高频出牌喂核心，适合快攻/连携体系。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/434ca597839b623d436a73232fe0619d.png",
-    "lordId": 41,
+    "skill": "游戏开始时，瑶召唤自己心爱的小鹿前来助阵，小鹿每回合等级+2，如果上回合战斗胜利，等级额外+4。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b70ff9e54e3a0d76fba729a5bbb1c792.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/16777f3ad8d23d9205f8c6b29061ac91.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/dc7bd05ddb2ceb42ff574051e422c8ab.png",
+    "lordId": 11,
     "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·姜导"
-    }
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/aff826c9cd5b1536b56150ea8cac618c.png",
+        "desc": "游戏开始时，瑶召唤自己心爱的小鹿前来助阵，小鹿每回合等级+2，如果上回合战斗胜利，等级额外+4。",
+        "cards": [
+          {
+            "name": "可爱小鹿",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/aff826c9cd5b1536b56150ea8cac618c.png",
+            "desc": "游戏开始时，瑶召唤自己心爱的小鹿前来助阵，小鹿每回合等级+2，如果上回合战斗胜利，等级额外+4。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "每3个回合，获得1张秘技牌神奇小鹿。",
+        "cards": [
+          {
+            "name": "超绝可爱小鹿",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "每3个回合，获得1张秘技牌神奇小鹿。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c245dcd7d02580a31df7077c93cc249e.png",
+        "desc": "小鹿等级+30，并获得1件小鹿的庇护。",
+        "cards": [
+          {
+            "name": "巨型玩偶",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c245dcd7d02580a31df7077c93cc249e.png",
+            "desc": "小鹿等级+30，并获得1件小鹿的庇护。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "神奇小鹿·奉献",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/dbf5a90543b5a60d44c91f83110dd7dc.png"
+      },
+      {
+        "name": "神奇小鹿·共鸣",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c6374448b6c84a7c11aba6c0d59a0558.png"
+      },
+      {
+        "name": "神奇小鹿·双生",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3129296dfd0b8d39248cb0d68df27fdc.png"
+      },
+      {
+        "name": "神奇小鹿·重装",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3890ed98100d063171b655ad42daec1f.png"
+      },
+      {
+        "name": "神奇小鹿·嘲讽",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/63a4a5de7e8a96796a067c275f0bd3e4.png"
+      }
+    ],
+    "placeholder": false
   },
   {
-    "id": "banshu",
-    "name": "班叔",
-    "type": "战斗增益型",
-    "skill": "棋手技【便携机关】：开局获得 2 张便携机关，并在棋手等级达到 2/3/4 级时分别获得热能陷阱、电磁弹簧或等离子屏障，自动触发提供强大被动控场。",
-    "talent": "便携机关",
-    "desc": "战斗增益型棋手，自动控场能力强，适合需要稳定场面的阵容。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ad8947e7d30e55756a7d76896f46ea29.png",
-    "lordId": 35,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·班叔"
-    }
-  },
-  {
-    "id": "zhaojun",
-    "name": "昭君",
-    "type": "战斗增益型",
-    "skill": "棋手技【寒霜转化】：指定一名己方英雄并将其冻结，战斗结束后该英雄有概率提升一阶并继承等级，是突破升阶瓶颈、激活高阶羁绊的关键手段。",
-    "talent": "寒霜转化",
-    "desc": "战斗增益型棋手，突破升阶瓶颈，适合需要高阶羁绊的阵容。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/38353de545d3bc7eef4e286b4243faa8.png",
-    "lordId": 34,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·昭君"
-    }
-  },
-  {
-    "id": "yinglü",
-    "name": "嬴律",
-    "type": "经济运营型",
-    "skill": "棋手技【战略决策】：开局获得一张“战略决策”牌，使用后可选择一项全局增益（如能量获取加成、经验转化提升等），属于强大的资源调控技能。",
-    "talent": "战略决策",
-    "desc": "经济运营型棋手，全局资源调控，适合多种体系。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/168aae5e0b3a8a4528ddd89bb14868e7.png",
-    "lordId": 43,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·嬴律"
-    }
-  },
-  {
-    "id": "changxiaoe",
-    "name": "常小娥",
-    "type": "战斗增益型",
-    "skill": "棋手技【随机助力】：使用后随机使一名己方英雄等级 +2，关键时刻迅速提升核心单位的坦度或输出，应对突发战况。",
-    "talent": "随机助力",
-    "desc": "战斗增益型棋手，随机强化核心，适合突击爆发阵容。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/585ca34d534d39608202e4be766a675c.png",
-    "lordId": 24,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·常小娥"
-    }
-  },
-  {
-    "id": "mingxiansheng",
-    "name": "明先生",
-    "type": "经济运营型",
-    "skill": "棋手技【卦象演算】：在“丰”和“节”两种卦象中选择其一，持续 3 回合；“丰”卦适合高频运营，“节”卦适合长线续航，为不同流派提供选择。",
-    "talent": "卦象演算",
-    "desc": "经济运营型棋手，按流派选卦象，适合长线或高频运营。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/6db784af711d4b968c0d407a70360b63.png",
-    "lordId": 39,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·明先生"
-    }
-  },
-  {
-    "id": "sunxiaobin",
-    "name": "孙小宾",
-    "type": "通用",
-    "skill": "棋手技【时光倒流】：可以回溯并再次使用上一回合的英雄牌或效果牌，极大提升操作容错率，适合二次释放关键控制或爆发效果。",
-    "talent": "时光倒流",
-    "desc": "通用/容错型棋手，操作容错高，适合需要精确释放关键牌的玩法。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b44fa31d1cefd1f812cef5901bb5db0c.png",
-    "lordId": 38,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·孙小宾"
-    }
-  },
-  {
-    "id": "jing",
-    "name": "镜",
-    "type": "战斗增益型",
-    "skill": "棋手技【镜像复刻】：使用后获得一张镜像牌，该牌自动变为上一张打出的英雄牌，可用于复制高价值英雄或临时补全特定羁绊。",
-    "talent": "镜像复刻",
-    "desc": "战斗增益型棋手，复制高价值英雄，适合补全羁绊或爆发。",
-    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/aa7d598f183346447345b42eecd99669.png",
-    "lordId": 21,
-    "source": {
-      "platform": "虎牙",
-      "author": "虎牙·全18位棋手详解",
-      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
-      "date": "2026",
-      "note": "棋手技能详解·镜"
-    }
-  },
-  {
-    "id": "ali",
+    "id": "20",
     "name": "阿离",
     "type": "战斗增益型",
-    "skill": "棋手技【枫叶舞】：指定 1 名主 C 英雄，主 C 每击败 3/7/11/15 名敌人获得强化牌“翩跃舞步”并解锁特性（恢复 / 追加转移 / 击败成长 / 攻击力成长），越杀越强；秘技【惊鸿游龙】。",
-    "talent": "枫叶舞",
-    "desc": "启动件 / 单核养成型棋手，养一个能打的主 C，越杀越强（当前版本出场率极高）。",
+    "skill": "使用技能，指向1名英雄，其受到最大生命值20%的伤害时将获得护盾并转移至纸伞处。",
+    "talent": "技能",
     "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/50ad0883c3bc185ffdd198263ab65466.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/119a3615b3e0b17491c795df3da4183e.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/505975bd5d63f01325ee29515551acdb.png",
     "lordId": 20,
     "source": {
-      "platform": "王者攻略库(ima)",
-      "author": "王者万象棋攻略库",
-      "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
-      "date": "2026",
-      "note": "阿离棋手详解·枫叶舞单核流"
-    }
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a36b9dab26e55e160b31423a00a12791.png",
+        "desc": "使用技能，指向1名英雄，其受到最大生命值20%的伤害时将获得护盾并转移至纸伞处。",
+        "cards": [
+          {
+            "name": "枫叶舞",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a36b9dab26e55e160b31423a00a12791.png",
+            "desc": "使用技能，指向1名英雄，其受到最大生命值20%的伤害时将获得护盾并转移至纸伞处。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "枫叶舞指定的英雄击败3/7/11/15名敌方英雄，获得1张秘技牌翩跹舞步并为枫叶舞解锁1项特性（共4项）。",
+        "cards": [
+          {
+            "name": "惊鸿游龙",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "枫叶舞指定的英雄击败3/7/11/15名敌方英雄，获得1张秘技牌翩跹舞步并为枫叶舞解锁1项特性（共4项）。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
+        "desc": "从3个枫叶舞强化中选择1项。",
+        "cards": [
+          {
+            "name": "即刻起舞",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
+            "desc": "从3个枫叶舞强化中选择1项。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "枫灵涌动",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0f8716354ccbe623d236779196da6294.png"
+      },
+      {
+        "name": "红叶染锋",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/49836f994c4eabc946d9607e7a8799c4.png"
+      },
+      {
+        "name": "有叶新生",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0a9e67f18bc4e5180b50e4c8c42aa4e0.png"
+      },
+      {
+        "name": "枫佑永驻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/02134412ea175852515a177ced66ee28.png"
+      },
+      {
+        "name": "拈花一指",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ec80828d2bbf00915f017759b5df4c70.png"
+      },
+      {
+        "name": "红枫疾舞",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/57a3989e14cd316cae543e1648d36c07.png"
+      },
+      {
+        "name": "枫华之刃",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a333eb3d31e2a0288ac28a682673cfc3.png"
+      },
+      {
+        "name": "枫影无拘",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8dc4a4c99f79b1c8ae7f23b6e5d26e41.png"
+      },
+      {
+        "name": "枫舞扶摇",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ce085ffa45c3e9938ab7342f4c0a4689.png"
+      },
+      {
+        "name": "翩跹馈赠",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b8169b8a5de0d54b2a804ef7dd99ccf8.png"
+      },
+      {
+        "name": "枫之洪流",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/600eae950981f9f2919fe43888f262bf.png"
+      },
+      {
+        "name": "落英汲取",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1e4913ad1ff9e80945a0dc7ca10b4c7e.png"
+      },
+      {
+        "name": "斗转星移",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8cc0366d2f1ed5470b688e9264a20425.png"
+      },
+      {
+        "name": "青叶绽蕊",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1b59083e8f61724dfa1874efd9d7ab07.png"
+      },
+      {
+        "name": "层林遮影",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/78139f8c825874da2d669ceebda22d15.png"
+      },
+      {
+        "name": "一叶双生",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e1ec37a01c335f6773d8e1c5acc2998d.png"
+      },
+      {
+        "name": "瞬步无影",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/58b37d13579d6b7cc4a2bfafe1f46d86.png"
+      },
+      {
+        "name": "踏叶摘星",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/acba79a7d12fff6cf371b1375e5bab99.png"
+      },
+      {
+        "name": "翩跹舞步·余韵",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1680da4cf89947cf79d72fe32821c629.png"
+      },
+      {
+        "name": "翩跹舞步·进化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/53b3c8a7da18b154aeed9294940bb397.png"
+      },
+      {
+        "name": "翩跹舞步·新生",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/29a12f308f75d3e0d171de62b8eb75c2.png"
+      },
+      {
+        "name": "翩跹舞步·流动",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6907e7ba8372f2b19099dad0e7e4c7c0.png"
+      },
+      {
+        "name": "翩跹舞步·蓄势",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c0b00ee7df8bffb4b5e6999a6d63e3e8.png"
+      }
+    ],
+    "placeholder": false
   },
   {
-    "id": "anqila",
+    "id": "21",
+    "name": "镜",
+    "type": "战斗增益型",
+    "skill": "使用技能，获得1张镜像牌，每使用4次技能，该技能能量消耗+1。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/aa7d598f183346447345b42eecd99669.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/4a34614097e77daf4500a10f4dfbb58a.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/59f25d3b8c62ec326c96e03ade53e11b.png",
+    "lordId": 21,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d5a71a34dd88803a3e87f3face4ffcec.png",
+        "desc": "使用技能，获得1张镜像牌，每使用4次技能，该技能能量消耗+1。",
+        "cards": [
+          {
+            "name": "无穷镜像",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d5a71a34dd88803a3e87f3face4ffcec.png",
+            "desc": "使用技能，获得1张镜像牌，每使用4次技能，该技能能量消耗+1。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "使用4张镜像，获得1张秘技牌万镜。",
+        "cards": [
+          {
+            "name": "镜像之力",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "使用4张镜像，获得1张秘技牌万镜。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a4ac6aceaccb7b1539e48d2f2a209eb7.png",
+        "desc": "商店里的英雄牌在购买后会留下1个镜像复制（不计入秘技任务）。",
+        "cards": [
+          {
+            "name": "镜花影",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a4ac6aceaccb7b1539e48d2f2a209eb7.png",
+            "desc": "商店里的英雄牌在购买后会留下1个镜像复制（不计入秘技任务）。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "镜像",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9dfd760f813714278595de55fa01a545.png"
+      },
+      {
+        "name": "万镜",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3ea8bc15143830cc565c686f6cb24b75.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "22",
+    "name": "乔汐",
+    "type": "经济运营型",
+    "skill": "使用技能，随机获得1张2-5阶的转瞬英雄牌。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/1b87c6a9b387b9a6bd48cefaf2967209.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/0b5f332f7fab409231b1ea4383b3491c.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/28514d6f37bd65aaf8e212ebcc4b52c3.png",
+    "lordId": 22,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3cbd047ed370bd5f9e720ee63e6be04c.png",
+        "desc": "使用技能，随机获得1张2-5阶的转瞬英雄牌。",
+        "cards": [
+          {
+            "name": "温柔呼唤",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3cbd047ed370bd5f9e720ee63e6be04c.png",
+            "desc": "使用技能，随机获得1张2-5阶的转瞬英雄牌。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "每经过4个回合，获得1张秘技牌潮汐的交响。",
+        "cards": [
+          {
+            "name": "海的拥抱",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "每经过4个回合，获得1张秘技牌潮汐的交响。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
+        "desc": "开战时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。",
+        "cards": [
+          {
+            "name": "潮起潮落",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
+            "desc": "开战时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "潮汐的交响",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3c0fa4addc0d5bf61aac889382f5153f.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "24",
+    "name": "常小娥",
+    "type": "战斗增益型",
+    "skill": "使用技能，小菟随机助力1名英雄，使其等级+2。本场比赛中，小菟每助力过1次，等级提升效果+1。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/585ca34d534d39608202e4be766a675c.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/c8c45b73de5a2f5e62adb846c0ae517c.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/f9d2e1fcfbfc30496eff6da8f4227f52.png",
+    "lordId": 24,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/2a7836597ea8b3050614e669b9318649.png",
+        "desc": "使用技能，小菟随机助力1名英雄，使其等级+2。本场比赛中，小菟每助力过1次，等级提升效果+1。",
+        "cards": [
+          {
+            "name": "小菟助力",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/2a7836597ea8b3050614e669b9318649.png",
+            "desc": "使用技能，小菟随机助力1名英雄，使其等级+2。本场比赛中，小菟每助力过1次，等级提升效果+1。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "己方英雄等级总和达到50/150/375级，获得1张秘技牌小菟送福。",
+        "cards": [
+          {
+            "name": "兔飞猛进",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "己方英雄等级总和达到50/150/375级，获得1张秘技牌小菟送福。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ae090d340811e7e00da09ffdf2ffad08.png",
+        "desc": "小菟提供等级时，每5级使其额外获得1项随机属性：15%攻速/2%物理和法术吸血/2点物理和法术防御力。且每通过小菟助力提供65级时，获得1张小菟送福。",
+        "cards": [
+          {
+            "name": "月之特调",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ae090d340811e7e00da09ffdf2ffad08.png",
+            "desc": "小菟提供等级时，每5级使其额外获得1项随机属性：15%攻速/2%物理和法术吸血/2点物理和法术防御力。且每通过小菟助力提供65级时，获得1张小菟送福。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "小菟送福",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/57462b03ac13f37a75dc706c1fa5d0dc.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "25",
+    "name": "玉环",
+    "type": "经济运营型",
+    "skill": "每打出3张非觉醒英雄牌时，玉环将根据出牌类型以不同的指法弹奏琵琶，并触发1次相应效果。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/76faabc5c6c354f8221b789e17058253.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/78c8bc23695303ee38c8a0ea84b9832b.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/bcd369cc4dfb9c584a2e336876e15f6d.png",
+    "lordId": 25,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/847728fabf55d8e10d42983c714343ee.png",
+        "desc": "每打出3张非觉醒英雄牌时，玉环将根据出牌类型以不同的指法弹奏琵琶，并触发1次相应效果。",
+        "cards": [
+          {
+            "name": "霓裳曲",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/847728fabf55d8e10d42983c714343ee.png",
+            "desc": "每打出3张非觉醒英雄牌时，玉环将根据出牌类型以不同的指法弹奏琵琶，并触发1次相应效果。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "累积弹奏6次琵琶，获得1张秘技牌惊鸿调，限2张。",
+        "cards": [
+          {
+            "name": "自成曲调",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "累积弹奏6次琵琶，获得1张秘技牌惊鸿调，限2张。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3bcc949a223374da9328849b8ec28d07.png",
+        "desc": "获得3次惊鸿调演奏次数。",
+        "cards": [
+          {
+            "name": "余音绕梁",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3bcc949a223374da9328849b8ec28d07.png",
+            "desc": "获得3次惊鸿调演奏次数。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "轮指",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d7d46e0e47e7617195e4f0cdca3569b8.png"
+      },
+      {
+        "name": "扫拂",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1fd6b4dde286a6003a0bbe15f24931e1.png"
+      },
+      {
+        "name": "吟揉",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b6e0d6fec8ec83542b1d429f6d63f0e2.png"
+      },
+      {
+        "name": "绞弦",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4a78c7f4eaaae45dd094b34e98e6dc41.png"
+      },
+      {
+        "name": "惊鸿调",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d8862322ad83d823af6351224ccec495.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "31",
+    "name": "庄小鱼",
+    "type": "经济运营型",
+    "skill": "庄小鱼升级时，会随机获得1张效果牌。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/93093539e579d83840f98dfb6e200adf.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/81595fcbaa6966a79cedf0daa24b412a.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/78de9ae5fc4ed040d57f27fc193de603.png",
+    "lordId": 31,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1a9a03335e6cb28491cd2f69d98b8f9c.png",
+        "desc": "庄小鱼升级时，会随机获得1张效果牌。",
+        "cards": [
+          {
+            "name": "梦境游戏",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1a9a03335e6cb28491cd2f69d98b8f9c.png",
+            "desc": "庄小鱼升级时，会随机获得1张效果牌。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "升到5级和6级，获得1张秘技牌如梦似幻。",
+        "cards": [
+          {
+            "name": "美梦成真",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "升到5级和6级，获得1张秘技牌如梦似幻。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb5eedf580967893e6f4ea787b20e2c8.png",
+        "desc": "获得1张梦幻引擎：将商店替换为梦幻商店。若在棋手生命值≤30时战斗失败，则重复获得。",
+        "cards": [
+          {
+            "name": "引擎升级",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb5eedf580967893e6f4ea787b20e2c8.png",
+            "desc": "获得1张梦幻引擎：将商店替换为梦幻商店。若在棋手生命值≤30时战斗失败，则重复获得。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "如梦似幻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a9a6e4da26e159c38ffb93403c9aba5d.png"
+      },
+      {
+        "name": "梦幻引擎",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b41957925b1fd7e54b494029beadba1a.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "32",
+    "name": "马可",
+    "type": "经济运营型",
+    "skill": "马可每打出4张3阶及以下的英雄牌，随机获得1张宝藏牌。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b3fd4e0aa4faaf1c23804e7a554e0ba3.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/89287acb08f878ffc7608da2828587d5.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/1b164494b9d31aee3629b4d282eda71e.png",
+    "lordId": 32,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/7c9933a16160958bf2229f9b166c09f7.png",
+        "desc": "马可每打出4张3阶及以下的英雄牌，随机获得1张宝藏牌。",
+        "cards": [
+          {
+            "name": "寻宝之旅",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/7c9933a16160958bf2229f9b166c09f7.png",
+            "desc": "马可每打出4张3阶及以下的英雄牌，随机获得1张宝藏牌。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "使用7张宝藏牌，获得1张秘技牌终极宝藏。",
+        "cards": [
+          {
+            "name": "终极宝藏",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "使用7张宝藏牌，获得1张秘技牌终极宝藏。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
+        "desc": "从2种英雄强化效果中选择1个。",
+        "cards": [
+          {
+            "name": "瓜分宝藏",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
+            "desc": "从2种英雄强化效果中选择1个。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "阳光普照",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c1d61ec0919e129f7c73a58f5cb52c36.png"
+      },
+      {
+        "name": "重点照顾",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png"
+      },
+      {
+        "name": "红笺锦鲤符",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/620914d76394e253d69cf0c5fc5038d5.png"
+      },
+      {
+        "name": "狼牙部落的图腾雕像",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/313104e5ad2f4ff124d4ba58a0189bfa.png"
+      },
+      {
+        "name": "沙海甘泉",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/53809eb3a92608ad01982b71ea3c8d1c.png"
+      },
+      {
+        "name": "人鱼之泪",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1471737723485dada537feec42cdd695.png"
+      },
+      {
+        "name": "神树彩陶",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5618396f4eeaaaee987e3ffab90e561f.png"
+      },
+      {
+        "name": "冰曜宝石镜",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9907c150d5de119bd5e3d307c3bfc5c4.png"
+      },
+      {
+        "name": "马可的随身信物",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/fd405f4f2f9a9cca14b0650044521a1b.png"
+      },
+      {
+        "name": "马可的时差信笺",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/6d25c4be2ba5d8f0e78c23ebaa4e0c4f.png"
+      },
+      {
+        "name": "马可的魅力飞吻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a09b7c370b739bb31d0cd7bd9ec1d971.png"
+      },
+      {
+        "name": "马可的限量亲签",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cd7bec4c11af9a7df510299d81410e86.png"
+      },
+      {
+        "name": "马可的吸睛自拍",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4bb50f808353a75f2584ec5496db71a6.png"
+      },
+      {
+        "name": "马可的招牌微笑",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/95051eb551ddf87039d722795480350f.png"
+      },
+      {
+        "name": "终极宝藏正是在下",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4ba54b932eb2c707b11182da4034e6ec.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "33",
+    "name": "白歌",
+    "type": "经济运营型",
+    "skill": "每进行4次英雄合成，白歌获得1张即兴创作。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/63b4742b5a23950a558afc07e5622296.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/47182c515afd06d9d4d93ddd8f201b99.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/d7321b3c5334ca1521ec550c980b3f56.png",
+    "lordId": 33,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d9dba2b673c153cedc9620b74634a0e0.png",
+        "desc": "每进行4次英雄合成，白歌获得1张即兴创作。",
+        "cards": [
+          {
+            "name": "神来之笔",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d9dba2b673c153cedc9620b74634a0e0.png",
+            "desc": "每进行4次英雄合成，白歌获得1张即兴创作。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "使用6张即兴创作，获得1张秘技牌灵感爆发。",
+        "cards": [
+          {
+            "name": "天生我才",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "使用6张即兴创作，获得1张秘技牌灵感爆发。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
+        "desc": "获得1张奇才：指定1名英雄，获得4张该英雄牌。",
+        "cards": [
+          {
+            "name": "惊才绝艳",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
+            "desc": "获得1张奇才：指定1名英雄，获得4张该英雄牌。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "即兴创作",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b043294fa9399767f17adef0361632fc.png"
+      },
+      {
+        "name": "灵感爆发",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f348490760bc37b603f66c711d8b0408.png"
+      },
+      {
+        "name": "奇才",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2871a902d5b5c6032e34913b44c96eb5.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "34",
+    "name": "昭君",
+    "type": "战斗增益型",
+    "skill": "指定1名英雄，将其冻结。战斗结束后，该英雄随机变为高1阶的英雄，继承等级。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/38353de545d3bc7eef4e286b4243faa8.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/bfee6b5e52907279bec2c399a0be77f3.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/64c94b8dcdbfb48ab4611de5daa38c32.png",
+    "lordId": 34,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/585756115d0f427c6641a8b4fc89416a.png",
+        "desc": "指定1名英雄，将其冻结。战斗结束后，该英雄随机变为高1阶的英雄，继承等级。",
+        "cards": [
+          {
+            "name": "冰之心",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/585756115d0f427c6641a8b4fc89416a.png",
+            "desc": "指定1名英雄，将其冻结。战斗结束后，该英雄随机变为高1阶的英雄，继承等级。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "第5/8回合，获得1张秘技牌深度冻结。",
+        "cards": [
+          {
+            "name": "极寒冰冻",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "第5/8回合，获得1张秘技牌深度冻结。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
+        "desc": "从3个增益效果中选择1个。",
+        "cards": [
+          {
+            "name": "冰雪秘藏",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
+            "desc": "从3个增益效果中选择1个。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "不朽坚冰",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png"
+      },
+      {
+        "name": "雪暴时刻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png"
+      },
+      {
+        "name": "寒潮之势",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png"
+      },
+      {
+        "name": "寒冰王座",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d94d46d5635672ca3640d08ae7d41cfc.png"
+      },
+      {
+        "name": "冰封结晶",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/642b3d8d626bdfa190903f6447650ca7.png"
+      },
+      {
+        "name": "冰心领域",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/96f2484e343bd187fbcd36814a66a9da.png"
+      },
+      {
+        "name": "寒雨凝结",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/80574f64b2ded8714a71cb4da6969ae8.png"
+      },
+      {
+        "name": "寒潮共振",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/39027b8e46c2b2a84f9bf3ac47ca9ad1.png"
+      },
+      {
+        "name": "寒冰觉醒",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/91a0b90c00a7e6dde261b553b88fbd25.png"
+      },
+      {
+        "name": "霜寒进化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/10367ef6b3424300134534dcc3e68b8a.png"
+      },
+      {
+        "name": "升华",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b9dc0a01c04554cca1e1f6a3dd01544b.png"
+      },
+      {
+        "name": "深度冻结",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4099a8d6d427195297f84c145531ecb7.png"
+      },
+      {
+        "name": "破冰裂变",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8f19cdead8ad38f1f80b2c8d43f47f3a.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "35",
+    "name": "班叔",
+    "type": "战斗增益型",
+    "skill": "比赛开始时，获得1张便携式机关。\n棋手等级达到2/3/4/5时，从热能陷阱、电磁弹簧、等离子屏障3种机关卡中随机获得1张。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ad8947e7d30e55756a7d76896f46ea29.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/57f792c0c385f815aef88e260123e043.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/69b517f66c1ed9115c8d142ca9098467.png",
+    "lordId": 35,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1dcc9302f7aa8a52234975fe30407f7a.png",
+        "desc": "比赛开始时，获得1张便携式机关。\n棋手等级达到2/3/4/5时，从热能陷阱、电磁弹簧、等离子屏障3种机关卡中随机获得1张。",
+        "cards": [
+          {
+            "name": "神匠",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1dcc9302f7aa8a52234975fe30407f7a.png",
+            "desc": "比赛开始时，获得1张便携式机关。\n棋手等级达到2/3/4/5时，从热能陷阱、电磁弹簧、等离子屏障3种机关卡中随机获得1张。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "收集螺丝，可获得秘技牌构筑升级（至多10张）。\n触发陷阱：螺丝+3\n触发弹簧：螺丝+2\n屏障被摧毁：螺丝+5",
+        "cards": [
+          {
+            "name": "机关跃迁",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "收集螺丝，可获得秘技牌构筑升级（至多10张）。\n触发陷阱：螺丝+3\n触发弹簧：螺丝+2\n屏障被摧毁：螺丝+5"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e582576458eb2f1a3585582d53e4e2f7.png",
+        "desc": "从3种机关强化方案中选择1个。",
+        "cards": [
+          {
+            "name": "成品方案",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e582576458eb2f1a3585582d53e4e2f7.png",
+            "desc": "从3种机关强化方案中选择1个。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "便携式机关",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4f88435cc127891f7aa9a7ea880ec577.png"
+      },
+      {
+        "name": "热能陷阱",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ef2dac171ac2832fa4831112c59c6f.png"
+      },
+      {
+        "name": "等离子屏障强化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/42cd06aca4bace948b7e484f339a23d2.png"
+      },
+      {
+        "name": "电磁弹簧强化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7077f7bcaa1aa16bf4b6c1f7251c7bf8.png"
+      },
+      {
+        "name": "热能陷阱强化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ef2dac171ac2832fa4831112c59c6f.png"
+      },
+      {
+        "name": "等离子屏障",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/42cd06aca4bace948b7e484f339a23d2.png"
+      },
+      {
+        "name": "电磁弹簧",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7077f7bcaa1aa16bf4b6c1f7251c7bf8.png"
+      },
+      {
+        "name": "构筑升级",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6557f0b36ae5d066558350116773f11c.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "36",
+    "name": "弈星",
+    "type": "通用",
+    "skill": "本回合战斗开始时，弈星随机复制1名敌方英雄。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/d7b23b766a880df73d7d59f9c679cd40.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/acadc747e75a60aa5191e41cc2719346.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/ddd0732d105530d4b62021dca87202a9.png",
+    "lordId": 36,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/041cc8fe938c1a1b12969ce92e4304f1.png",
+        "desc": "本回合战斗开始时，弈星随机复制1名敌方英雄。",
+        "cards": [
+          {
+            "name": "棋道万象",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/041cc8fe938c1a1b12969ce92e4304f1.png",
+            "desc": "本回合战斗开始时，弈星随机复制1名敌方英雄。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "第4/8/12回合，获得1张秘技牌驭势。",
+        "cards": [
+          {
+            "name": "谋而后定",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "第4/8/12回合，获得1张秘技牌驭势。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
+        "desc": "战斗开始时，将敌方等级最高的英雄复制，临时加入我方战场。",
+        "cards": [
+          {
+            "name": "神之一手",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
+            "desc": "战斗开始时，将敌方等级最高的英雄复制，临时加入我方战场。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "驭势",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ff8414ddc60fbebff0acbd9befee123e.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "38",
+    "name": "孙小宾",
+    "type": "通用",
+    "skill": "使用技能，孙小宾回溯上回合使用过的英雄牌（非觉醒）和效果牌，随机触发其中1张。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b44fa31d1cefd1f812cef5901bb5db0c.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/5a05f3de05c33fef474d16022506d821.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/45bc4978da2e172f56758d4ddf2911b3.png",
+    "lordId": 38,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/871f5b916ae8d187575a2df42c4cad74.png",
+        "desc": "使用技能，孙小宾回溯上回合使用过的英雄牌（非觉醒）和效果牌，随机触发其中1张。",
+        "cards": [
+          {
+            "name": "时光倒流",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/871f5b916ae8d187575a2df42c4cad74.png",
+            "desc": "使用技能，孙小宾回溯上回合使用过的英雄牌（非觉醒）和效果牌，随机触发其中1张。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "首次单回合使用8张英雄或效果牌，获得1张秘技牌时之回环。",
+        "cards": [
+          {
+            "name": "时间魔法",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "首次单回合使用8张英雄或效果牌，获得1张秘技牌时之回环。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db2b7f01eabfa9111d708a01d596c101.png",
+        "desc": "获得1张更强力的永恒时之回环，可以记录12张英雄牌或效果牌。",
+        "cards": [
+          {
+            "name": "时光宝藏",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db2b7f01eabfa9111d708a01d596c101.png",
+            "desc": "获得1张更强力的永恒时之回环，可以记录12张英雄牌或效果牌。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "时之回环",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/01939d7496327136c091230ff17781da.png"
+      },
+      {
+        "name": "永恒时之回环",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/01939d7496327136c091230ff17781da.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "39",
+    "name": "明先生",
+    "type": "经济运营型",
+    "skill": "使用技能，从2种卦象中选择1个，卦象效果持续3个回合。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/6db784af711d4b968c0d407a70360b63.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/75a13d66c8fc8bad8ab324b8779311f1.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/2ff54ea6cbe795347fb9c4a5fd53ae76.png",
+    "lordId": 39,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/795dd1e31f7933e388ff435ca93b161a.png",
+        "desc": "使用技能，从2种卦象中选择1个，卦象效果持续3个回合。",
+        "cards": [
+          {
+            "name": "先知卦象",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/795dd1e31f7933e388ff435ca93b161a.png",
+            "desc": "使用技能，从2种卦象中选择1个，卦象效果持续3个回合。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "第6/11回合，获得1张秘技牌命运馈赠。",
+        "cards": [
+          {
+            "name": "天降鸿运",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "第6/11回合，获得1张秘技牌命运馈赠。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9510a42389dd49d1fa64ab5daa2b492e.png",
+        "desc": "强化明先生的卦象。\n卦象·节：每回合额外获得4能量。\n卦象·丰：每回合获得8次临时刷新。",
+        "cards": [
+          {
+            "name": "飞龙在天",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9510a42389dd49d1fa64ab5daa2b492e.png",
+            "desc": "强化明先生的卦象。\n卦象·节：每回合额外获得4能量。\n卦象·丰：每回合获得8次临时刷新。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "命运馈赠",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a49203fe99b53174b76f8db4d5b13ce5.png"
+      },
+      {
+        "name": "命运馈赠·阴",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/f2b0865e24f0f25ab8ab8da44c018675.png"
+      },
+      {
+        "name": "命运馈赠·阳",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/44700e502eeb61664b645260be74d45e.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "40",
+    "name": "闹闹",
+    "type": "经济运营型",
+    "skill": "使用技能，从随机2个阵营中选择1个，之后技能替换为：花费1能量，获得1张该阵营的英雄牌。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b64c5e798a8705e1d0bb4077dde7fc5f.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/0fa9a62913f2eb2621bddc0e046fe4f1.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/295a4d70c2080024ed752b893d634081.png",
+    "lordId": 40,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1c702a76fe3fd2db678177e17965ba3a.png",
+        "desc": "使用技能，从随机2个阵营中选择1个，之后技能替换为：花费1能量，获得1张该阵营的英雄牌。",
+        "cards": [
+          {
+            "name": "派对泡泡",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1c702a76fe3fd2db678177e17965ba3a.png",
+            "desc": "使用技能，从随机2个阵营中选择1个，之后技能替换为：花费1能量，获得1张该阵营的英雄牌。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "上阵6名技能所选阵营的英雄，获得1张秘技牌朋友多多。",
+        "cards": [
+          {
+            "name": "快乐集结",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "上阵6名技能所选阵营的英雄，获得1张秘技牌朋友多多。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
+        "desc": "获得1张打成一片。",
+        "cards": [
+          {
+            "name": "狂欢时刻",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
+            "desc": "获得1张打成一片。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "打成一片",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5741cf3a63081735d235fae82c435479.png"
+      },
+      {
+        "name": "朋友多多",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328975d01796797f943c51b427f8a3d8.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "41",
+    "name": "姜导",
+    "type": "战斗增益型",
+    "skill": "使用技能，指定1名英雄成为主角，获得效果：每打出2张英雄或效果牌，等级+1（每回合最多+5）。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/434ca597839b623d436a73232fe0619d.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/aa35e080d6b69a83d90fe0d1b5b20ea9.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/fd8ce8b6ccef463717b5a50a85d4db9d.png",
+    "lordId": 41,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/95581fe110e7db41c0e289eeb7da4058.png",
+        "desc": "使用技能，指定1名英雄成为主角，获得效果：每打出2张英雄或效果牌，等级+1（每回合最多+5）。",
+        "cards": [
+          {
+            "name": "钦定主角",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/95581fe110e7db41c0e289eeb7da4058.png",
+            "desc": "使用技能，指定1名英雄成为主角，获得效果：每打出2张英雄或效果牌，等级+1（每回合最多+5）。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "己方英雄首次升到25级，获得1张秘技牌封神一瞬。",
+        "cards": [
+          {
+            "name": "封神时刻",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "己方英雄首次升到25级，获得1张秘技牌封神一瞬。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
+        "desc": "封神一瞬指定的英雄在战斗开始时获得30%物理和法术吸血，并在15秒内免疫控制效果（压制除外）。",
+        "cards": [
+          {
+            "name": "完美演出",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
+            "desc": "封神一瞬指定的英雄在战斗开始时获得30%物理和法术吸血，并在15秒内免疫控制效果（压制除外）。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "封神一瞬",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/01e3c6e81d77abeb95830ca448918944.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "43",
+    "name": "嬴律",
+    "type": "经济运营型",
+    "skill": "比赛开始时，嬴律获得1张战略决策。使用后在第一次发布至高决策时，可以再获得1张。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/168aae5e0b3a8a4528ddd89bb14868e7.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/345a419499ea3ef1f1e298022af8e3f8.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/94f40003033d7cacbc42f7ed54fe2bf2.png",
+    "lordId": 43,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4b8dd6015ec25269d9c794a3744c12c3.png",
+        "desc": "比赛开始时，嬴律获得1张战略决策。使用后在第一次发布至高决策时，可以再获得1张。",
+        "cards": [
+          {
+            "name": "最高决策者",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4b8dd6015ec25269d9c794a3744c12c3.png",
+            "desc": "比赛开始时，嬴律获得1张战略决策。使用后在第一次发布至高决策时，可以再获得1张。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "每经过4个回合，获得1张秘技牌至高决策。",
+        "cards": [
+          {
+            "name": "至高之主",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "每经过4个回合，获得1张秘技牌至高决策。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/19c90230d5451669f5b6fb63220f7a84.png",
+        "desc": "选择1个特权决策颁布，对所有玩家生效，并且自己额外享受特权效果。",
+        "cards": [
+          {
+            "name": "特权决策",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/19c90230d5451669f5b6fb63220f7a84.png",
+            "desc": "选择1个特权决策颁布，对所有玩家生效，并且自己额外享受特权效果。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "战略决策",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b826f778a470226d3d794c31f8c324f4.png"
+      },
+      {
+        "name": "投资增值",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d342cade74ff9fab135fb83db8d8a0ea.png"
+      },
+      {
+        "name": "风险对冲",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9eacc9f4c4e59827df790ec8b8963e65.png"
+      },
+      {
+        "name": "固定收益",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/caf73b132e9dc55eb067b885dde254ea.png"
+      },
+      {
+        "name": "乘胜追击",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9c105856234e33afc7736e2e4e5c63f8.png"
+      },
+      {
+        "name": "基层提拔",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4a282723e3af31ef5cee822373abb95a.png"
+      },
+      {
+        "name": "空降人才",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/25efbd6dda6de37e022e236571f8483a.png"
+      },
+      {
+        "name": "沉淀收益",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1cec0ce135d57344e22b2c4bae10f14f.png"
+      },
+      {
+        "name": "并购红利",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d8bf3ddf9a3840752a5418d4ee8d0b0f.png"
+      },
+      {
+        "name": "低压运营",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/841376ba614335b8094959f2407310a7.png"
+      },
+      {
+        "name": "至高决策",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1661efe7aa01660ffb1c7c1731a7a6ac.png"
+      },
+      {
+        "name": "资本杠杆",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/60dc6d8fb8f541b4c1b65485a7580ae5.png"
+      },
+      {
+        "name": "资产清算",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cdcfee7ad4f54b2e7939e80ca49108a3.png"
+      },
+      {
+        "name": "胜场激励",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/96fbb8ab764a2903fde38c758427a435.png"
+      },
+      {
+        "name": "分红",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d734f159041118f9cae5c79f93028ebe.png"
+      },
+      {
+        "name": "人才储备",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cbbd1f4ddc7012cf10c4cd06dbd2f4ff.png"
+      },
+      {
+        "name": "投资回报",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8d6b4a480d17fcc79a6d574dbf2143db.png"
+      },
+      {
+        "name": "首购激励",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8dc03364306d737e07ea1668f2d25edc.png"
+      },
+      {
+        "name": "管理进修",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d1d7197e78936c463947ae8c6bb405e0.png"
+      },
+      {
+        "name": "战略性收缩",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/38906bdc2b3ffa46602d32d45fa2e1d5.png"
+      },
+      {
+        "name": "短期企划",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/513efd212c8e13116a3ca33d6c2ab285.png"
+      },
+      {
+        "name": "股权激励",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/77704228bea743679545578c57985bf1.png"
+      },
+      {
+        "name": "精英计划",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/856f62394ffb7cb61326537d364c422e.png"
+      },
+      {
+        "name": "协同增效",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/316226633b7e0f31a441481cc16cefd5.png"
+      },
+      {
+        "name": "猎头挖角",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/727a62c5eb482454917f7534b89708ba.png"
+      },
+      {
+        "name": "基层强化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/269e626293c8e304957deecaf21bc8fb.png"
+      },
+      {
+        "name": "绝对压制",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d77936685498ad4e6d991b19f589c7de.png"
+      },
+      {
+        "name": "贷款协议",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/33f743696510f0b3a8931a00aae68354.png"
+      },
+      {
+        "name": "资源再分配",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1edc7166e4f80ff4cfbe22e9b2a45233.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "50",
+    "name": "香香",
+    "type": "战斗增益型",
+    "skill": "开战时，香香会使用武器攻击敌人。\n香香初始攻击力为20，每拥有1名不低于10级的1-3阶英雄，香香的攻击力+20。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ee127a1c111ea90f739f985fb99b0040.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/c9863437ffcf04b72839508aa2e1ec08.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/5948264aeb8444e4c0bce593b848977f.png",
+    "lordId": 50,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/76563408c929e63fae226462fd2b3d35.png",
+        "desc": "开战时，香香会使用武器攻击敌人。\n香香初始攻击力为20，每拥有1名不低于10级的1-3阶英雄，香香的攻击力+20。",
+        "cards": [
+          {
+            "name": "究极弩炮",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/76563408c929e63fae226462fd2b3d35.png",
+            "desc": "开战时，香香会使用武器攻击敌人。\n香香初始攻击力为20，每拥有1名不低于10级的1-3阶英雄，香香的攻击力+20。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "累积造成10/15/20/30点棋手伤害，获得1张秘技牌武器改造。",
+        "cards": [
+          {
+            "name": "枪炮艺术",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "累积造成10/15/20/30点棋手伤害，获得1张秘技牌武器改造。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/60593b2fae31599e18ad659be2cb9806.png",
+        "desc": "香香获得（己方英雄等级的总和×0.5）%的攻击力提升。",
+        "cards": [
+          {
+            "name": "火力全开",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/60593b2fae31599e18ad659be2cb9806.png",
+            "desc": "香香获得（己方英雄等级的总和×0.5）%的攻击力提升。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "补给弹匣",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/05b8d33e3df819c319e3ae35acab03e5.png"
+      },
+      {
+        "name": "武器改造",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d9a1de59abe44813f77bbf4acd67e992.png"
+      },
+      {
+        "name": "炮击模式",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/dfb8596214a13921e5cbba33051593a2.png"
+      },
+      {
+        "name": "机枪模式",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0bae40b1eb25f06150db9a8ac3d18b66.png"
+      },
+      {
+        "name": "狙击模式",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/5f20c35ecce8c0f984331335accf9aba.png"
+      },
+      {
+        "name": "激光模式",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3eabb1642252c4a98655604bcb1379d3.png"
+      },
+      {
+        "name": "战术·歼灭",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b3aac940965e6b86eeed6e6b312f0cc4.png"
+      },
+      {
+        "name": "战术·砺刃",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9d8193a31def785e02007b32df229277.png"
+      },
+      {
+        "name": "战术·暴击",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/41d9646f44237bed3d339050c14ba47b.png"
+      },
+      {
+        "name": "战术·追击",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/22db03981e821c25eabc55b5059ce7b4.png"
+      },
+      {
+        "name": "战术·蓄势",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ada4ef5fdaa6874b73ea011eb7a20ceb.png"
+      },
+      {
+        "name": "战术·王牌",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4d0c120e0b8fb7f1d3bf975103b6c5e5.png"
+      },
+      {
+        "name": "战术·列阵",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/bdcb82f766a809665c2345de01e31aba.png"
+      },
+      {
+        "name": "战术·痛击",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9e49321376ed010e4a339b93d85d8add.png"
+      },
+      {
+        "name": "额外弹匣",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/913bc343e1ad5812396258c4115b9792.png"
+      },
+      {
+        "name": "破甲弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1821e9eef7b052c3d9004e2eaf5eecdf.png"
+      },
+      {
+        "name": "燃烧弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/7e1220ffe468cf87c0e75de58b344bd5.png"
+      },
+      {
+        "name": "制导弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/25697577e2dd0bb06a2254faaa3c968f.png"
+      },
+      {
+        "name": "裂伤弹",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cd93fd3b9a5fe82dd6154916c8119777.png"
+      },
+      {
+        "name": "连锁跳弹",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a7d200e3ea4612ee6f286bf3655ddece.png"
+      },
+      {
+        "name": "干扰弹",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/bb7596b751e0672e649dbb5d6fb045ff.png"
+      },
+      {
+        "name": "贯穿弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e3491cb46671e0e0c06c2275bd5bfba2.png"
+      },
+      {
+        "name": "大号弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d57d0cfa8be999992283ce37215b2758.png"
+      },
+      {
+        "name": "凝滞弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/927e1a6789ec20ee2b1b3e9458c55bda.png"
+      },
+      {
+        "name": "歼灭补给",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/09cac9886467b96b4880f7f4c7c0dd56.png"
+      },
+      {
+        "name": "超级电池",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4b0af4b6381e6f089472d23868ee5546.png"
+      },
+      {
+        "name": "聚焦光束",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b743bd5aed7004cfaf905d7de4ce89a7.png"
+      },
+      {
+        "name": "殉爆模式",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b1974c66037bfb706a0c496a2fe263b2.png"
+      },
+      {
+        "name": "高能激发",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3811d10f0a5d3cb4c0a505cf8911602e.png"
+      },
+      {
+        "name": "战术·淬刃",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/66328902c29f8fc699a2204a026132d9.png"
+      },
+      {
+        "name": "战术·借势",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ab58571d2a7b6ce5a07978bfd1926118.png"
+      },
+      {
+        "name": "战术·百战",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/616b7d5c87c5dca8b4a8ba5eac556d40.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
+    "id": "51",
     "name": "安琪拉",
     "type": "战斗增益型",
-    "skill": "棋手技【特制灵异追踪器】：比赛开始时获得飞行器与 1 张“顿悟时刻”；3 级拿顿悟时刻选神秘力量天赋；秘技累积神秘力量换“灵异探测大改装”；专属【超级连接】战斗开始时飞行器连接的英雄随机获得自身 10%-40% 等级数的临时等级。",
-    "talent": "超级连接",
-    "desc": "机制新颖的棋手，飞行器连接英雄提供临时等级，适合养高等级核心的阵容。",
+    "skill": "获得飞行器，棋手等级达到3时获得1张顿悟时刻。",
+    "talent": "技能",
     "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/c43f858a6825abf330ce927a5a000aac.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/6c6ea4f10a31709b1c9e72e980f63605.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/0e553588cb9cc9ee379e508c3bbe6663.png",
     "lordId": 51,
     "source": {
-      "platform": "18183游戏网",
-      "author": "18183·新棋手安琪拉介绍",
-      "url": "https://m.18183.com/gonglue/202608/fdnchvcn.html",
-      "date": "2026-08",
-      "note": "安琪拉棋手介绍·飞行器机制"
-    }
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/44209c4cbf5dd1807956e76ea3340cdd.png",
+        "desc": "获得飞行器，棋手等级达到3时获得1张顿悟时刻。",
+        "cards": [
+          {
+            "name": "特制灵异追踪器",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/44209c4cbf5dd1807956e76ea3340cdd.png",
+            "desc": "获得飞行器，棋手等级达到3时获得1张顿悟时刻。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "累积获得5/10/20/35点神秘力量，获得1张秘技牌灵异探测大改装。",
+        "cards": [
+          {
+            "name": "驱鬼!加大力度!",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "累积获得5/10/20/35点神秘力量，获得1张秘技牌灵异探测大改装。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
+        "desc": "获得一张灵异探测大改装。战斗开始时，飞行器连接的英雄会随机获得自身10%-30%等级数的临时等级。",
+        "cards": [
+          {
+            "name": "超级连接",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
+            "desc": "获得一张灵异探测大改装。战斗开始时，飞行器连接的英雄会随机获得自身10%-30%等级数的临时等级。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "顿悟时刻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1f1151a19463ccce92c95cdb63693388.png"
+      },
+      {
+        "name": "灵异探测大改装",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f1583471506cbeed6b783327fbff9845.png"
+      },
+      {
+        "name": "奇想·效果牌",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/25d9cf4879ff0d84847984e76fe1d695.png"
+      },
+      {
+        "name": "奇想·英雄牌",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/49a77ff02baee9c3db163ae420a7d7a0.png"
+      },
+      {
+        "name": "奇想·低阶牌",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e2f057c1c447533785de9c327ad8b676.png"
+      },
+      {
+        "name": "奇想·高阶牌",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b0602a07f75dd8de1182b71872c65e37.png"
+      },
+      {
+        "name": "奇想·联合",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/56abe85362cebcd8e5af94edd8c13f23.png"
+      },
+      {
+        "name": "奇想·阵营",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8f695e46c809e4080b03668c20599bb4.png"
+      },
+      {
+        "name": "奇想·进化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/15560b6ce75d5b80b3a7b8d548a51ddf.png"
+      },
+      {
+        "name": "奇想·胜利",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/57f604f324ee5c791de6f99444c9ce23.png"
+      },
+      {
+        "name": "奇想·补给",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/23f94451d1a915330217e1998fa27673.png"
+      },
+      {
+        "name": "奇想·奖励",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/c4147f36438773fb95fa75c2740e7496.png"
+      },
+      {
+        "name": "“二号机”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/953538c45fe3a55062b8dddcd6df7be1.png"
+      },
+      {
+        "name": "“都别跑”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0673aaedfb358efecfa3a525f28aaaae.png"
+      },
+      {
+        "name": "“定向毁灭”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/c6b2d2cf1cc00b2d3da16620e2e5afed.png"
+      },
+      {
+        "name": "“耍赖皮”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0b6a75ae7d0b8875816dc2f8f1743606.png"
+      },
+      {
+        "name": "“壮胆”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ebf13a066683dccdc9b2cf8a00497073.png"
+      },
+      {
+        "name": "“紧急救命”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a856483b4fec31edf646f182758390e1.png"
+      },
+      {
+        "name": "“保送升级”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b1ec72079957c0a0912b6deabc66648d.png"
+      },
+      {
+        "name": "“杠上了”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/424d863246b47b10253e974138847e03.png"
+      },
+      {
+        "name": "“秒变脆皮”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e6c8a6b66883eb9bac18783091dd1d59.png"
+      },
+      {
+        "name": "“热情扩散”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e25bfc76b476a7660a562649d2caf248.png"
+      },
+      {
+        "name": "“贴膜”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/976be0ffb470c158dcbe3ec9cf32d4ce.png"
+      },
+      {
+        "name": "“使绊子”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/6a278c086005f7112d14f969f97d7e85.png"
+      },
+      {
+        "name": "“让你嘚瑟”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/dd226c557828af56a1ec977345479734.png"
+      },
+      {
+        "name": "“站好了”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/53b98b11e45fecc33e9ec8f43450d7bc.png"
+      },
+      {
+        "name": "奇想·灵活",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/00a1c41d9d2cd7faba4622075cfc1c5c.png"
+      },
+      {
+        "name": "奇想·精锐",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a7ad087ba29b8e95964b2d8559614639.png"
+      },
+      {
+        "name": "“变胖”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/27d0ff48e4e7c9c5757a937df045948e.png"
+      },
+      {
+        "name": "“低调”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/c584e64add78c7f8c113a16c2ede64bd.png"
+      },
+      {
+        "name": "“重拳”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/aeb7f960a79be69e5d8aa42f6a2725ab.png"
+      },
+      {
+        "name": "“节能”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/176c0fd95f4b6b5696ee1a9089ea2097.png"
+      },
+      {
+        "name": "“攻速加持”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/2aef09ca60f0afa34f4803fc67695ba2.png"
+      },
+      {
+        "name": "“技能加持”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/557fa6db0dbe26c3ece6053c5c2a89d0.png"
+      },
+      {
+        "name": "“复仇者”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/033278eb7bc99df08faba22b11045bfb.png"
+      },
+      {
+        "name": "“开团秒跟”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/c9a18c20232673d9c13a6ae45769c822.png"
+      },
+      {
+        "name": "“泄气皮球”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9fcffd3a2190ec76caf5302cdefbb735.png"
+      },
+      {
+        "name": "“拿来吧你”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/99dd96bdf56fa324272571bfe576633c.png"
+      },
+      {
+        "name": "“蓄力痛击”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0f170bbcd912039cc58f65ac53f167f1.png"
+      },
+      {
+        "name": "“上强度”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/53b98b11e45fecc33e9ec8f43450d7bc.png"
+      },
+      {
+        "name": "“打扫战场”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d7f91a5b3917a68edc175d278e8d993d.png"
+      },
+      {
+        "name": "“坐火箭”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ac12c36817595cd4b300cf18769e5f8e.png"
+      }
+    ],
+    "placeholder": false
   }
 ]

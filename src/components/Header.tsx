@@ -7,10 +7,12 @@ import type { DataStatus } from '../hooks/useGameData';
 export function Header({
   onOpenSources,
   onOpenCodex,
+  onOpenChangelog,
   status,
 }: {
   onOpenSources: () => void;
   onOpenCodex: () => void;
+  onOpenChangelog: () => void;
   status: DataStatus;
 }) {
   return (
@@ -58,6 +60,9 @@ export function Header({
           />
           {status === 'ready' ? '数据已更新' : '内置数据'}
         </span>
+        <button className="btn-ghost" onClick={onOpenChangelog}>
+          版本更新
+        </button>
         <button className="btn-ghost" onClick={onOpenCodex}>
           图鉴
         </button>

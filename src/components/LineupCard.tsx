@@ -4,6 +4,7 @@ import type { ScoredLineup, RecommendReason } from '../lib/recommend';
 import type { Tier } from '../types';
 import { cn } from '../lib/cn';
 import { SourceBadge } from './SourceBadge';
+import { ImgIcon } from './ImgIcon';
 
 function TierBadge({ tier }: { tier: Tier }) {
   const styles: Record<Tier, string> = {
@@ -61,8 +62,11 @@ function OperationColumn({
 /** 站位棋盘：依官方 positionX / positionZ 绘制网格；z 越小越靠前排，前排置于底部 */
 function PositionBoard({
   positions,
+  thumbs,
 }: {
   positions: { name: string; x: number | null; z: number | null; equip?: string[] }[];
+  /** 英雄名 -> 头像 URL */
+  thumbs?: Record<string, string>;
 }) {
   const valid = positions.filter(
     (p) => typeof p.x === 'number' && typeof p.z === 'number',
@@ -96,14 +100,22 @@ function PositionBoard({
                 return (
                   <div
                     key={c}
+                    title={hero ? hero.name : undefined}
                     className={cn(
-                      'flex aspect-square items-center justify-center rounded-md text-center text-[10px] leading-tight',
+                      'flex aspect-square items-center justify-center overflow-hidden rounded-md',
                       hero
-                        ? 'bg-gold/15 text-gold'
-                        : 'bg-white/[0.03] text-text-dim/40',
+                        ? 'bg-gold/15'
+                        : 'bg-white/[0.03]',
                     )}
                   >
-                    {hero ? hero.name.slice(0, 2) : ''}
+                    {hero ? (
+                      <ImgIcon
+                        src={thumbs?.[hero.name]}
+                        alt={hero.name}
+                        className="h-full w-full text-[8px]"
+                        fallbackClassName="text-[8px]"
+                      />
+                    ) : null}
                   </div>
                 );
               })}
@@ -128,12 +140,18 @@ export function LineupCard({
   defaultOpen,
   favorite,
   onToggleFavorite,
+  heroThumbs,
+  onHeroClick,
 }: {
   scored: ScoredLineup;
   index: number;
   defaultOpen?: boolean;
   favorite?: boolean;
   onToggleFavorite?: () => void;
+  /** 英雄名 -> 头像 URL（用于站位棋盘与核心英雄） */
+  heroThumbs?: Record<string, string>;
+  /** 点击核心英雄时回调（用于打开英雄详解） */
+  onHeroClick?: (name: string) => void;
 }) {
   const [open, setOpen] = useState(defaultOpen ?? index === 0);
   const { lineup, reasons } = scored;
@@ -226,12 +244,15 @@ export function LineupCard({
                 <div className="flex flex-wrap gap-2">
                   {lineup.coreHeroes.length > 0 ? (
                     lineup.coreHeroes.map((h) => (
-                      <span
+                      <button
                         key={h}
-                        className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1 text-sm text-gold"
+                        type="button"
+                        onClick={() => onHeroClick?.(h)}
+                        className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1 text-sm text-gold transition-colors hover:border-gold/60 hover:bg-gold/20"
+                        title="查看英雄详情"
                       >
                         {h}
-                      </span>
+                      </button>
                     ))
                   ) : (
                     <span className="text-sm text-text-dim">
@@ -279,7 +300,10 @@ export function LineupCard({
 
               {/* 站位棋盘 */}
               {lineup.heroPositions && lineup.heroPositions.length > 0 ? (
-                <PositionBoard positions={lineup.heroPositions} />
+                <PositionBoard
+                  positions={lineup.heroPositions}
+                  thumbs={heroThumbs}
+                />
               ) : null}
 
               {/* 出装明细（按英雄） */}

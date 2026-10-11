@@ -1,12 +1,13 @@
 {
   "meta": {
-    "fetchedAt": "2026-10-11T10:43:57.967Z",
+    "fetchedAt": "2026-10-11T11:10:29.696Z",
     "source": "腾讯王者万象棋官方 CDN（营地/官网）",
     "sourceUrls": {
       "heroes": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_1.js",
       "talents": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_8.js",
       "equipments": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_4.js",
       "effectCards": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_2.js",
+      "lords": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_16.js",
       "lineups": "https://game.gtimg.cn/images/amside/ide_timer/598252_oslineupbyrecommend_pro_<page>.js"
     },
     "counts": {
@@ -14,6 +15,7 @@
       "talents": 258,
       "equipments": 73,
       "effectCards": 98,
+      "lords": 20,
       "factions": 6,
       "lineups": 499
     },
@@ -152,7 +154,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/bd50906724791132e7fef18b41368abe.png",
       "desc": "牺牲：苏烈的等级永久+2。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "苏烈",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/5c7348b30921b80c7b24f1b344e66fe3.png",
+        "desc": "牺牲：苏烈的等级永久+4。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5221,
@@ -163,7 +173,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2271ca2d7d8a6420d326c3fa336b9ac7.png",
       "desc": "你的英雄合成提升的等级+1。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "曜",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/58a6757c9094f038fccb14f6d0e9c50b.png",
+        "desc": "你的英雄合成提升的等级+2。"
+      },
+      "relatedCards": [
+        "逐星"
+      ]
     },
     {
       "id": 1181,
@@ -174,7 +194,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/bf7985ba2e1f9acaed5d1046d22827bc.png",
       "desc": "你的英雄每释放3次技能，该英雄等级永久+1。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "孙膑",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/ecac8234623e07f2c52135f1d9e5ec4d.png",
+        "desc": "你的英雄每释放3次技能，该英雄等级永久+2。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5031,
@@ -185,7 +213,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/ec2de510aaf9ba36f374130ee1cd2bdd.png",
       "desc": "整备：阿科米亚核心的等级+2。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "狂铁",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/e89583c66a3dbfee66d6b47828aa24b0.png",
+        "desc": "整备：阿科米亚核心的等级+2，触发2次。"
+      },
+      "relatedCards": [
+        "狂铁·强化"
+      ]
     },
     {
       "id": 1111,
@@ -196,7 +234,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/b1b1c4935f3d6eb4cb242e62de5ff0c5.png",
       "desc": "登场：获得1次免费刷新。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "孙尚香",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c540a7f2cef990b5c3249aed9046c4ba.png",
+        "desc": "登场：获得2次免费刷新。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1971,
@@ -207,7 +253,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/5ecd03adb33a8d187ff822c588330f68.png",
       "desc": "棋手升级时，棋手经验+2。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "弈星",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c6c91f011529f66de555a8774821ca22.png",
+        "desc": "棋手升级时，棋手经验+4。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1821,
@@ -218,7 +272,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/a5cf6d85a212323809f9445c3b48f425.png",
       "desc": "干将莫邪在场时，获得普通装备双剑·雄。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "干将莫邪",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/9670b18a21540dae4be644a142f4ab94.png",
+        "desc": "干将莫邪在场时，获得普通装备双剑·雄及双剑·雌。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1731,
@@ -229,7 +291,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/c3fb8a2aed92d604b46b6be098bc9139.png",
       "desc": "整备：对距离最近的【河洛】英雄使用1张古币。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "李元芳",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/6f2435829dc52b53a16c706fb9a30956.png",
+        "desc": "整备：对距离最近的【河洛】英雄使用1张精致古币。"
+      },
+      "relatedCards": [
+        "旋刃"
+      ]
     },
     {
       "id": 1681,
@@ -240,7 +312,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f7ef3c5560cccec98ad29468a75cc883.png",
       "desc": "凯旋：获得1能量。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "牛魔",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/047601bd83b7e124a2dfac8158003280.png",
+        "desc": "凯旋：获得2能量。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5141,
@@ -251,7 +331,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/a449e1cc89889154333ab8576c0289c6.png",
       "desc": "整备：你穿戴装备最多的1名英雄等级+2，且阿科米亚核心等级+1。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "亚连",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/ce0fcf7fe07d4a1270466b2be3dbf8ac.png",
+        "desc": "整备：你穿戴装备最多的1名英雄等级+2，且阿科米亚核心等级+1，触发2次。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5041,
@@ -262,7 +350,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2abcfd1ac6f720240ed70402610e574e.png",
       "desc": "召唤单位获得 3临时等级。\n整备：该临时等级及阿科米亚核心等级额外+3。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "米莱狄",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/7471befb4e462fc33e6e5620860c7e74.png",
+        "desc": "召唤单位获得 6临时等级。\n整备：该临时等级及阿科米亚核心等级额外+3，触发2次。"
+      },
+      "relatedCards": [
+        "巨像",
+        "升格"
+      ]
     },
     {
       "id": 1351,
@@ -273,7 +372,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/0de5ed257bd358d6110087499ff1e493.png",
       "desc": "牺牲：所有图腾等级永久+3且本回合你的召唤物免疫控制。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "项羽",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/3b7a1f0cd6d7a1308d2c02439773a944.png",
+        "desc": "牺牲：所有图腾等级永久+6且本回合你的召唤物免疫控制。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1891,
@@ -284,7 +391,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/5b7769e634c8899e4953e01bec2fca2e.png",
       "desc": "在场时，召唤先知图腾。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "鬼谷子",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/b35644e6dbb623f3d4467554f566fa9b.png",
+        "desc": "在场时，召唤并强化先知图腾。"
+      },
+      "relatedCards": [
+        "生命绽放"
+      ]
     },
     {
       "id": 1981,
@@ -295,7 +412,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/e17d6f3d65eb2e87550697a68b361b75.png",
       "desc": "退场：获得1张 1阶英雄兑换券。\n败阵：提升英雄兑换券的品阶。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "梦奇",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/3be801fa01638ada2a2e4ff2ab532bdc.png",
+        "desc": "退场：获得2张 1阶英雄兑换券。\n败阵：提升英雄兑换券的品阶。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1211,
@@ -306,7 +431,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/74bdbbdc99a98145cc9f86cc0e41da59.png",
       "desc": "每当你使用效果牌时，己方穿戴装备最多的1名【逐鹿】英雄等级+1。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "芈月",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/8e38f29d239db08858b6e2eed4cd50cc.png",
+        "desc": "每当你使用效果牌时，己方穿戴装备最多的1名【逐鹿】英雄等级+2。"
+      },
+      "relatedCards": []
     },
     {
       "id": 3121,
@@ -317,7 +450,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2674fae42335fc1ce006b8476aa32fad.png",
       "desc": "每对沈梦溪使用1张效果牌，本回合法力值上限-15。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "沈梦溪",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/2fd1b220d63e9faae125410e2c002358.png",
+        "desc": "每对沈梦溪使用1张效果牌，本回合法力值上限-30。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5091,
@@ -328,7 +469,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/189b5f960a9f6a9e823d823215c2c39b.png",
       "desc": "牺牲：获得1张古币。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "盾山",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/43a4eba256d03021365a907e4e943333.png",
+        "desc": "牺牲：获得1张精致古币。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1281,
@@ -339,7 +488,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2b2ccd1348d6e5020649d7362e101900.png",
       "desc": "整备：随机触发1名【三分】英雄的登场效果。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "曹操",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d96597a59724474ee1c2127701dc4a76.png",
+        "desc": "整备：随机触发2名【三分】英雄的登场效果。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1741,
@@ -350,7 +507,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/18742e5bb95a71174b50f25aff6b9b56.png",
       "desc": "开团：场上每有1个图腾，自身及随机2名不同【大河流域】英雄等级+1。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "虞姬",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/110e0751141f22f07f85f00085d476b8.png",
+        "desc": "开团：场上每有1个图腾，自身及随机4名不同【大河流域】英雄等级+1。"
+      },
+      "relatedCards": [
+        "箭雨"
+      ]
     },
     {
       "id": 1321,
@@ -361,7 +528,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/88705f544b5d4492d0a129a47115ffd1.png",
       "desc": "登场：自身及阿科米亚核心等级+2。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "马可波罗",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/fbafea05b877426d1cc3646941801e2b.png",
+        "desc": "登场：自身及阿科米亚核心等级+4。"
+      },
+      "relatedCards": [
+        "崛起"
+      ]
     },
     {
       "id": 1071,
@@ -372,7 +549,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/90feabff398cf6fb80bfc47becdd0653.png",
       "desc": "登场：自身及随机2名其他英雄等级+1。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "赵云",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/b6115eeecd0bded5a81423bc43e5dc74.png",
+        "desc": "登场：自身及随机2名其他英雄等级+2。"
+      },
+      "relatedCards": [
+        "一身是胆"
+      ]
     },
     {
       "id": 1911,
@@ -383,7 +570,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/986d585a5dc3dc5bc1fea1cadaff5f72.png",
       "desc": "你的英雄每触发2次登场效果，大乔的法力值上限永久-5。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "大乔",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/0e869135406b92e21236cf5ab966a345.png",
+        "desc": "每当你的英雄触发登场效果，大乔的法力值上限永久-5。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1991,
@@ -394,7 +589,20 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/e37c41d9977fb7943e896959c2be0fef.png",
       "desc": "夺取\n开团：场上每有1名已觉醒英雄，攻击速度+15%。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "公孙离",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d9d19b57cee5981692046a0d4283a66d.png",
+        "desc": "夺取\n开团：场上每有1名已觉醒英雄，攻击速度+30%。"
+      },
+      "relatedCards": [
+        "摄人心魄",
+        "箭雨",
+        "旋刃",
+        "控魂"
+      ]
     },
     {
       "id": 1961,
@@ -405,7 +613,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/198e67ac6fbaafbab9aa27338df6590a.png",
       "desc": "每当你拥有牺牲效果的英雄阵亡时，本回合百里守约的法力值上限-20。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "百里守约",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/deb14fb998df7717ecccc47962d7c2ab.png",
+        "desc": "每当你拥有牺牲效果的英雄阵亡时，本回合百里守约的法力值上限-40。"
+      },
+      "relatedCards": [
+        "崛起"
+      ]
     },
     {
       "id": 1081,
@@ -416,7 +634,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/b1936a0c293710205470446d3876e20d.png",
       "desc": "友方单位护盾被击破时，该单位生命值上限永久+30。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "墨子",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c4194417ec91def6e83dece482584eff.png",
+        "desc": "友方单位护盾被击破时，该单位生命值上限永久+60。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1951,
@@ -427,7 +653,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/6b17f3a73b257035a350aa31bda1c464.png",
       "desc": "闪现\n整备：你的闪现英雄上回合每击败过1名敌方英雄，随机1名闪现英雄等级+1（击败次数： 0）。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "百里玄策",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/25c1f7b3cd20bb03854b560dc2427722.png",
+        "desc": "闪现\n整备：你的闪现英雄上回合每击败过1名敌方英雄，随机1名闪现英雄等级+2（击败次数： 0）。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1051,
@@ -438,7 +672,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2cf66bb3403c0783ed965c9fbb63aafa.png",
       "desc": "廉颇释放技能时，你的其他英雄获得 5点护盾值。每次使用战术牌会提升该护盾值。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "廉颇",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/4c9384713054f51514310f8ad5b57fc2.png",
+        "desc": "廉颇释放技能时，你的其他英雄获得 10点护盾值。每次使用战术牌会提升该护盾值。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5271,
@@ -449,7 +691,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/88124cfd87e1369f485dbff3ef6eb374.png",
       "desc": "牺牲：召唤2名与自身等级相同的玄雍士兵。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "蒙恬",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/516d5e748f0244ec0712f7ce60394145.png",
+        "desc": "牺牲：召唤4名与自身等级相同的玄雍士兵。"
+      },
+      "relatedCards": [
+        "巨像",
+        "升格"
+      ]
     },
     {
       "id": 1841,
@@ -460,7 +713,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/faa2bc18f7630ff22c35ec35ffb5a872.png",
       "desc": "每当你使用【三分】英雄牌时，等级最低的其他3名【三分】英雄等级+1。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "蔡文姬",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d881e8e6b5d10379c3763026b587498c.png",
+        "desc": "每当你使用【三分】英雄牌时，等级最低的其他3名【三分】英雄等级+2。"
+      },
+      "relatedCards": [
+        "毒奶"
+      ]
     },
     {
       "id": 5061,
@@ -471,7 +734,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f67c42716500d97656904fa3263eb9d7.png",
       "desc": "闪现\n开团：你的英雄每穿戴1件装备，该英雄等级永久+1。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "云中君",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d52d34bcc613196e2cebaa841bcf6b71.png",
+        "desc": "闪现\n开团：你的英雄每穿戴1件装备，该英雄等级永久+2。"
+      },
+      "relatedCards": [
+        "兽觉"
+      ]
     },
     {
       "id": 5641,
@@ -482,7 +755,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/40fe1c263075f889d23f29baabdfa225.png",
       "desc": "每当你出售4名场上英雄后，获得1次临时刷新。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "姬小满",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/7986d922c1669afe351afe701e472165.png",
+        "desc": "每当你出售2名场上英雄后，获得1次临时刷新。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1771,
@@ -493,7 +774,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/36716634173d0cc96dbcedd2ac6b6646.png",
       "desc": "你的召唤单位阵亡时，会对周围敌人造成 25点物理伤害。每次召唤还会额外提升该伤害。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "苍",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/b21fae3b475767b57ab02dc920cb5827.png",
+        "desc": "你的召唤单位阵亡时，会对周围敌人造成 50点物理伤害。每次召唤还会额外提升该伤害。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1931,
@@ -504,7 +793,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/b4835ebc7bd4df52d5cd835de22f2257.png",
       "desc": "复生\n牺牲：你的【河洛】英雄获得5临时等级。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "铠",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/95c652a6cf330e91c2be4f5c7a740fb5.png",
+        "desc": "完美复生\n牺牲：你的【河洛】英雄获得10临时等级。"
+      },
+      "relatedCards": [
+        "兄妹"
+      ]
     },
     {
       "id": 1201,
@@ -515,7 +814,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/5e8581caf2935e84070ee44936bb3779.png",
       "desc": "每回合首次使用效果牌时，获得1张援护战术。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "白起",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/72ecf54c9a80eeb1dbee2ba5aa43cfd4.png",
+        "desc": "每回合首次使用效果牌时，获得1张高阶援护战术。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5011,
@@ -526,7 +833,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f6f2d52e4223b1e1ea25df41e8e2bbf3.png",
       "desc": "距离最近的英雄，临时等级中的 2级可转化为永久等级。\n登场：可转化的等级+2。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "明世隐",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/7760046caadf7c8a4d3922da89fb87f6.png",
+        "desc": "距离最近的英雄，临时等级中的 4级可转化为永久等级。\n登场：可转化的等级+4。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1161,
@@ -537,7 +852,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/5de6a396516f822473bd4f476f4da9bc.png",
       "desc": "闪现\n登场：自身及随机1名英雄等级+1，棋手生命值每降低10点，重复1次。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "阿轲",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c138f303993d08f0a93398123c752bca.png",
+        "desc": "闪现\n登场：自身及随机1名英雄等级+2，棋手生命值每降低10点，重复1次。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5181,
@@ -548,7 +871,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/204baba8a4d96b2383ae0beea27a8cec.png",
       "desc": "己方施加控制效果时，马超获得15点法力值及5%暴击率。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "马超",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/a9b1216040428a3513adbf888328c7c1.png",
+        "desc": "己方施加控制效果时，马超获得30点法力值及10%暴击率。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5021,
@@ -559,7 +890,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/916803561412111d80ab05e114b5246b.png",
       "desc": "闪现\n整备：随机获得1名其他英雄等级数一半的临时等级，不可叠加。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "裴擒虎",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/dcde51ae84bb111cc09d7ea918ccf313.png",
+        "desc": "闪现\n整备：随机获得1名其他英雄等级数的临时等级，不可叠加。"
+      },
+      "relatedCards": [
+        "兽觉"
+      ]
     },
     {
       "id": 1391,
@@ -570,7 +911,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/95ee94ee672de169b1869da12558d7c6.png",
       "desc": "每回合首次合成时，获得1张招募战术。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "老夫子",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/8e50ed9c6d8423c678e5647adeb8c995.png",
+        "desc": "每回合首次合成时，获得1张高阶招募战术。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5231,
@@ -581,7 +930,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/c7e4c38d9050539a8ae6cfddacb72f20.png",
       "desc": "整备：获得1张推演战术。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "西施",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/7bbc2266d9cc0231052304669442a869.png",
+        "desc": "整备：获得1张高阶推演战术。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1141,
@@ -592,7 +949,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/77c58bb27bb46cea3ea32d6b2b81a52e.png",
       "desc": "你的英雄释放技能时，该英雄获得2临时等级。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "刘禅",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/b764763140ad3e0638b1f9dfc8eed3ff.png",
+        "desc": "你的英雄释放技能时，该英雄获得4临时等级。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5111,
@@ -603,7 +968,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2cf753e41136bbe6c5d4c6924d89db55.png",
       "desc": "夺取\n每当3阶及以下英雄合成时，与其同阶的英雄等级+1。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "猪八戒",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/bacc7ed403ea57858fc61c4c081b7291.png",
+        "desc": "夺取\n每当3阶及以下英雄合成时，与其同阶的英雄等级+2。"
+      },
+      "relatedCards": [
+        "摄人心魄",
+        "控魂"
+      ]
     },
     {
       "id": 1441,
@@ -614,7 +990,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/9736bab9c472acc5bdc8942ac7200c9a.png",
       "desc": "整备：获得1张古币，对自身使用1张古币。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "程咬金",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/3989121de070589426b0218f06172ba2.png",
+        "desc": "整备：获得1张精致古币，对自身使用1张精致古币。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1331,
@@ -625,7 +1009,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f0363e1c543d5c0bf02fd1b1c13ea117.png",
       "desc": "对狄仁杰使用古币时，其攻击速度永久+5%。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "狄仁杰",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/eb3d203f33eec656a150959461ced637.png",
+        "desc": "对狄仁杰使用古币时，其攻击速度永久+10%。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1561,
@@ -636,7 +1028,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/fad4dda086e78227f65dedd121e5db9d.png",
       "desc": "每当你的单位触发开团效果时，场上随机3名己方英雄等级永久+1。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "张良",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d594710476057dec7c40ea5d85eca90a.png",
+        "desc": "每当你的单位触发开团效果时，所有英雄等级永久+1。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5771,
@@ -647,7 +1047,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/4cdf701fe4b6bb3947e34cf09f6cad44.png",
       "desc": "在场时，召唤因缘图腾。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "少司缘",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/513a6fe2723cb77f5e4866b83903c652.png",
+        "desc": "在场时，召唤并强化因缘图腾。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1661,
@@ -658,7 +1066,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/60b7c74fe7a942e875eb44defd76fdb2.png",
       "desc": "每当你使用【日落海】英雄牌时，阿科米亚核心等级+3。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "亚瑟",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/cfe8a616b0824c06a446dbbd84e67f29.png",
+        "desc": "每当你使用【日落海】英雄牌时，阿科米亚核心等级+6。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1751,
@@ -669,7 +1085,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/bd5d400d4aab509599f3db935d91f254.png",
       "desc": "自身及左右1格的英雄获得牺牲：击败者等级临时降低10%（每场战斗限1次）。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "钟馗",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/ee8074658c9f445a434938f7f890dff9.png",
+        "desc": "自身及左右1格的英雄获得牺牲：击败者等级临时降低20%（每场战斗限1次）。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1411,
@@ -680,7 +1104,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/735083ee049068dc3dfa3cc4af6ec321.png",
       "desc": "登场：【三分】英雄等级+1。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "貂蝉",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/826010ba09d9a4399d412be945796f92.png",
+        "desc": "登场：【三分】英雄等级+2。"
+      },
+      "relatedCards": [
+        "起舞"
+      ]
     },
     {
       "id": 1421,
@@ -691,7 +1125,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/e07974389273c900bfcdb5f22c7b0d17.png",
       "desc": "整备：自身及阿科米亚核心等级+2。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "安琪拉",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/cc399dc4a4d9f6b4a39f46d936a9a748.png",
+        "desc": "整备：自身及阿科米亚核心等级+2，触发2次。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5051,
@@ -702,7 +1144,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/906a48992c7228914777dfe4efcfa434.png",
       "desc": "开团：自身的首件普通装备分享给随机3名友方英雄（持续15秒）。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "瑶",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/a4135927773be59e539faa1b86bb22ba.png",
+        "desc": "开团：自身的首件普通装备分享给随机3名友方英雄。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5311,
@@ -713,7 +1163,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/fe0850fcceb7fb3abdf7456ec02a5740.png",
       "desc": "闪现\n每使用2张效果牌，等级+1。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "镜",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/097f21f2402181c71fe3a7ee5149ab7c.png",
+        "desc": "闪现\n每使用2张效果牌，等级+2。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1591,
@@ -724,7 +1182,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/faac65959d499e474f7b118747e3b319.png",
       "desc": "每当你的英雄触发整备效果时，随机3名英雄及阿科米亚核心等级+1。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "朵莉亚",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/b13f4c907c7e34e149fa52d407d4d9e7.png",
+        "desc": "每当你的英雄触发整备效果时，己方所有英雄及阿科米亚核心等级+1。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5451,
@@ -735,7 +1201,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/46ead358e10a832c74dd50af15b24380.png",
       "desc": "每当你出售2名场上英雄后，阿科米亚核心等级+1。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "莱西奥",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/f5ab325c1b8399de367c6118456e5798.png",
+        "desc": "每当你出售场上英雄后，阿科米亚核心等级+1。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5131,
@@ -746,7 +1220,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f03154d2e4bfc7266a3a93bc26187f08.png",
       "desc": "整备：随机对3名不同【河洛】英雄使用1张古币。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "上官婉儿",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/cc1a7d9d2ec8071ffebf64a01d1a6dab.png",
+        "desc": "整备：随机对6名不同【河洛】英雄使用1张古币。"
+      },
+      "relatedCards": [
+        "起舞"
+      ]
     },
     {
       "id": 3551,
@@ -757,7 +1241,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/bbcb4b0d0e241589d8e5ed6188bff57a.png",
       "desc": "开团：艾琳获得自身等级×1%的攻击速度。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "艾琳",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/ee16aaa4768f2d7d7ce6e48c007a93e8.png",
+        "desc": "开团：艾琳获得自身等级×2%的攻击速度。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1191,
@@ -768,7 +1260,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/4708536fe1e026afd08faa1e93527ee7.png",
       "desc": "友方单位护盾被击破时，对周围敌人造成该英雄最大生命值10%的法术伤害（冷却1秒）。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "扁鹊",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d1110df125f314bf50aaab394392b573.png",
+        "desc": "友方单位护盾被击破时，对周围敌人造成该英雄最大生命值20%的法术伤害（冷却1秒）。"
+      },
+      "relatedCards": [
+        "毒奶"
+      ]
     },
     {
       "id": 1101,
@@ -779,7 +1281,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/2af25469dff50369747fcf3973dcda48.png",
       "desc": "开团：法术攻击力+ 7。每次使用战术牌会提升该加成。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "嬴政",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c40b6203f89ac73f5c9774516c63fa41.png",
+        "desc": "开团：法术攻击力+ 14。每次使用战术牌会提升该加成。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5071,
@@ -790,7 +1300,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/24428dd12ddd9d7b29addc9d33279e5d.png",
       "desc": "每当你拥有牺牲效果的英雄阵亡时，李信临时等级+7。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "李信",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/8084662f2fca2862f480d14b8825d725.png",
+        "desc": "每当你拥有牺牲效果的英雄阵亡时，李信临时等级+14。"
+      },
+      "relatedCards": [
+        "献祭之赐",
+        "河洛来客"
+      ]
     },
     {
       "id": 1311,
@@ -801,7 +1322,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/91eccc72e272ee7cb08a335dd048203f.png",
       "desc": "闪现\n古币牌会额外提供4临时等级。若目标为李白，该临时等级会额外+3。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "李白",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/4f31630a294232a96543339963973444.png",
+        "desc": "闪现\n古币牌会额外提供8临时等级。若目标为李白，该临时等级会额外+6。"
+      },
+      "relatedCards": [
+        "千金换酒",
+        "逐星"
+      ]
     },
     {
       "id": 1831,
@@ -812,7 +1344,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/77f16591920deacf6727bfae934f97f1.png",
       "desc": "开团：随机触发2名【日落海】英雄的整备效果。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "雅典娜",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/56d89cf209b3b268281f7ea1c6e5769c.png",
+        "desc": "开团：随机触发4名【日落海】英雄的整备效果。"
+      },
+      "relatedCards": [
+        "日落海来客"
+      ]
     },
     {
       "id": 1861,
@@ -823,7 +1365,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/9d0a3bdf56b254cd8e7bf30874df8a2e.png",
       "desc": "开团：使距离最近的1名英雄获得复生。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "太乙真人",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c657e478bb7071bfd476a373fba08065.png",
+        "desc": "开团：使距离最近的1名英雄获得完美复生。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1671,
@@ -834,7 +1384,20 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/9db0288a1b34639f079120b56dda6b8d.png",
       "desc": "闪现，夺取\n整备：拥有闪现效果的英雄等级+2。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "孙悟空",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/e4ab92fef920653bdefa7d32c61e18bb.png",
+        "desc": "闪现，夺取\n整备：拥有闪现效果的英雄等级+4。"
+      },
+      "relatedCards": [
+        "摄人心魄",
+        "宝盒",
+        "身外身",
+        "控魂"
+      ]
     },
     {
       "id": 1271,
@@ -845,7 +1408,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/0d292f0d30751de609ba583362aa9648.png",
       "desc": "登场：获得1张其他的登场英雄牌。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "甄姬",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/eba7c7213db215cd6edc8cbb7fd1bcc2.png",
+        "desc": "登场：从3张其他的登场英雄牌中选择1张。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1061,
@@ -856,7 +1427,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/11711f999d889b61daf6e926017dfd03.png",
       "desc": "每当你的英雄触发登场效果时，随机3名英雄等级+1。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "小乔",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/5f61a79568ba645b3dfcfd81393cde63.png",
+        "desc": "每当你的英雄触发登场效果时，所有英雄等级+1。"
+      },
+      "relatedCards": [
+        "三分来客"
+      ]
     },
     {
       "id": 5171,
@@ -867,7 +1448,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/948dd54e701f36f77aec600b1249c463.png",
       "desc": "在场时，召唤往生图腾。\n每当你触发牺牲效果时：往生图腾等级永久+2并获得50点法力值。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "大司命",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c60616de6e3122ff8e8f608cbb59620e.png",
+        "desc": "在场时，召唤往生图腾。\n每当你触发牺牲效果时：往生图腾等级永久+4并获得50点法力值。"
+      },
+      "relatedCards": [
+        "升格"
+      ]
     },
     {
       "id": 1131,
@@ -878,7 +1469,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/1b0b4002e6af2bd3a3c1c8ab6bb3e0e5.png",
       "desc": "登场：自身等级+2并获得1张招募战术。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "庄周",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/eff3d8a87768945c2006a52a964f89a5.png",
+        "desc": "登场：自身等级+4并获得1张高阶招募战术。"
+      },
+      "relatedCards": [
+        "鲸吞"
+      ]
     },
     {
       "id": 1491,
@@ -889,7 +1490,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/60e779d8ec852fb83fba06f6faef313b.png",
       "desc": "开团：摧毁你所有的图腾，每摧毁1个，刘邦等级永久+5。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "刘邦",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/94cc02e6e1ff454c8e4a9dba53b8ffca.png",
+        "desc": "开团：摧毁你所有的图腾，每摧毁1个，刘邦等级永久+10。"
+      },
+      "relatedCards": [
+        "大河来客"
+      ]
     },
     {
       "id": 1901,
@@ -900,7 +1511,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/eef754cb0fd3bea25affa930175a1547.png",
       "desc": "你的其他英雄释放技能时，诸葛亮获得15点法力值以及4临时等级。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "诸葛亮",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/20914477a0b35a80edd29a1d01b10ea5.png",
+        "desc": "你的其他英雄释放技能时，诸葛亮获得30点法力值以及8临时等级。"
+      },
+      "relatedCards": [
+        "卧龙威势"
+      ]
     },
     {
       "id": 1501,
@@ -911,7 +1532,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/5765e0a774103621c8ed9b0d91383304.png",
       "desc": "闪现\n每当你的英雄触发整备或开团效果时，韩信等级永久+2。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "韩信",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/bab8754999f59ceb89f9778dad76f60c.png",
+        "desc": "闪现\n每当你的英雄触发整备或开团效果时，韩信等级永久+4。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5241,
@@ -922,7 +1551,17 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/b7110fe4f30068b797f74abe482dd699.png",
       "desc": "登场：获得1张特训战术。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "蒙犽",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/d1632c89af6f86fe9db23f12e3561457.png",
+        "desc": "登场：获得1张高阶特训战术。"
+      },
+      "relatedCards": [
+        "逐鹿来客"
+      ]
     },
     {
       "id": 1871,
@@ -933,7 +1572,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/54913769ab8bc4bd6b46891cfaa5def1.png",
       "desc": "图腾不会被优先攻击。\n开团：获得每个图腾等级数15%的临时等级。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "东皇太一",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/58808dfd3b1859235de1c215203b8f32.png",
+        "desc": "图腾不会被优先攻击。\n开团：获得每个图腾等级数30%的临时等级。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5191,
@@ -944,7 +1591,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f7d88265cf5d5899cf5221e48aa3f1ed.png",
       "desc": "战斗中，每个图腾每4秒为敖隐提供16%攻击速度和4临时等级。",
       "relationId": 321,
-      "relationName": "大河流域"
+      "relationName": "大河流域",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "敖隐",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/026e61179e2703470d2721331a518735.png",
+        "desc": "战斗中，每个图腾每4秒为敖隐提供32%攻击速度和8临时等级。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5251,
@@ -955,7 +1610,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/cc4544aa19e3c6f29834f333c560d455.png",
       "desc": "鲁班大师在场时，召唤1个等级与自身相同的机关傀儡。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "鲁班大师",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/319c62dfbcd0efd777c3aff27f6ab150.png",
+        "desc": "鲁班大师在场时，召唤1个等级与自身相同的机关傀儡·改。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1541,
@@ -966,7 +1629,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/4124b5b315c015ba3fb6915982033935.png",
       "desc": "本回合每使用5张古币牌，获得1次复生（总复生次数： 1）。 牺牲：临时等级+10。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "花木兰",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/09c20f80ebec7d4ff7730bd6ee1b250e.png",
+        "desc": "本回合每使用5张古币牌，获得1次复生（总复生次数： 1）。\n牺牲：临时等级+20。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5371,
@@ -977,7 +1648,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/3253a45c5ea2c83ec00c6565c3b19714.png",
       "desc": "你的其他英雄获得临时等级时，司空震获得一半效果（不超过自身真实等级的1倍）。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "司空震",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/4e071fa5300f30965909f2737f2aa79b.png",
+        "desc": "你的其他英雄获得临时等级时，司空震获得全部效果（不超过自身真实等级的2倍）。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1481,
@@ -988,7 +1667,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/3c2ea8dba87075476a3c717e40b1414d.png",
       "desc": "你每次使用不在场的阵营以及无阵营的英雄牌时，姜子牙和随机3名其他不同阵营的英雄等级+1。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "姜子牙",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/f3a7f8381ab88c3eb10144ea912199f8.png",
+        "desc": "你每次使用不在场的阵营以及无阵营的英雄牌时，姜子牙和随机3名其他不同阵营的英雄等级+2。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1361,
@@ -999,7 +1686,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/8315dc5b0815e812564c2b816221eee4.png",
       "desc": "古币牌提升的等级+1。\n登场：获得1张精致古币。",
       "relationId": 319,
-      "relationName": "河洛"
+      "relationName": "河洛",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "武则天",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/fda6d0318fbf6f611875c8b99063cbaf.png",
+        "desc": "古币牌提升的等级+2。\n登场：获得2张精致古币。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1231,
@@ -1010,7 +1705,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/b4fb96da87cf5f63e317dafd7485d35b.png",
       "desc": "开团：等级最高的3名【三分】英雄获得20%物理和法术吸血，若目标为吕布，效果翻倍。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "吕布",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/818c5ceabea7377cf9fcb59f2e35abf4.png",
+        "desc": "开团：等级最高的6名【三分】英雄获得20%物理和法术吸血，若目标为吕布，效果翻倍。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5211,
@@ -1021,7 +1724,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/83d453b16fe389a84fee2ddf0771c0af.png",
       "desc": "牺牲：将敌方等级最高的英雄困入水月幻境控制4秒，并造成等同于海月生命值的真实伤害。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "海月",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/bf6e73128268676f88c5f3fdd521e5ba.png",
+        "desc": "牺牲：将敌方等级最高的英雄困入水月幻境控制4秒，并造成等同于海月生命值150%的真实伤害。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1121,
@@ -1032,7 +1743,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/1ddd6a323443fd6bc9fe5dc92246a6c7.png",
       "desc": "你的英雄每合成3次，随机获得1张战术牌。",
       "relationId": 320,
-      "relationName": "逐鹿"
+      "relationName": "逐鹿",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "鲁班七号",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/89a583dfc59104ab113f45f15a7ceb0c.png",
+        "desc": "你的英雄每合成3次，随机获得1张高阶战术牌。"
+      },
+      "relatedCards": []
     },
     {
       "id": 5631,
@@ -1043,7 +1762,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/24e7ee4edd16d7d1bced9c9faf4a9d28.png",
       "desc": "每当阿科米亚核心等级提升时，核心等级额外+1。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "海诺",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/9d32da8b3c5709aaada93411d2ce30f3.png",
+        "desc": "每当阿科米亚核心等级提升时，核心等级额外+2。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1461,
@@ -1054,7 +1781,18 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/f9342e4ef544d6602d7ab0fda166926a.png",
       "desc": "闪现\n登场：阿科米亚核心等级+2，并且随机触发2名英雄的整备效果。",
       "relationId": 314,
-      "relationName": "日落海"
+      "relationName": "日落海",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "露娜",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/c3127ffdcd763126344ee518d43e7429.png",
+        "desc": "闪现\n登场：阿科米亚核心等级+4，并且随机触发4名英雄的整备效果。"
+      },
+      "relatedCards": [
+        "宝盒",
+        "兄妹"
+      ]
     },
     {
       "id": 1761,
@@ -1065,7 +1803,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/0ff6583da4264c6031d0987c48f755fc.png",
       "desc": "杨玉环在场时，每过3个回合获得1张弦音。\n退场：获得1张弦音。",
       "relationId": 307,
-      "relationName": "无阵营"
+      "relationName": "无阵营",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "杨玉环",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/31f66b97767e5d2284d0f8fe4194fd6a.png",
+        "desc": "杨玉环在场时，每过3个回合获得1张妙音。\n退场：获得1张妙音。"
+      },
+      "relatedCards": []
     },
     {
       "id": 1241,
@@ -1076,7 +1822,15 @@
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/02f3415fc1336207db094aeb27378205.png",
       "desc": "登场：全体英雄等级+1。",
       "relationId": 309,
-      "relationName": "三分之地"
+      "relationName": "三分之地",
+      "cost": 3,
+      "effectTypeDesc": "",
+      "evolution": {
+        "name": "周瑜",
+        "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/dd7e9032d8555ec7ae2aaefcf2305734.png",
+        "desc": "登场：全体英雄等级+2。"
+      },
+      "relatedCards": []
     }
   ],
   "talents": [

@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import type { ChessPlayer } from '../types';
 import { ChessPlayerCard } from './ChessPlayerCard';
+import { LordDetailModal } from './LordDetailModal';
 
 /**
  * Step 2：选择棋手（单选）。
@@ -19,6 +21,7 @@ export function ChessPlayerStep({
   onNext: () => void;
 }) {
   const selected = players.find((p) => p.id === selectedId) ?? null;
+  const [detailLord, setDetailLord] = useState<ChessPlayer | null>(null);
 
   return (
     <section>
@@ -36,6 +39,7 @@ export function ChessPlayerStep({
             player={p}
             selected={p.id === selectedId}
             onSelect={onSelect}
+            onShowDetail={() => setDetailLord(p)}
           />
         ))}
       </div>
@@ -53,6 +57,12 @@ export function ChessPlayerStep({
           生成推荐 →
         </motion.button>
       </div>
+
+      <LordDetailModal
+        lord={detailLord ?? undefined}
+        open={!!detailLord}
+        onClose={() => setDetailLord(null)}
+      />
     </section>
   );
 }

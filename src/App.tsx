@@ -8,6 +8,7 @@ import { ChessPlayerStep } from './components/ChessPlayerStep';
 import { RecommendStep } from './components/RecommendStep';
 import { SourcesPanel } from './components/SourcesPanel';
 import { CodexPanel } from './components/CodexPanel';
+import { ChangelogPage } from './components/ChangelogPage';
 import { Footer } from './components/Footer';
 import { useGameData } from './hooks/useGameData';
 import { useFavorites } from './hooks/useFavorites';
@@ -37,6 +38,7 @@ export default function App() {
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const [codexOpen, setCodexOpen] = useState(false);
+  const [changelogOpen, setChangelogOpen] = useState(false);
   const favorites = useFavorites();
   const [favOnly, setFavOnly] = useState(false);
 
@@ -78,6 +80,7 @@ export default function App() {
         <Header
           onOpenSources={() => setSourcesOpen(true)}
           onOpenCodex={() => setCodexOpen(true)}
+          onOpenChangelog={() => setChangelogOpen(true)}
           status={status}
         />
 
@@ -125,6 +128,7 @@ export default function App() {
                   onToggleFavorite={favorites.toggle}
                   favOnly={favOnly}
                   onToggleFavOnly={() => setFavOnly((v) => !v)}
+                  database={data.database}
                 />
               )}
             </motion.div>
@@ -145,6 +149,13 @@ export default function App() {
         open={codexOpen}
         onClose={() => setCodexOpen(false)}
         database={data.database}
+        chessPlayers={data.chessPlayers}
+      />
+
+      <ChangelogPage
+        open={changelogOpen}
+        onClose={() => setChangelogOpen(false)}
+        changelog={data.changelog}
       />
       </div>
     </MotionConfig>

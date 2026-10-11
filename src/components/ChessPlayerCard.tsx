@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import type { ChessPlayer } from '../types';
 import { cn } from '../lib/cn';
-import { SourceBadge } from './SourceBadge';
+import { ImgIcon } from './ImgIcon';
 
 /**
  * 棋手卡片（Step 2 使用）：单选。
@@ -10,10 +10,12 @@ export function ChessPlayerCard({
   player,
   selected,
   onSelect,
+  onShowDetail,
 }: {
   player: ChessPlayer;
   selected: boolean;
   onSelect: (id: string) => void;
+  onShowDetail?: () => void;
 }) {
   return (
     <motion.button
@@ -27,36 +29,20 @@ export function ChessPlayerCard({
       className={cn(
         'card-base flex flex-col p-4 text-left transition-all duration-200',
         selected ? 'border-gold shadow-gold' : 'hover:border-gold/40',
-        player.placeholder && !selected && 'opacity-80',
       )}
     >
       <div className="flex items-center justify-between gap-2">
         <div className="flex min-w-0 items-center gap-2">
-          {player.icon ? (
-            <img
-              src={player.icon}
-              alt={player.name}
-              loading="lazy"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-              className="h-9 w-9 shrink-0 rounded-lg border border-white/10 object-cover"
-            />
-          ) : null}
-          <h3
-            className={cn(
-              'truncate font-display text-lg leading-tight',
-              player.placeholder ? 'text-text-dim' : 'text-text',
-            )}
-          >
+          <ImgIcon
+            src={player.icon}
+            alt={player.name}
+            className="h-9 w-9 shrink-0 rounded-lg border border-white/10"
+            fallbackClassName="text-sm"
+          />
+          <h3 className="truncate font-display text-lg leading-tight text-text">
             {player.name}
           </h3>
         </div>
-        {player.placeholder ? (
-          <span className="rounded bg-white/10 px-2 py-0.5 text-[11px] text-text-dim">
-            示例·待核实
-          </span>
-        ) : null}
       </div>
 
       <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
@@ -65,7 +51,9 @@ export function ChessPlayerCard({
             'rounded-md px-2 py-0.5 font-medium',
             player.type === '经济运营型'
               ? 'bg-gold/15 text-gold'
-              : 'bg-crimson/15 text-crimson',
+              : player.type === '战斗增益型'
+                ? 'bg-crimson/15 text-crimson'
+                : 'bg-white/10 text-text-dim',
           )}
         >
           {player.type}
@@ -75,22 +63,29 @@ export function ChessPlayerCard({
         ) : null}
       </div>
 
-      <p className="mt-2 text-sm text-text-dim">{player.skill}</p>
-      <p className="mt-2 text-xs text-text-dim/80">{player.desc}</p>
+      <p className="mt-2 line-clamp-2 text-sm text-text-dim">{player.skill}</p>
 
-      {player.source ? (
-        <div className="mt-3">
-          <SourceBadge source={player.source} small />
+      <div className="mt-3 flex items-center justify-between gap-2">
+        <div
+          className={cn(
+            'inline-flex w-fit items-center gap-1 rounded-lg px-3 py-1 text-sm font-medium transition-colors',
+            selected ? 'bg-gold text-bg' : 'bg-surface-2 text-text',
+          )}
+        >
+          {selected ? '已选择' : '选择此棋手'}
         </div>
-      ) : null}
-
-      <div
-        className={cn(
-          'mt-3 inline-flex w-fit items-center gap-1 rounded-lg px-3 py-1 text-sm font-medium transition-colors',
-          selected ? 'bg-gold text-bg' : 'bg-surface-2 text-text',
-        )}
-      >
-        {selected ? '已选择' : '选择此棋手'}
+        {onShowDetail ? (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onShowDetail();
+            }}
+            className="rounded-lg border border-white/10 px-2.5 py-1 text-xs text-text-dim transition-colors hover:border-gold/40 hover:text-gold"
+          >
+            技能详解 ›
+          </button>
+        ) : null}
       </div>
     </motion.button>
   );

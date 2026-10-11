@@ -1,0 +1,16 @@
+[
+  {
+    "version": "2026-10-11",
+    "date": "2026-10-11",
+    "title": "数据库初始化 · 全量同步官方数据",
+    "baseline": true,
+    "summary": {
+      "heroes": 85,
+      "equipments": 73,
+      "effectCards": 98,
+      "talents": 258,
+      "lords": 20
+    },
+    "changes": []
+  }
+]
