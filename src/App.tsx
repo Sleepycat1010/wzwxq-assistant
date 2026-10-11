@@ -9,10 +9,12 @@ import { RecommendStep } from './components/RecommendStep';
 import { SourcesPanel } from './components/SourcesPanel';
 import { CodexPanel } from './components/CodexPanel';
 import { ChangelogPage } from './components/ChangelogPage';
+import { AuthModal } from './components/AuthModal';
 import { Footer } from './components/Footer';
 import { useGameData } from './hooks/useGameData';
 import { useFavorites } from './hooks/useFavorites';
 import { useRatings } from './hooks/useRatings';
+import { useAuth } from './hooks/useAuth';
 import { recommendLineups } from './lib/recommend';
 
 /**
@@ -40,8 +42,10 @@ export default function App() {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const [codexOpen, setCodexOpen] = useState(false);
   const [changelogOpen, setChangelogOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
   const favorites = useFavorites();
-  const ratings = useRatings();
+  const auth = useAuth();
+  const ratings = useRatings(auth.signedIn);
   const [favOnly, setFavOnly] = useState(false);
 
   const player = data.chessPlayers.find((p) => p.id === playerId) ?? null;
@@ -104,8 +108,11 @@ export default function App() {
           onOpenSources={() => setSourcesOpen(true)}
           onOpenCodex={() => setCodexOpen(true)}
           onOpenChangelog={() => setChangelogOpen(true)}
+          onOpenAuth={() => setAuthOpen(true)}
           status={status}
           hasNewUpdate={hasNewUpdate}
+          authStatus={auth.status}
+          user={auth.user}
         />
 
         <main className="flex-1 py-8">
@@ -159,6 +166,8 @@ export default function App() {
                   database={data.database}
                   ratings={ratings.ratings}
                   onRate={ratings.rate}
+                  ratingsSyncing={ratings.syncing}
+                  ratingsCloudError={ratings.cloudError}
                 />
               )}
             </motion.div>
@@ -186,6 +195,12 @@ export default function App() {
         open={changelogOpen}
         onClose={() => setChangelogOpen(false)}
         changelog={data.changelog}
+      />
+
+      <AuthModal
+        open={authOpen}
+        onClose={() => setAuthOpen(false)}
+        onSignedIn={() => setAuthOpen(false)}
       />
       </div>
     </MotionConfig>

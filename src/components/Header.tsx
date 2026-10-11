@@ -1,22 +1,30 @@
 import { motion } from 'framer-motion';
 import type { DataStatus } from '../hooks/useGameData';
+import type { AuthStatus, AuthUser } from '../hooks/useAuth';
 
 /**
- * 站点头部：站名 + 副标题 + 数据来源 / 图鉴 / 版本更新入口。
+ * 站点头部：站名 + 副标题 + 数据来源 / 图鉴 / 版本更新入口 + 登录状态。
  */
 export function Header({
   onOpenSources,
   onOpenCodex,
   onOpenChangelog,
+  onOpenAuth,
   status,
   hasNewUpdate,
+  authStatus,
+  user,
 }: {
   onOpenSources: () => void;
   onOpenCodex: () => void;
   onOpenChangelog: () => void;
+  onOpenAuth: () => void;
   status: DataStatus;
   hasNewUpdate?: boolean;
+  authStatus?: AuthStatus;
+  user?: AuthUser | null;
 }) {
+  const signedIn = authStatus === 'signed-in' && !!user;
   return (
     <header className="flex flex-wrap items-center justify-between gap-4">
       <div className="flex items-center gap-3">
@@ -72,6 +80,22 @@ export function Header({
         <button className="btn-ghost px-4 py-2" onClick={onOpenSources}>
           来源
         </button>
+
+        {/* 登录 / 用户 */}
+        {signedIn ? (
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-jade/40 bg-jade/10 px-3.5 py-2 text-sm text-jade">
+            <span className="h-1.5 w-1.5 rounded-full bg-jade" />
+            {user?.name ? user.name.slice(0, 8) : '已登录'}
+          </span>
+        ) : (
+          <button
+            className="btn-ghost px-4 py-2 text-gold"
+            onClick={onOpenAuth}
+            disabled={authStatus === 'loading'}
+          >
+            {authStatus === 'loading' ? '加载中…' : '登录'}
+          </button>
+        )}
       </div>
     </header>
   );

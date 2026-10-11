@@ -32,6 +32,8 @@ export function RecommendStep({
   database,
   ratings,
   onRate,
+  ratingsSyncing,
+  ratingsCloudError,
 }: {
   scored: ScoredLineup[];
   bannedCount: number;
@@ -44,6 +46,8 @@ export function RecommendStep({
   database?: Database;
   ratings: Record<string, number>;
   onRate: (id: string, value: number) => void;
+  ratingsSyncing?: boolean;
+  ratingsCloudError?: string | null;
 }) {
   const [sort, setSort] = useState<SortKey>('smart');
 
@@ -144,6 +148,13 @@ export function RecommendStep({
           </span>
         </div>
       </div>
+
+      {/* 评分同步状态 */}
+      {ratingsCloudError ? (
+        <p className="mb-3 text-xs text-crimson">{ratingsCloudError}</p>
+      ) : ratingsSyncing ? (
+        <p className="mb-3 text-xs text-text-dim">正在同步你的评分…</p>
+      ) : null}
 
       {scored.length === 0 ? (
         <div className="card-base p-10 text-center text-text-dim">
