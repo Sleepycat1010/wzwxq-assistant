@@ -34,6 +34,8 @@ export function RecommendStep({
   onRate,
   ratingsSyncing,
   ratingsCloudError,
+  favoritesSyncing,
+  favoritesCloudError,
 }: {
   scored: ScoredLineup[];
   bannedCount: number;
@@ -48,6 +50,8 @@ export function RecommendStep({
   onRate: (id: string, value: number) => void;
   ratingsSyncing?: boolean;
   ratingsCloudError?: string | null;
+  favoritesSyncing?: boolean;
+  favoritesCloudError?: string | null;
 }) {
   const [sort, setSort] = useState<SortKey>('smart');
 
@@ -149,11 +153,13 @@ export function RecommendStep({
         </div>
       </div>
 
-      {/* 评分同步状态 */}
-      {ratingsCloudError ? (
-        <p className="mb-3 text-xs text-crimson">{ratingsCloudError}</p>
-      ) : ratingsSyncing ? (
-        <p className="mb-3 text-xs text-text-dim">正在同步你的评分…</p>
+      {/* 评分 / 收藏同步状态 */}
+      {ratingsCloudError || favoritesCloudError ? (
+        <p className="mb-3 text-xs text-crimson">
+          {ratingsCloudError ?? favoritesCloudError}
+        </p>
+      ) : ratingsSyncing || favoritesSyncing ? (
+        <p className="mb-3 text-xs text-text-dim">正在同步你的评分与收藏…</p>
       ) : null}
 
       {scored.length === 0 ? (

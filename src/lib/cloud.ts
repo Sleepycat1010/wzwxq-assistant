@@ -22,6 +22,14 @@ export type LineupRatingRow = {
   created_at: string;
 };
 
+/** 收藏表行类型 */
+export type LineupFavoriteRow = {
+  id: number;
+  owner_id: string;
+  lineup_id: string;
+  created_at: string;
+};
+
 /**
  * 数据库 schema 类型：让 from('lineup_ratings') 正确推断行/插入类型。
  * Insert 中不含 owner_id（由 DEFAULT auth.uid() 服务端填充，前端不发送）。
@@ -33,6 +41,12 @@ type CloudDatabase = {
         Row: LineupRatingRow;
         Insert: Omit<LineupRatingRow, 'id' | 'owner_id' | 'created_at'>;
         Update: Partial<Omit<LineupRatingRow, 'id' | 'owner_id' | 'created_at'>>;
+        Relationships: [];
+      };
+      lineup_favorites: {
+        Row: LineupFavoriteRow;
+        Insert: Omit<LineupFavoriteRow, 'id' | 'owner_id' | 'created_at'>;
+        Update: Partial<Omit<LineupFavoriteRow, 'id' | 'owner_id' | 'created_at'>>;
         Relationships: [];
       };
     };
@@ -52,3 +66,6 @@ export const cloud = createWorkBuddyCloud<CloudDatabase>({
 
 /** 云端评分表名 */
 export const RATINGS_TABLE = 'lineup_ratings';
+
+/** 云端收藏表名 */
+export const FAVORITES_TABLE = 'lineup_favorites';

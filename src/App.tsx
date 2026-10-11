@@ -43,8 +43,8 @@ export default function App() {
   const [codexOpen, setCodexOpen] = useState(false);
   const [changelogOpen, setChangelogOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
-  const favorites = useFavorites();
   const auth = useAuth();
+  const favorites = useFavorites(auth.signedIn);
   const ratings = useRatings(auth.signedIn);
   const [favOnly, setFavOnly] = useState(false);
 
@@ -168,6 +168,8 @@ export default function App() {
                   onRate={ratings.rate}
                   ratingsSyncing={ratings.syncing}
                   ratingsCloudError={ratings.cloudError}
+                  favoritesSyncing={favorites.syncing}
+                  favoritesCloudError={favorites.cloudError}
                 />
               )}
             </motion.div>
