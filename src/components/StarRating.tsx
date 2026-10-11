@@ -1,1 +1,63 @@
-aW1wb3J0IHsgY24gfSBmcm9tICcuLi9saWIvY24nOwoKLyoqCiAqIOaYn+e6p+ivhOWIhu+8mueCueWHuyAx4oCTNSDmmJ/kuLrpmLXlrrnmiZPliIbvvIzlho3mrKHngrnlh7vlkIzkuIDpopfmmJ/lj6/muIXpmaTjgIIKICog57qv5bGV56S65oCB77yIcmVhZG9ubHnvvInnlKjkuo7msYfmgLvmmL7npLrjgIIKICovCmV4cG9ydCBmdW5jdGlvbiBTdGFyUmF0aW5nKHsKICB2YWx1ZSwKICBvblJhdGUsCiAgc2l6ZSA9ICdzbScsCiAgcmVhZG9ubHkgPSBmYWxzZSwKfTogewogIC8qKiDlvZPliY3or4TliIYgMOKAkzXvvIgwID0g5pyq6K+E5YiG77yJICovCiAgdmFsdWU6IG51bWJlcjsKICBvblJhdGU/OiAodmFsdWU6IG51bWJlcikgPT4gdm9pZDsKICBzaXplPzogJ3NtJyB8ICdtZCc7CiAgcmVhZG9ubHk/OiBib29sZWFuOwp9KSB7CiAgY29uc3QgcHggPSBzaXplID09PSAnbWQnID8gJ3RleHQtbGcnIDogJ3RleHQtc20nOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2NuKCdpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTAuNScsIHB4KX0+CiAgICAgIHtbMSwgMiwgMywgNCwgNV0ubWFwKChuKSA9PiB7CiAgICAgICAgY29uc3QgZmlsbGVkID0gbiA8PSB2YWx1ZTsKICAgICAgICBjb25zdCBTdGFyID0gKAogICAgICAgICAgPHNwYW4KICAgICAgICAgICAgY2xhc3NOYW1lPXtjbigKICAgICAgICAgICAgICAnbGVhZGluZy1ub25lIHRyYW5zaXRpb24tY29sb3JzJywKICAgICAgICAgICAgICBmaWxsZWQgPyAndGV4dC1nb2xkJyA6ICd0ZXh0LXdoaXRlLzIwJywKICAgICAgICAgICAgICAhcmVhZG9ubHkgJiYgJ2N1cnNvci1wb2ludGVyIGhvdmVyOnRleHQtZ29sZC83MCcsCiAgICAgICAgICAgICl9CiAgICAgICAgICA+CiAgICAgICAgICAgIOKYhQogICAgICAgICAgPC9zcGFuPgogICAgICAgICk7CiAgICAgICAgaWYgKHJlYWRvbmx5IHx8ICFvblJhdGUpIHsKICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgIDxzcGFuIGtleT17bn0gYXJpYS1oaWRkZW49eyFmaWxsZWR9PgogICAgICAgICAgICAgIHtTdGFyfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICApOwogICAgICAgIH0KICAgICAgICByZXR1cm4gKAogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBrZXk9e259CiAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgb25DbGljaz17KGUpID0+IHsKICAgICAgICAgICAgICBlLnN0b3BQcm9wYWdhdGlvbigpOwogICAgICAgICAgICAgIG9uUmF0ZSh2YWx1ZSA9PT0gbiA/IDAgOiBuKTsKICAgICAgICAgICAgfX0KICAgICAgICAgICAgYXJpYS1sYWJlbD17dmFsdWUgPT09IG4gPyBg5riF6Zmk6K+E5YiGICR7dmFsdWV9IOaYn2AgOiBg6K+E5Li6ICR7bn0g5pifYH0KICAgICAgICAgICAgdGl0bGU9e3ZhbHVlID09PSBuID8gJ+eCueWHu+a4hemZpCcgOiBgJHtufSDmmJ9gfQogICAgICAgICAgPgogICAgICAgICAgICB7U3Rhcn0KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICk7CiAgICAgIH0pfQogICAgICB7dmFsdWUgPiAwID8gKAogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic3RhdC1udW0gbWwtMSB0ZXh0LXhzIHRleHQtZ29sZCI+e3ZhbHVlfTwvc3Bhbj4KICAgICAgKSA6IG51bGx9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { cn } from '../lib/cn';
+
+/**
+ * 星级评分：点击 1–5 星为阵容打分，再次点击同一颗星可清除。
+ * 纯展示态（readonly）用于汇总显示。
+ */
+export function StarRating({
+  value,
+  onRate,
+  size = 'sm',
+  readonly = false,
+}: {
+  /** 当前评分 0–5（0 = 未评分） */
+  value: number;
+  onRate?: (value: number) => void;
+  size?: 'sm' | 'md';
+  readonly?: boolean;
+}) {
+  const px = size === 'md' ? 'text-lg' : 'text-sm';
+
+  return (
+    <div className={cn('inline-flex items-center gap-0.5', px)}>
+      {[1, 2, 3, 4, 5].map((n) => {
+        const filled = n <= value;
+        const Star = (
+          <span
+            className={cn(
+              'leading-none transition-colors',
+              filled ? 'text-gold' : 'text-white/20',
+              !readonly && 'cursor-pointer hover:text-gold/70',
+            )}
+          >
+            ★
+          </span>
+        );
+        if (readonly || !onRate) {
+          return (
+            <span key={n} aria-hidden={!filled}>
+              {Star}
+            </span>
+          );
+        }
+        return (
+          <button
+            key={n}
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onRate(value === n ? 0 : n);
+            }}
+            aria-label={value === n ? `清除评分 ${value} 星` : `评为 ${n} 星`}
+            title={value === n ? '点击清除' : `${n} 星`}
+          >
+            {Star}
+          </button>
+        );
+      })}
+      {value > 0 ? (
+        <span className="stat-num ml-1 text-xs text-gold">{value}</span>
+      ) : null}
+    </div>
+  );
+}

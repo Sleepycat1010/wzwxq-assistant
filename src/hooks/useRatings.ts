@@ -1,1 +1,58 @@
-aW1wb3J0IHsgdXNlQ2FsbGJhY2ssIHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7Cgpjb25zdCBTVE9SQUdFX0tFWSA9ICd3end4cS1yYXRpbmdzJzsKCmV4cG9ydCB0eXBlIFJhdGluZ3MgPSBSZWNvcmQ8c3RyaW5nLCBudW1iZXI+OwoKLyoqCiAqIOacrOWcsOivhOWIhiBIb29r77ya5bCG546p5a625a+55ZCE6Zi15a6555qE6Ieq6K+E5YiG77yIMeKAkzUg5pif77yJ5oyB5LmF5YyW5YiwIGxvY2FsU3RvcmFnZeOAggogKiDlrpjmlrnor4TliIblubbpnZ7mr4/lpZfpmLXlrrnpg73mnInvvIjlpJrmlbDkuLogMD3ml6DmlbDmja7vvInvvIzmlYXmj5Dkvpvnjqnlrrboh6ror4TkvZzkuLrmjpLluo/kvp3mja7jgIIKICog57qv5YmN56uv44CB5peg5ZCO56uv77yM5Yi35pawL+mHjeW8gOS7jeS/neeVmeOAggogKi8KZXhwb3J0IGZ1bmN0aW9uIHVzZVJhdGluZ3MoKSB7CiAgY29uc3QgW3JhdGluZ3MsIHNldFJhdGluZ3NdID0gdXNlU3RhdGU8UmF0aW5ncz4oKCkgPT4gewogICAgdHJ5IHsKICAgICAgY29uc3QgcmF3ID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oU1RPUkFHRV9LRVkpOwogICAgICBjb25zdCBwYXJzZWQgPSByYXcgPyAoSlNPTi5wYXJzZShyYXcpIGFzIHVua25vd24pIDoge307CiAgICAgIGlmIChwYXJzZWQgJiYgdHlwZW9mIHBhcnNlZCA9PT0gJ29iamVjdCcgJiYgIUFycmF5LmlzQXJyYXkocGFyc2VkKSkgewogICAgICAgIC8vIOS7heS/neeVmSAx4oCTNSDnmoTmlbTmlbDliIblgLwKICAgICAgICBjb25zdCBjbGVhbjogUmF0aW5ncyA9IHt9OwogICAgICAgIGZvciAoY29uc3QgW2ssIHZdIG9mIE9iamVjdC5lbnRyaWVzKHBhcnNlZCBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPikpIHsKICAgICAgICAgIGNvbnN0IG4gPSBOdW1iZXIodik7CiAgICAgICAgICBpZiAoTnVtYmVyLmlzSW50ZWdlcihuKSAmJiBuID49IDEgJiYgbiA8PSA1KSBjbGVhbltrXSA9IG47CiAgICAgICAgfQogICAgICAgIHJldHVybiBjbGVhbjsKICAgICAgfQogICAgICByZXR1cm4ge307CiAgICB9IGNhdGNoIHsKICAgICAgcmV0dXJuIHt9OwogICAgfQogIH0pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgdHJ5IHsKICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oU1RPUkFHRV9LRVksIEpTT04uc3RyaW5naWZ5KHJhdGluZ3MpKTsKICAgIH0gY2F0Y2ggewogICAgICAvKiDpmpDnp4HmqKHlvI8gLyDml6AgbG9jYWxTdG9yYWdlIOaXtumdmem7mOmZjee6pyAqLwogICAgfQogIH0sIFtyYXRpbmdzXSk7CgogIC8qKiDorr7nva7or4TliIbvvIgx4oCTNe+8ie+8m+S8oCAwIOihqOekuua4hemZpOivpemYteWuueeahOivhOWIhiAqLwogIGNvbnN0IHJhdGUgPSB1c2VDYWxsYmFjaygoaWQ6IHN0cmluZywgdmFsdWU6IG51bWJlcikgPT4gewogICAgc2V0UmF0aW5ncygocHJldikgPT4gewogICAgICBjb25zdCBuZXh0ID0geyAuLi5wcmV2IH07CiAgICAgIGlmICh2YWx1ZSA+PSAxICYmIHZhbHVlIDw9IDUpIHsKICAgICAgICBuZXh0W2lkXSA9IHZhbHVlOwogICAgICB9IGVsc2UgewogICAgICAgIGRlbGV0ZSBuZXh0W2lkXTsKICAgICAgfQogICAgICByZXR1cm4gbmV4dDsKICAgIH0pOwogIH0sIFtdKTsKCiAgY29uc3QgZ2V0ID0gdXNlQ2FsbGJhY2soKGlkOiBzdHJpbmcpID0+IHJhdGluZ3NbaWRdID8/IDAsIFtyYXRpbmdzXSk7CgogIGNvbnN0IGNvdW50ID0gT2JqZWN0LmtleXMocmF0aW5ncykubGVuZ3RoOwoKICByZXR1cm4geyByYXRpbmdzLCByYXRlLCBnZXQsIGNvdW50IH07Cn0K
+import { useCallback, useEffect, useState } from 'react';
+
+const STORAGE_KEY = 'wzwxq-ratings';
+
+export type Ratings = Record<string, number>;
+
+/**
+ * 本地评分 Hook：将玩家对各阵容的自评分（1–5 星）持久化到 localStorage。
+ * 官方评分并非每套阵容都有（多数为 0=无数据），故提供玩家自评作为排序依据。
+ * 纯前端、无后端，刷新/重开仍保留。
+ */
+export function useRatings() {
+  const [ratings, setRatings] = useState<Ratings>(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const parsed = raw ? (JSON.parse(raw) as unknown) : {};
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+        // 仅保留 1–5 的整数分值
+        const clean: Ratings = {};
+        for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
+          const n = Number(v);
+          if (Number.isInteger(n) && n >= 1 && n <= 5) clean[k] = n;
+        }
+        return clean;
+      }
+      return {};
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(ratings));
+    } catch {
+      /* 隐私模式 / 无 localStorage 时静默降级 */
+    }
+  }, [ratings]);
+
+  /** 设置评分（1–5）；传 0 表示清除该阵容的评分 */
+  const rate = useCallback((id: string, value: number) => {
+    setRatings((prev) => {
+      const next = { ...prev };
+      if (value >= 1 && value <= 5) {
+        next[id] = value;
+      } else {
+        delete next[id];
+      }
+      return next;
+    });
+  }, []);
+
+  const get = useCallback((id: string) => ratings[id] ?? 0, [ratings]);
+
+  const count = Object.keys(ratings).length;
+
+  return { ratings, rate, get, count };
+}
