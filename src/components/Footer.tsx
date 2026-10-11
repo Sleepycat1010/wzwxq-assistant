@@ -9,7 +9,7 @@ export function Footer() {
         编辑 <code className="font-mono text-gold/80">public/data/*.json</code> 即可动态更新，无需重新构建。
       </p>
       <p className="mt-2 text-text-dim/60">
-        本站点为玩家自建辅助工具，攻略内容版权归原作者所有 · 示例棋手数据待官方核实替换
+        本站点为玩家自建辅助工具，攻略内容版权归原作者所有 · 棋手与图鉴数据来自官方接口
       </p>
     </footer>
   );

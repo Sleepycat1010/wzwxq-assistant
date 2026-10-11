@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { Header } from './components/Header';
+import { Hero } from './components/Hero';
 import { StepProgress } from './components/StepProgress';
 import { BanStep } from './components/BanStep';
 import { ChessPlayerStep } from './components/ChessPlayerStep';
@@ -72,15 +73,18 @@ export default function App() {
     }));
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-6 sm:px-6">
-      <Header
-        onOpenSources={() => setSourcesOpen(true)}
-        onOpenCodex={() => setCodexOpen(true)}
-        status={status}
-      />
+    <MotionConfig reducedMotion="user">
+      <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-6 sm:px-6">
+        <Header
+          onOpenSources={() => setSourcesOpen(true)}
+          onOpenCodex={() => setCodexOpen(true)}
+          status={status}
+        />
 
-      <main className="flex-1 py-8">
-        <StepProgress current={step} onStepClick={setStep} />
+        <main className="flex-1 py-8">
+          <Hero />
+
+          <StepProgress current={step} onStepClick={setStep} />
 
         <div className="mt-10">
           <AnimatePresence mode="wait">
@@ -142,6 +146,7 @@ export default function App() {
         onClose={() => setCodexOpen(false)}
         database={data.database}
       />
-    </div>
+      </div>
+    </MotionConfig>
   );
 }

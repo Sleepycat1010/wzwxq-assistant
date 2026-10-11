@@ -14,6 +14,11 @@ export default {
         crimson: 'rgb(var(--crimson-rgb) / <alpha-value>)',
         jade: 'rgb(var(--jade-rgb) / <alpha-value>)',
       },
+      borderRadius: {
+        lg: '10px',
+        xl: '12px',
+        '2xl': '18px',
+      },
       fontFamily: {
         display: ['"ZCOOL KuaiLe"', 'cursive'],
         sans: ['"Noto Sans SC"', 'sans-serif'],

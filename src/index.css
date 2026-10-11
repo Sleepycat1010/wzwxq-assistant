@@ -3,18 +3,21 @@
 @tailwind utilities;
 
 :root {
-  /* 原始十六进制（用于直接取值） */
-  --bg: #0b0d12;
-  /* RGB 通道：供 Tailwind 的 rgb(var(--x) / <alpha-value>) 支持透明度修饰符 */
-  --bg-rgb: 11 13 18;
-  --surface-rgb: 20 24 35;
-  --surface-2-rgb: 28 34 48;
-  --text-rgb: 245 243 234;
-  --text-dim-rgb: 154 163 178;
-  --gold-rgb: 245 197 66;
-  --gold-2-rgb: 212 175 55;
-  --crimson-rgb: 226 59 59;
-  --jade-rgb: 63 178 127;
+  /* 品牌色（RGB 通道，供 Tailwind 透明度修饰符 rgb(var(--x) / <alpha-value>)） */
+  --bg-rgb: 8 10 14;            /* 近黑竞技场底 */
+  --surface-rgb: 17 20 28;      /* 卡片表层 */
+  --surface-2-rgb: 24 28 38;    /* 内层/区块 */
+  --text-rgb: 240 238 230;      /* 主文字（暖白） */
+  --text-dim-rgb: 148 156 170;  /* 次要文字（去饱和） */
+  --gold-rgb: 245 197 66;       /* 唯一品牌强调色 */
+  --gold-2-rgb: 214 165 45;
+  --crimson-rgb: 229 72 77;     /* 语义色：禁用/危险 */
+  --jade-rgb: 54 199 140;       /* 语义色：可用/成功 */
+
+  /* 统一圆角系统 */
+  --r-card: 18px;
+  --r-btn: 12px;
+  --r-inner: 10px;
 }
 
 html {
@@ -24,14 +27,15 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--bg);
+  background-color: rgb(var(--bg-rgb));
   color: rgb(var(--text-rgb));
   font-family: 'Noto Sans SC', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-/* 竞技场氛围：近黑底上叠加两团冷/金辉光，固定不随滚动。 */
+/* 竞技场氛围：定向双辉光（左上金、右下绯）+ 极淡战术网格，固定不随滚动。
+   刻意做成非对称，避免「居中暗色网格 + AI 紫」的套路感。 */
 body::before {
   content: '';
   position: fixed;
@@ -39,21 +43,36 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(60% 50% at 15% 0%, rgba(245, 197, 66, 0.10), transparent 60%),
-    radial-gradient(55% 45% at 100% 10%, rgba(226, 59, 59, 0.10), transparent 60%),
-    radial-gradient(80% 60% at 50% 100%, rgba(28, 34, 48, 0.65), transparent 70%);
+    radial-gradient(58% 48% at 12% -4%, rgba(245, 197, 66, 0.14), transparent 58%),
+    radial-gradient(52% 46% at 104% 8%, rgba(229, 72, 77, 0.12), transparent 60%),
+    radial-gradient(90% 70% at 50% 116%, rgba(24, 28, 38, 0.8), transparent 72%);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(rgba(245, 197, 66, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 197, 66, 0.04) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 80%);
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 80%);
 }
 
 @layer components {
-  /* 通用卡片：暗色 surface + 细描边 + 悬停金边 */
+  /* 通用卡片：暗色 surface + 细描边 + 悬停金边 + 一致圆角 */
   .card-base {
-    @apply rounded-2xl border border-white/5 bg-surface/80 backdrop-blur-sm;
+    @apply rounded-2xl border border-white/[0.06] bg-surface/85 shadow-lift backdrop-blur-sm;
   }
 
-  /* 主金按钮 */
+  /* 主金按钮（唯一品牌强调） */
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-5 py-2.5
-      font-semibold text-bg transition-all duration-200
+      text-sm font-semibold text-bg transition-all duration-200
       hover:bg-gold-2 hover:shadow-gold active:scale-[0.98]
       disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none;
   }
@@ -61,10 +80,32 @@ body::before {
   /* 次级幽灵按钮 */
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10
-      bg-surface-2/60 px-5 py-2.5 font-medium text-text transition-all duration-200
+      bg-surface-2/60 px-5 py-2.5 text-sm font-medium text-text transition-all duration-200
       hover:border-gold/40 hover:text-gold active:scale-[0.98]
       disabled:cursor-not-allowed disabled:opacity-40;
   }
+
+  /* 微标签（eyebrow / 小说明）：统一的字距与大小，避免滥用 */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.22em] text-gold/80;
+  }
+
+  /* 区隔的小节标题 */
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.16em] text-text-dim;
+  }
+
+  /* 焦点可见环（无障碍）：键盘可达时高亮，不破坏鼠标体验 */
+  .focusable:focus-visible {
+    outline: 2px solid rgb(var(--gold-rgb));
+    outline-offset: 2px;
+  }
+}
+
+/* 焦点可见环（全局兜底） */
+:focus-visible {
+  outline: 2px solid rgba(245, 197, 66, 0.7);
+  outline-offset: 2px;
 }
 
 /* 细滚动条，贴合暗色主题 */
@@ -73,9 +114,21 @@ body::before {
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(245, 197, 66, 0.25);
+  background: rgba(245, 197, 66, 0.22);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(245, 197, 66, 0.45);
+  background: rgba(245, 197, 66, 0.42);
+}
+
+/* 尊重「减少动态效果」偏好：关闭持续性 CSS 动画 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

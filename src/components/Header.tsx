@@ -20,7 +20,7 @@ export function Header({
           initial={{ rotate: -8, scale: 0.9, opacity: 0 }}
           animate={{ rotate: 0, scale: 1, opacity: 1 }}
           transition={{ duration: 0.4 }}
-          className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-2 font-display text-2xl text-bg shadow-gold"
+          className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-gold to-gold-2 font-display text-2xl text-bg shadow-gold"
           aria-hidden
         >
           象

@@ -261,7 +261,7 @@ export function LineupCard({
               {/* 推荐棋手 */}
               {lineup.recommendedLords && lineup.recommendedLords.length > 0 ? (
                 <div>
-                  <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-text-dim">
+                  <div className="section-label mb-1.5">
                     官方推荐棋手
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -286,7 +286,7 @@ export function LineupCard({
               {lineup.heroPositions &&
               lineup.heroPositions.some((h) => h.equip && h.equip.length > 0) ? (
                 <div>
-                  <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-text-dim">
+                  <div className="section-label mb-1.5">
                     出装明细（按英雄）
                   </div>
                   <div className="flex flex-wrap gap-2">
