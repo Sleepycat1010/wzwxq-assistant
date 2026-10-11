@@ -38,16 +38,16 @@
     "name": "复活木兰拉扯流",
     "tier": "T0",
     "fitType": "战斗增益型",
-    "coreHeroes": ["花木兰"],
-    "lateHeroes": [],
-    "tagline": "依托花木兰复活机制反复拉扯消耗的版本强势阵容",
-    "strategy": "以花木兰的复活机制为核心，前排反复承伤复活，配合拉扯型英雄持续消耗对手，是当前版本主流强势阵容。需围绕木兰的觉醒节奏运营。",
-    "positioning": "花木兰顶前排承伤并触发复活，后排输出英雄在安全位输出；利用复活时间差拉扯，避免被一波带走。",
-    "equipment": "木兰优先肉装与复活类装备提升承伤与续航，后排补输出装打持续伤害。",
+    "coreHeroes": ["花木兰", "程咬金", "盾山", "上官婉儿", "李白", "武则天"],
+    "lateHeroes": ["露娜"],
+    "tagline": "河洛古币叠复活，单回合最高10次复活，容错拉满的版本 T0",
+    "strategy": "靠古币+整备反复触发花木兰复活：程咬金、上官婉儿触发整备词条产出古币，露娜持续产出古币；古币累积给花木兰叠加复活层数（最高10次），复活后仍可输出，多轮作战难被快速击杀，拖进加时赛直接碾压。ban大河/三分/逐鹿均可。",
+    "positioning": "花木兰顶前排承伤并触发复活，程咬金/盾山/上官婉儿前置吸收，武则天/李白后排输出；利用复活时间差拉扯，避免被一波带走。",
+    "equipment": "花木兰优先复活甲、吸血、防御装备（魂灭灵官、无尽巨剑、机器头）；肉装给程咬金，法装给武则天，露娜带功能装保古币产出。",
     "operations": {
-      "early": "前期稳住血量，优先拿到木兰并规划觉醒路线。",
-      "mid": "中期围绕木兰觉醒节奏补拉扯型英雄，提升整体坦度与续航。",
-      "late": "后期上7人口完善阵容，靠复活拉扯拖垮对手。"
+      "early": "1-5回合不主动搜牌，存钱升人口用打工卡过渡，尽量不掉太多血。",
+      "mid": "升人口补程咬金、上官婉儿触发整备，囤露娜。",
+      "late": "后期让花木兰疯狂叠复活层数，拖进加时赛碾压。"
     },
     "counters": ["dunaixuhang"],
     "sources": [
@@ -56,7 +56,21 @@
         "author": "卷心菜",
         "url": "https://www.wywyx.com/",
         "date": "2026-09-10",
-        "note": "王者万象棋最强阵容推荐（复活木兰拉扯流）"
+        "note": "最强阵容推荐（复活木兰拉扯流）"
+      },
+      {
+        "platform": "游戏鸟",
+        "author": "游戏鸟",
+        "url": "https://www.youxiniao.com/news/dalu/2751977_full.html",
+        "date": "2026-09",
+        "note": "六套主流阵容·复活花木兰"
+      },
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库(梨盏)",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026-09-15",
+        "note": "六套主流阵容推荐·复活花木兰"
       }
     ]
   },
@@ -152,6 +166,210 @@
         "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
         "date": "2026",
         "note": "上手指南·站位思路"
+      }
+    ]
+  },
+  {
+    "id": "sanfendaodao",
+    "name": "三分倒转流",
+    "tier": "T0",
+    "fitType": "经济运营型",
+    "coreHeroes": ["曹操", "甄姬", "小乔", "周瑜", "露娜"],
+    "lateHeroes": ["蔡文姬", "吕布"],
+    "tagline": "词条永动叠级，等级碾压全场的上限流",
+    "strategy": "曹操整备触发三分英雄登场，甄姬指定登场目标、小乔提升三分英雄等级、周瑜登场带来等级加成、露娜触发场上多名英雄登场词条，形成无限循环持续叠加全队等级，滚雪球式成长，成型后等级碾压。",
+    "positioning": "前排坦度（吕布/蔡文姬）吸收伤害，周瑜/小乔/露娜置后排；怕强控，关键英雄需避开先手控制，否则词条连锁会中断。",
+    "equipment": "输出装优先给小乔、周瑜；露娜带功能型装备保障词条触发；吕布、蔡文姬分配肉装。装备优先级低于核心卡牌（先凑齐启动卡）。",
+    "operations": {
+      "early": "1-3回合可适度卖血攒资源，优先找曹操、甄姬（整套体系启动的钥匙）；拿不到建议转其他阵容。",
+      "mid": "4-5回合提升人口，补齐小乔、周瑜。",
+      "late": "7回合之后拿到露娜，完整闭环启动；决赛圈补吕布、蔡文姬提升容错。"
+    },
+    "counters": ["heluogubi"],
+    "sources": [
+      {
+        "platform": "游戏鸟",
+        "author": "游戏鸟",
+        "url": "https://www.youxiniao.com/news/dalu/2751977_full.html",
+        "date": "2026-09",
+        "note": "六套主流阵容·三分倒转流"
+      },
+      {
+        "platform": "今日头条",
+        "author": "今日头条·攻略",
+        "url": "https://www.toutiao.com/a7685648413567746586",
+        "date": "2026-09",
+        "note": "最强阵容·三分倒转循环"
+      },
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026",
+        "note": "六套主流阵容推荐·三分倒转"
+      },
+      {
+        "platform": "Bilibili",
+        "author": "Bilibili 视频区",
+        "url": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B%20%E4%B8%89%E5%88%86%E5%80%92%E8%BD%AC%E6%B5%81",
+        "date": "2026",
+        "note": "视频攻略汇总（搜索）"
+      }
+    ]
+  },
+  {
+    "id": "riluohai",
+    "name": "日落海整备流",
+    "tier": "T1",
+    "fitType": "战斗增益型",
+    "coreHeroes": ["雅典娜", "安琪拉", "亚连", "海诺", "朵莉亚", "狂铁", "米莱迪"],
+    "lateHeroes": [],
+    "tagline": "整备拉满阿科米亚核心，全队共享等级加成",
+    "strategy": "利用狂铁、亚连、米莱狄、安琪拉的【整备】效果，配合朵莉亚提升阿科米亚核心与全队等级；后期雅典娜、海诺进一步加强核心等级。核心等级决定全队强度，属于慢慢叠属性滚雪球的运营玩法。",
+    "positioning": "前排坦（雅典娜/狂铁）吸收伤害，后排输出（安琪拉），核心单位重点保护。",
+    "equipment": "安琪拉带法源、虚无法杖、炽热；雅典娜带霸者、近卫、不死鸟。",
+    "operations": {
+      "early": "用带整备效果的英雄过渡，稳住血量。",
+      "mid": "升人口补齐核心，开始叠加阿科米亚核心等级。",
+      "late": "6-7人口完善阵容，配合海诺/雅典娜进一步拉高核心等级。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "游戏鸟",
+        "author": "游戏鸟",
+        "url": "https://www.youxiniao.com/news/dalu/2751977_full.html",
+        "date": "2026-09",
+        "note": "六套主流阵容·日落海整备流"
+      },
+      {
+        "platform": "3DM",
+        "author": "3DM网游",
+        "url": "https://ol.3dmgame.com/gl/352932_23.html",
+        "date": "2026-09",
+        "note": "阵容推荐大全·玉环日落海"
+      }
+    ]
+  },
+  {
+    "id": "dahetuteng",
+    "name": "大河图腾流",
+    "tier": "T1",
+    "fitType": "战斗增益型",
+    "coreHeroes": ["鬼谷子", "大司命", "少司缘", "敖隐", "虞姬", "东皇太一"],
+    "lateHeroes": ["张良"],
+    "tagline": "图腾召唤+敖隐主C，新手顺滑好成型",
+    "strategy": "鬼谷子、少司缘、大司命召唤图腾；前期虞姬打输出，后期核心主C敖隐，东皇太一保护图腾。凑齐阵容英雄后全员自动成长，操作简单，适合新手、懒人。",
+    "positioning": "东皇太一前排坦克保护图腾，敖隐后排主C，虞姬输出；图腾单位需重点保护。",
+    "equipment": "敖隐带寒霜、破晓、自然法杖；东皇太一带霸者、近卫、不死鸟。推荐天赋：复印机、大河新援。",
+    "operations": {
+      "early": "拿图腾英雄过渡，虞姬负责前期输出。",
+      "mid": "升人口补敖隐，确立主C。",
+      "late": "7人口完善，张良补等级，敖隐吃满资源。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "游戏鸟",
+        "author": "游戏鸟",
+        "url": "https://www.youxiniao.com/news/dalu/2751977_full.html",
+        "date": "2026-09",
+        "note": "六套主流阵容·大河图腾流"
+      },
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库(梨盏)",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026-09-15",
+        "note": "多种强力上分阵容·大河图腾龙"
+      },
+      {
+        "platform": "Bilibili",
+        "author": "Bilibili 视频区",
+        "url": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B%20%E5%A4%A7%E6%B2%B3%E5%9B%BE%E8%85%BE%E6%B5%81",
+        "date": "2026",
+        "note": "视频攻略汇总（搜索）"
+      }
+    ]
+  },
+  {
+    "id": "heluogubi",
+    "name": "河洛古币流",
+    "tier": "T2",
+    "fitType": "经济运营型",
+    "coreHeroes": ["盾山", "钟馗", "程咬金", "武则天", "太乙真人", "李元芳", "上官婉儿"],
+    "lateHeroes": [],
+    "tagline": "古币叠复活，后期河洛体系容错拉满",
+    "strategy": "河洛阵营靠古币叠加复活次数：程咬金、上官婉儿触发整备词条产出古币，露娜（若补）持续产出，古币累积给核心英雄叠加复活层数，最高10次复活；复活后仍可输出，适合对局拖入后期。",
+    "positioning": "前排坦吸收伤害，核心后排；靠复活层数打多轮消耗。",
+    "equipment": "核心带复活甲、吸血、防御装备；其余肉装分给坦位。推荐天赋：瞬影连斩、微弱优势。",
+    "operations": {
+      "early": "1-5回合不主动搜牌，存钱升人口用打工卡过渡，尽量不掉太多血。",
+      "mid": "升人口补核心，触发整备产出古币。",
+      "late": "后期叠满古币复活层数，拖入加时赛碾压。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "游戏鸟",
+        "author": "游戏鸟",
+        "url": "https://www.youxiniao.com/news/dalu/2751977_full.html",
+        "date": "2026-09",
+        "note": "六套主流阵容·河洛古币流"
+      }
+    ]
+  },
+  {
+    "id": "leitingyingzheng",
+    "name": "雷霆战机嬴政",
+    "tier": "T1",
+    "fitType": "经济运营型",
+    "coreHeroes": ["白起", "庄周", "蒙犽", "芈月", "西施", "嬴政", "鲁班七号"],
+    "lateHeroes": [],
+    "tagline": "全屏输出体系，嬴政远程压制",
+    "strategy": "以嬴政为核心的远程全屏输出阵容，配合庄周/白起前排与控制，蒙犽、鲁班七号补足火力，形成持续远程压制。",
+    "positioning": "前排白起/庄周坦控，嬴政/鲁班/蒙犽后排输出；保证后排生存才能持续火力。",
+    "equipment": "嬴政法强装；鲁班/蒙犽攻速暴击装；前排肉装。",
+    "operations": {
+      "early": "拿前排过渡，稳住血量。",
+      "mid": "升人口补嬴政，确立远程核心。",
+      "late": "完善后排输出，火力全开。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库(梨盏)",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026-09-15",
+        "note": "多种强力上分阵容·雷霆战机嬴政"
+      }
+    ]
+  },
+  {
+    "id": "xishenglixin",
+    "name": "牺牲流李信",
+    "tier": "T2",
+    "fitType": "战斗增益型",
+    "coreHeroes": ["花木兰", "凯", "太乙真人", "钟馗", "上官婉儿", "李信", "明世隐"],
+    "lateHeroes": [],
+    "tagline": "以李信为核心的牺牲换战力体系",
+    "strategy": "围绕李信，花木兰/凯前排承伤，太乙真人、明世隐提供增益与复活，钟馗、上官婉儿触发整备；牺牲低价值单位换取核心战力，后期李信单核爆发。",
+    "positioning": "前排凯/花木兰承伤，李信中排输出，辅助后排提供增益。",
+    "equipment": "李信输出装；前排肉装；太乙/明世隐功能装。",
+    "operations": {
+      "early": "拿前排过渡，稳住血量。",
+      "mid": "升人口补李信，确立单核。",
+      "late": "完善阵容，牺牲低价值单位强化李信。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库(梨盏)",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026-09-15",
+        "note": "多种强力上分阵容·牺牲流李信"
       }
     ]
   }
