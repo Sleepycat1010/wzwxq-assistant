@@ -13,6 +13,19 @@ import { useFavorites } from './hooks/useFavorites';
 import { recommendLineups } from './lib/recommend';
 
 /**
+ * 第一步「一键禁用」可操作的真实阵营（羁绊）。
+ * 大河流域 / 逐鹿 / 三分之地 / 河洛 / 日落海 —— 这 5 个是本局可选禁用的经营阵营；
+ * 「无阵营」本身不是可经营的羁绊，不参与一键禁用（仍可手动逐套禁用单卡）。
+ */
+const BANABLE_FACTIONS = [
+  '大河流域',
+  '逐鹿',
+  '三分之地',
+  '河洛',
+  '日落海',
+] as const;
+
+/**
  * 应用根组件：管理三步向导状态并串联各步骤。
  */
 export default function App() {
@@ -56,10 +69,12 @@ export default function App() {
     setFavOnly(false);
   };
 
-  const factions = (data.database?.factions ?? []).map((f) => ({
-    name: f.name,
-    heroCount: f.heroCount,
-  }));
+  const factions = (data.database?.factions ?? [])
+    .filter((f) => (BANABLE_FACTIONS as readonly string[]).includes(f.name))
+    .map((f) => ({
+      name: f.name,
+      heroCount: f.heroCount,
+    }));
 
   return (
     <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-6 sm:px-6">
