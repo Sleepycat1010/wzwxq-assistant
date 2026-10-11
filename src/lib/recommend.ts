@@ -36,6 +36,7 @@ function stableJitter(id: string): number {
  *
  * 评分规则（透明可解释）：
  *  - 基础分：T0=100 / T1=80 / T2=60
+ *  - 数据驱动匹配：该阵容官方推荐的棋手包含玩家所选棋手 → +30（最强信号）
  *  - 棋手类型匹配：fitType === 玩家棋手类型  → +25
  *  - 克制加成：若「被禁用的阵容」恰好被本阵容克制 → +15（命中即加，不论命中几条）
  *  - 稳定微扰：基于 id 的伪随机小数（0~5），使排序稳定且每次一致
@@ -53,8 +54,13 @@ export function scoreLineup(
   let score = TIER_BASE[lineup.tier];
   const reasons: RecommendReason[] = [`强度评级 ${lineup.tier}`];
 
-  // 棋手类型匹配
-  if (player && lineup.fitType === player.type) {
+  // 数据驱动匹配：阵容官方推荐棋手命中玩家所选棋手（最强信号）
+  const recommended = lineup.recommendedLords ?? [];
+  if (player && recommended.includes(player.name)) {
+    score += 30;
+    reasons.push(`官方推荐搭配「${player.name}」`);
+  } else if (player && lineup.fitType === player.type) {
+    // 退而求其次：棋手类型匹配
     score += 25;
     reasons.push(`契合你的${player.type}棋手`);
   }

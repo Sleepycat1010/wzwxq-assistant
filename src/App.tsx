@@ -6,6 +6,7 @@ import { BanStep } from './components/BanStep';
 import { ChessPlayerStep } from './components/ChessPlayerStep';
 import { RecommendStep } from './components/RecommendStep';
 import { SourcesPanel } from './components/SourcesPanel';
+import { CodexPanel } from './components/CodexPanel';
 import { Footer } from './components/Footer';
 import { useGameData } from './hooks/useGameData';
 import { useFavorites } from './hooks/useFavorites';
@@ -21,6 +22,7 @@ export default function App() {
   const [bannedIds, setBannedIds] = useState<string[]>([]);
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sourcesOpen, setSourcesOpen] = useState(false);
+  const [codexOpen, setCodexOpen] = useState(false);
   const favorites = useFavorites();
   const [favOnly, setFavOnly] = useState(false);
 
@@ -32,6 +34,21 @@ export default function App() {
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     );
 
+  // 阵营一键禁用 / 启用：若该阵营全部已禁用则解除，否则全部禁用
+  const toggleFaction = (faction: string) => {
+    const inFaction = data.lineups
+      .filter((l) => l.faction === faction)
+      .map((l) => l.id);
+    if (inFaction.length === 0) return;
+    const allBanned = inFaction.every((id) => bannedIds.includes(id));
+    setBannedIds((prev) => {
+      if (allBanned) {
+        return prev.filter((id) => !inFaction.includes(id));
+      }
+      return Array.from(new Set([...prev, ...inFaction]));
+    });
+  };
+
   const restart = () => {
     setStep(1);
     setBannedIds([]);
@@ -39,9 +56,18 @@ export default function App() {
     setFavOnly(false);
   };
 
+  const factions = (data.database?.factions ?? []).map((f) => ({
+    name: f.name,
+    heroCount: f.heroCount,
+  }));
+
   return (
     <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-6 sm:px-6">
-      <Header onOpenSources={() => setSourcesOpen(true)} status={status} />
+      <Header
+        onOpenSources={() => setSourcesOpen(true)}
+        onOpenCodex={() => setCodexOpen(true)}
+        status={status}
+      />
 
       <main className="flex-1 py-8">
         <StepProgress current={step} onStepClick={setStep} />
@@ -58,8 +84,10 @@ export default function App() {
               {step === 1 && (
                 <BanStep
                   lineups={data.lineups}
+                  factions={factions}
                   bannedIds={bannedIds}
                   onToggleBan={toggleBan}
+                  onToggleFaction={toggleFaction}
                   onNext={() => setStep(2)}
                 />
               )}
@@ -98,6 +126,12 @@ export default function App() {
         onClose={() => setSourcesOpen(false)}
         lineups={data.lineups}
         players={data.chessPlayers}
+      />
+
+      <CodexPanel
+        open={codexOpen}
+        onClose={() => setCodexOpen(false)}
+        database={data.database}
       />
     </div>
   );

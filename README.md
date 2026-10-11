@@ -11,12 +11,29 @@
 ## 功能特性
 
 - **三步向导**：禁用本局阵容 → 选择棋手 → 智能推荐可用阵容
-- **搜索 / 筛选**（第一步）：按阵容名 / 英雄名搜索，按「类型 / 强度」一键筛选，快速定位目标阵容
+- **阵营一键禁用**（第一步）：按「大河流域 / 三分之地 / 逐鹿 / 日落海 / 河洛 / 无阵营」六大阵营一键禁用 / 启用其下全部阵容
+- **搜索 / 筛选**（第一步）：按阵容名 / 英雄名 / 阵营搜索，按「类型 / 强度」一键筛选，快速定位目标阵容
 - **本地收藏**（第三步）：点击卡片右上角 ☆ 收藏阵容，使用浏览器 localStorage 持久化，刷新 / 重开仍保留；支持「只看收藏」快速回顾
+- **基础数据库 · 图鉴**：顶部「图鉴」入口，浏览全部**英雄 / 效果牌 / 天赋 / 装备**与六大**阵营羁绊**及其英雄构成（数据来自官方 CDN，定时刷新）
 - **多来源出处**：每套推荐标注平台 / 作者 / 链接 / 日期，可点击跳转；「数据来源」面板按平台分组汇总
 - **动态更新**：编辑 `public/data/*.json` 提交即可让线上数据生效，无需重新构建
 
-当前内置数据：**11 套阵容 / 8 名棋手**，来源覆盖 王者营地 · 王者攻略库(ima) · 玩一玩 · 游戏鸟 · 3DM · 今日头条 · Bilibili 共 7 个平台。
+当前内置数据（由官方 CDN 抓取归一化）：**500+ 套推荐阵容 / 6 大阵营 / 85 名英雄 / 258 张天赋牌 / 73 件装备牌 / 98 张效果牌**，阵容出处覆盖腾讯王者万象棋官方（营地 / 官网）。
+
+## 基础数据库与定时刷新
+
+本项目的核心数据并非手工录入，而是由脚本 `scripts/build-db.mjs` 从**腾讯王者万象棋官方 CDN 接口**抓取并归一化：
+
+- **英雄牌 / 天赋牌 / 装备牌 / 效果牌**：`game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_{1,8,4,2}.js`
+- **推荐阵容（分页）**：`game.gtimg.cn/images/amside/ide_timer/598252_oslineupbyrecommend_pro_<page>.js`
+
+抓取结果写入 `public/data/database.json`（图鉴用）与 `public/data/lineups.json`（推荐用），并附带 `public/data/meta.json`（抓取时间 / 来源 / 数量）。
+
+**定时刷新（联动部署）**：`.github/workflows/refresh-db.yml` 以 `cron` 每日运行一次，自动抓取最新官方数据并**提交到 `main`**，从而触发 `deploy.yml` 重新构建并部署到 GitHub Pages——实现「抓取 → 入库 → 上线」全链路自动化。也可在 Actions 页面手动 **Run workflow** 立即刷新。
+
+```bash
+npm run db:build     # 本地重新抓取并生成 public/data/*.json
+```
 
 ## 技术栈
 
@@ -87,12 +104,18 @@ wzwxq-assistant/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── .nojekyll
-├── .github/workflows/deploy.yml
+├── .github/workflows/
+│   ├── deploy.yml         # 构建并部署 Pages
+│   └── refresh-db.yml     # 定时抓取官方数据并提交（联动部署）
 ├── public/
 │   ├── favicon.svg
 │   └── data/
-│       ├── lineups.json
-│       └── chessPlayers.json
+│       ├── database.json  # 基础数据库（英雄/天赋/装备/效果牌/阵营）图鉴用
+│       ├── lineups.json   # 推荐阵容（官方推荐阵容归一化）
+│       ├── chessPlayers.json
+│       └── meta.json      # 抓取时间/来源/数量
+├── scripts/
+│   └── build-db.mjs       # 抓取官方 CDN 并生成基础数据库
 └── src/
     ├── main.tsx
     ├── App.tsx
@@ -111,6 +134,7 @@ wzwxq-assistant/
         ├── ChessPlayerCard.tsx
         ├── SourceBadge.tsx
         ├── SourcesPanel.tsx
+        ├── CodexPanel.tsx
         └── Footer.tsx
 ```
 
@@ -119,9 +143,12 @@ wzwxq-assistant/
 评分（透明可解释，见 `src/lib/recommend.ts`）：
 
 - 基础分：T0=100 / T1=80 / T2=60
+- **数据驱动匹配**（最强信号）：该阵容官方推荐的棋手包含玩家所选棋手 → +30
 - 棋手类型匹配（`fitType` === 玩家棋手类型）：+25
 - 克制加成（被禁用的阵容恰好被本阵容克制）：+15
 - 稳定微扰：基于 id 的确定性伪随机（0~5），保证排序每次一致
+
+推荐时会**自动排除第一步已禁用的阵容**（含阵营一键禁用触发的批量禁用）。
 
 最终按分数降序排序，并附带每条「推荐理由」用于 UI 展示。
 

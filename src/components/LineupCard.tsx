@@ -51,7 +51,59 @@ function OperationColumn({
       >
         {title}
       </div>
-      <p className="text-sm leading-relaxed text-text-dim">{text}</p>
+      <p className="text-sm leading-relaxed text-text-dim">
+        {text || '（官方暂未提供该阶段运营）'}
+      </p>
+    </div>
+  );
+}
+
+/** 站位棋盘：依官方 positionX / positionZ 绘制 7×N 网格 */
+function PositionBoard({
+  positions,
+}: {
+  positions: { name: string; x: number | null; z: number | null }[];
+}) {
+  const valid = positions.filter(
+    (p) => typeof p.x === 'number' && typeof p.z === 'number',
+  );
+  if (valid.length === 0) return null;
+  const cols = Math.max(6, ...valid.map((p) => (p.x as number) + 1));
+  const rows = Math.max(2, ...valid.map((p) => (p.z as number) + 1));
+
+  return (
+    <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
+      <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
+        站位棋盘
+      </div>
+      <div
+        className="grid gap-1"
+        style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
+      >
+        {Array.from({ length: rows }).map((_, r) =>
+          Array.from({ length: cols }).map((__, c) => {
+            const hero = valid.find(
+              (p) => p.x === c && p.z === r,
+            );
+            return (
+              <div
+                key={`${r}-${c}`}
+                className={cn(
+                  'flex aspect-square items-center justify-center rounded-md text-center text-[10px] leading-tight',
+                  hero
+                    ? 'bg-gold/15 text-gold'
+                    : 'bg-white/[0.03] text-text-dim/40',
+                )}
+              >
+                {hero ? hero.name.slice(0, 2) : ''}
+              </div>
+            );
+          }),
+        )}
+      </div>
+      <div className="mt-1.5 text-[10px] text-text-dim/70">
+        （上为前排，下为后排）
+      </div>
     </div>
   );
 }
@@ -96,8 +148,22 @@ export function LineupCard({
             <span className="rounded-md bg-white/10 px-2 py-0.5 text-xs text-text-dim">
               {lineup.fitType}
             </span>
+            {lineup.faction ? (
+              <span className="rounded-md bg-gold/15 px-2 py-0.5 text-xs text-gold">
+                {lineup.faction}
+              </span>
+            ) : null}
           </div>
           <p className="mt-1 text-sm text-text-dim">{lineup.tagline}</p>
+          <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-text-dim/80">
+            {typeof lineup.score === 'number' ? (
+              <span className="text-gold/90">评分 {lineup.score}</span>
+            ) : null}
+            {lineup.useNum ? (
+              <span>使用 {lineup.useNum.toLocaleString()} 次</span>
+            ) : null}
+            {lineup.author ? <span>作者 {lineup.author}</span> : null}
+          </div>
         </div>
 
         {/* 收藏星标 */}
@@ -181,6 +247,30 @@ export function LineupCard({
               <p className="text-sm leading-relaxed text-text-dim">
                 {lineup.strategy}
               </p>
+
+              {/* 推荐棋手 */}
+              {lineup.recommendedLords && lineup.recommendedLords.length > 0 ? (
+                <div>
+                  <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-text-dim">
+                    官方推荐棋手
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {lineup.recommendedLords.map((n) => (
+                      <span
+                        key={n}
+                        className="rounded-lg border border-jade/30 bg-jade/10 px-2.5 py-1 text-sm text-jade"
+                      >
+                        {n}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              {/* 站位棋盘 */}
+              {lineup.heroPositions && lineup.heroPositions.length > 0 ? (
+                <PositionBoard positions={lineup.heroPositions} />
+              ) : null}
 
               {/* 站位 / 出装 */}
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">

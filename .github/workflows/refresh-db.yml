@@ -1,0 +1,70 @@
+name: 定时刷新基础数据库
+
+# 定时抓取腾讯王者万象棋官方 CDN 数据，更新基础数据库（英雄/天赋/装备/效果牌/推荐阵容），
+# 提交到 main 并自动构建部署到 GitHub Pages（联动部署）。
+on:
+  schedule:
+    # 每日 19:17 UTC（北京时间次日 03:17）抓取一次；可按需修改
+    - cron: '17 19 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 独立的并发组，避免取消用户代码推送触发的普通部署
+concurrency:
+  group: refresh-db
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: 抓取并生成基础数据库
+        run: node scripts/build-db.mjs
+
+      - name: 提交数据变更（若有）
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A public/data/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "无数据变更，跳过提交"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git commit -m "chore: 自动刷新基础数据库 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

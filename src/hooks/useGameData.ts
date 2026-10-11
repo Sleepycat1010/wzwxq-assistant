@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { GameData } from '../types';
+import type { Database, GameData } from '../types';
 import { FALLBACK_LINEUPS, FALLBACK_PLAYERS } from '../data/fallback';
 
 /** 数据加载状态 */
@@ -27,9 +27,10 @@ export function useGameData(): { data: GameData; status: DataStatus } {
     async function load(): Promise<void> {
       const base = import.meta.env.BASE_URL || './';
       try {
-        const [lineupsRes, playersRes] = await Promise.all([
+        const [lineupsRes, playersRes, dbRes] = await Promise.all([
           fetch(`${base}data/lineups.json`),
           fetch(`${base}data/chessPlayers.json`),
+          fetch(`${base}data/database.json`),
         ]);
 
         if (!lineupsRes.ok || !playersRes.ok) {
@@ -38,13 +39,21 @@ export function useGameData(): { data: GameData; status: DataStatus } {
 
         const lineups = (await lineupsRes.json()) as GameData['lineups'];
         const chessPlayers = (await playersRes.json()) as GameData['chessPlayers'];
+        let database: Database | undefined;
+        if (dbRes.ok) {
+          try {
+            database = (await dbRes.json()) as Database;
+          } catch {
+            database = undefined;
+          }
+        }
 
         if (!Array.isArray(lineups) || !Array.isArray(chessPlayers)) {
           throw new Error('数据结构异常');
         }
 
         if (!cancelled) {
-          setData({ lineups, chessPlayers });
+          setData({ lineups, chessPlayers, database });
           setStatus('ready');
         }
       } catch {

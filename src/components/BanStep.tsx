@@ -21,22 +21,26 @@ function TierBadge({ tier }: { tier: Tier }) {
   );
 }
 
-const TYPE_OPTIONS = ['全部', '经济运营型', '战斗增益型'] as const;
+const TYPE_OPTIONS = ['全部', '经济运营型', '战斗增益型', '通用'] as const;
 const TIER_OPTIONS = ['全部', 'T0', 'T1', 'T2'] as const;
 
 /**
- * Step 1：禁用阵容（多选）+ 搜索 / 筛选。
+ * Step 1：禁用阵容（多选）+ 阵营一键禁用 + 搜索 / 筛选。
  * 网格展示所有阵容卡片，每张可切换「本局禁用」状态。
  */
 export function BanStep({
   lineups,
+  factions,
   bannedIds,
   onToggleBan,
+  onToggleFaction,
   onNext,
 }: {
   lineups: Lineup[];
+  factions: { name: string; heroCount: number }[];
   bannedIds: string[];
   onToggleBan: (id: string) => void;
+  onToggleFaction: (faction: string) => void;
   onNext: () => void;
 }) {
   const [query, setQuery] = useState('');
@@ -68,19 +72,51 @@ export function BanStep({
       <div className="mb-5">
         <h2 className="font-display text-xl text-text">第一步 · 禁用本局阵容</h2>
         <p className="mt-1 text-sm text-text-dim">
-          勾选本局不能玩的阵容（可多选），系统将在推荐中自动排除它们。
+          勾选本局不能玩的阵容（可多选），系统将在推荐中自动排除它们。也可按阵营一键禁用。
         </p>
       </div>
 
-      {/* 搜索 + 筛选 */}
+      {/* 搜索 + 筛选 + 阵营 */}
       <div className="mb-5 space-y-3 rounded-xl border border-white/5 bg-surface/60 p-4">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="搜索阵容名 / 英雄（如：三分、花木兰、嬴政）"
+          placeholder="搜索阵容名 / 英雄 / 阵营（如：三分、花木兰、大河流域）"
           className="w-full rounded-lg border border-white/10 bg-surface-2 px-4 py-2.5 text-sm text-text placeholder:text-text-dim/70 focus:border-gold/50 focus:outline-none"
         />
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="mr-1 text-xs text-text-dim">阵营一键</span>
+          {factions.map((f) => {
+            const inFaction = lineups.filter((l) => l.faction === f.name);
+            const bannedFaction = inFaction.filter((l) =>
+              bannedIds.includes(l.id),
+            ).length;
+            const allBanned =
+              inFaction.length > 0 && bannedFaction === inFaction.length;
+            const partial = bannedFaction > 0 && !allBanned;
+            return (
+              <button
+                key={f.name}
+                type="button"
+                onClick={() => onToggleFaction(f.name)}
+                className={cn(
+                  chipBase,
+                  allBanned
+                    ? 'border-crimson bg-crimson/15 text-crimson'
+                    : partial
+                      ? 'border-crimson/50 bg-crimson/5 text-crimson/90'
+                      : 'border-white/10 text-text-dim hover:border-gold/30',
+                )}
+              >
+                {f.name}
+                <span className="ml-1 opacity-70">
+                  {bannedFaction}/{inFaction.length}
+                </span>
+              </button>
+            );
+          })}
+        </div>
         <div className="flex flex-wrap items-center gap-2">
           <span className="mr-1 text-xs text-text-dim">类型</span>
           {TYPE_OPTIONS.map((t) => (
@@ -153,7 +189,7 @@ export function BanStep({
                 type="button"
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: Math.min(i * 0.04, 0.4) }}
+                transition={{ duration: 0.3, delay: Math.min(i * 0.02, 0.3) }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => onToggleBan(l.id)}
@@ -171,15 +207,24 @@ export function BanStep({
                   </h3>
                   <TierBadge tier={l.tier} />
                 </div>
-                <div className="mt-1 flex items-center gap-2 text-xs text-text-dim">
-                  <span>{l.fitType}</span>
-                  {l.coreHeroes.length > 0 ? (
-                    <span className="truncate">
-                      · {l.coreHeroes.join(' / ')}
+                <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-text-dim">
+                  {l.faction ? (
+                    <span className="rounded bg-surface-2 px-1.5 py-0.5 text-gold/80">
+                      {l.faction}
                     </span>
                   ) : null}
+                  <span>{l.fitType}</span>
                 </div>
-                <p className="mt-2 text-sm text-text-dim">{l.tagline}</p>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {l.coreHeroes.slice(0, 7).map((h) => (
+                    <span
+                      key={h}
+                      className="rounded-md border border-white/10 bg-surface-2/60 px-1.5 py-0.5 text-[11px] text-text-dim"
+                    >
+                      {h}
+                    </span>
+                  ))}
+                </div>
                 <div
                   className={cn(
                     'mt-3 inline-flex items-center gap-1 rounded-lg px-3 py-1 text-sm font-medium transition-colors',
