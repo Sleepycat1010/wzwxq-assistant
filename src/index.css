@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 原始十六进制（用于直接取值） */
+  --bg: #0b0d12;
+  /* RGB 通道：供 Tailwind 的 rgb(var(--x) / <alpha-value>) 支持透明度修饰符 */
+  --bg-rgb: 11 13 18;
+  --surface-rgb: 20 24 35;
+  --surface-2-rgb: 28 34 48;
+  --text-rgb: 245 243 234;
+  --text-dim-rgb: 154 163 178;
+  --gold-rgb: 245 197 66;
+  --gold-2-rgb: 212 175 55;
+  --crimson-rgb: 226 59 59;
+  --jade-rgb: 63 178 127;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: rgb(var(--text-rgb));
+  font-family: 'Noto Sans SC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 竞技场氛围：近黑底上叠加两团冷/金辉光，固定不随滚动。 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 15% 0%, rgba(245, 197, 66, 0.10), transparent 60%),
+    radial-gradient(55% 45% at 100% 10%, rgba(226, 59, 59, 0.10), transparent 60%),
+    radial-gradient(80% 60% at 50% 100%, rgba(28, 34, 48, 0.65), transparent 70%);
+}
+
+@layer components {
+  /* 通用卡片：暗色 surface + 细描边 + 悬停金边 */
+  .card-base {
+    @apply rounded-2xl border border-white/5 bg-surface/80 backdrop-blur-sm;
+  }
+
+  /* 主金按钮 */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-5 py-2.5
+      font-semibold text-bg transition-all duration-200
+      hover:bg-gold-2 hover:shadow-gold active:scale-[0.98]
+      disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none;
+  }
+
+  /* 次级幽灵按钮 */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10
+      bg-surface-2/60 px-5 py-2.5 font-medium text-text transition-all duration-200
+      hover:border-gold/40 hover:text-gold active:scale-[0.98]
+      disabled:cursor-not-allowed disabled:opacity-40;
+  }
+}
+
+/* 细滚动条，贴合暗色主题 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 197, 66, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 197, 66, 0.45);
+}

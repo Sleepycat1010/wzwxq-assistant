@@ -1,0 +1,158 @@
+[
+  {
+    "id": "dunaixuhang",
+    "name": "毒奶续航流",
+    "tier": "T1",
+    "fitType": "经济运营型",
+    "coreHeroes": ["蔡文姬", "扁鹊", "露娜"],
+    "lateHeroes": ["曹操", "甄姬"],
+    "tagline": "不追高星、一星即战，边回血边压血线的苟分神器",
+    "strategy": "核心思路是不花大资源追高星，一星英雄即可打出效果。实操时用扁鹊给蔡文姬放二技能，提升移速的同时让扁鹊的持续伤害与蔡文姬的群体治疗叠加，一边回血一边压对面血线，稳稳过渡到中期。",
+    "positioning": "前排放坦度较高的英雄（如补的曹操）吸收伤害，蔡文姬/扁鹊/露娜置于后排；若对面控制较多，把远程英雄再往后撤，避免被先手控住。",
+    "equipment": "优先回蓝与法强/法穿装：蔡文姬带群体增益/回血向装备，扁鹊堆持续伤害，露娜补生存。装备无需拆卸，基础装备可合成进阶装。",
+    "operations": {
+      "early": "前期优先消耗能量提升棋手等级、占满上阵格子，不盲目D牌抢卡，稳住血量。",
+      "mid": "中期凑齐蔡文姬+扁鹊+露娜核心，利用词条联动提升全队等级，逐步优化站位。",
+      "late": "后期上7人口补曹操、甄姬，形成完整续航+消耗闭环。"
+    },
+    "counters": ["fuxuomulan"],
+    "sources": [
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026",
+        "note": "上手指南·新手阵容推荐（毒奶续航流）"
+      },
+      {
+        "platform": "玩一玩",
+        "author": "卷心菜",
+        "url": "https://www.wywyx.com/",
+        "date": "2026-09",
+        "note": "王者万象棋上手指南"
+      }
+    ]
+  },
+  {
+    "id": "fuxuomulan",
+    "name": "复活木兰拉扯流",
+    "tier": "T0",
+    "fitType": "战斗增益型",
+    "coreHeroes": ["花木兰"],
+    "lateHeroes": [],
+    "tagline": "依托花木兰复活机制反复拉扯消耗的版本强势阵容",
+    "strategy": "以花木兰的复活机制为核心，前排反复承伤复活，配合拉扯型英雄持续消耗对手，是当前版本主流强势阵容。需围绕木兰的觉醒节奏运营。",
+    "positioning": "花木兰顶前排承伤并触发复活，后排输出英雄在安全位输出；利用复活时间差拉扯，避免被一波带走。",
+    "equipment": "木兰优先肉装与复活类装备提升承伤与续航，后排补输出装打持续伤害。",
+    "operations": {
+      "early": "前期稳住血量，优先拿到木兰并规划觉醒路线。",
+      "mid": "中期围绕木兰觉醒节奏补拉扯型英雄，提升整体坦度与续航。",
+      "late": "后期上7人口完善阵容，靠复活拉扯拖垮对手。"
+    },
+    "counters": ["dunaixuhang"],
+    "sources": [
+      {
+        "platform": "玩一玩",
+        "author": "卷心菜",
+        "url": "https://www.wywyx.com/",
+        "date": "2026-09-10",
+        "note": "王者万象棋最强阵容推荐（复活木兰拉扯流）"
+      }
+    ]
+  },
+  {
+    "id": "citiaoliandong",
+    "name": "词条联动流（周瑜+小乔）",
+    "tier": "T1",
+    "fitType": "经济运营型",
+    "coreHeroes": ["周瑜", "小乔"],
+    "lateHeroes": [],
+    "tagline": "靠英雄词条连锁放大，而非硬凑阵营羁绊的质变流",
+    "strategy": "本游戏更看重英雄之间的词条搭配。周瑜上场即可让全队所有英雄等级+1，再配上小乔该加成翻倍。这种连锁加成远强于硬凑阵营羁绊，选牌时多看核心卡词条再补能搭配的棋子。",
+    "positioning": "周瑜、小乔置后排保护，前排放坦克吸收伤害；词条叠满后整体等级与强度质变。",
+    "equipment": "周瑜/小乔堆法强装放大词条收益，前排补肉装。",
+    "operations": {
+      "early": "前期优先拿周瑜、小乔核心，其余位置用低费卡过渡。",
+      "mid": "中期围绕词条补能联动的棋子，提升连锁层数。",
+      "late": "后期上7人口补全联动链，形成等级碾压。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026",
+        "note": "上手指南·词条联动机制"
+      }
+    ]
+  },
+  {
+    "id": "jingjisu7",
+    "name": "经济速7运营流",
+    "tier": "T1",
+    "fitType": "经济运营型",
+    "coreHeroes": [],
+    "lateHeroes": [],
+    "tagline": "不赌阵容、先上人口，用7人口上限吃质量红利",
+    "strategy": "本游戏没有利息与连胜连败补偿，能量存着不会变多，建议优先花在核心英雄与提升棋手等级上。3级、5级分别解锁第6、7个上阵格子，先把场上位置占满再优化阵容，经济不易崩盘。",
+    "positioning": "站位随阵容变化，原则是前排坦、后排输出；战斗全程自动，战前务必检查站位。",
+    "equipment": "通用：核心英雄优先拿关键装，其余随词条补。",
+    "operations": {
+      "early": "前期优先消耗能量提升棋手等级到3级解锁6人口。",
+      "mid": "中期冲5级解锁7人口，占满格子稳住血量。",
+      "late": "后期在7人口基础上优化核心阵容与装备。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "王者营地",
+        "author": "王者万象棋官方",
+        "url": "https://camp.qq.com/h5/webdist/info-detail.html?iInfoId=18930010",
+        "date": "2026",
+        "note": "玩法爆料·人口与能量机制"
+      },
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026",
+        "note": "上手指南·经济运营要稳"
+      }
+    ]
+  },
+  {
+    "id": "qianpaitank",
+    "name": "前排坦克控制流",
+    "tier": "T2",
+    "fitType": "战斗增益型",
+    "coreHeroes": [],
+    "lateHeroes": [],
+    "tagline": "用坦度与控制拖住节奏，给后排创造输出窗口",
+    "strategy": "站位思路与传统王者一致：前排坦克吸收伤害与控制，后排输出。战斗全程自动，因此战前检查站位尤为关键——对面输出猛就把坦克顶前，对面控制多就把远程后挪。",
+    "positioning": "明确前后排分工：坦克/控制顶前，输出/辅助后排；根据对手阵容动态调整。",
+    "equipment": "前排堆肉装与控制装，后排堆输出装。",
+    "operations": {
+      "early": "前期拿坦度英雄稳住前排。",
+      "mid": "中期补控制与输出，形成前后排配合。",
+      "late": "后期上7人口强化核心坦克与后排输出。"
+    },
+    "counters": [],
+    "sources": [
+      {
+        "platform": "王者营地",
+        "author": "王者万象棋官方",
+        "url": "https://camp.qq.com/h5/webdist/info-detail.html?iInfoId=18930010",
+        "date": "2026",
+        "note": "玩法爆料·站位与装备"
+      },
+      {
+        "platform": "王者攻略库(ima)",
+        "author": "王者万象棋攻略库",
+        "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+        "date": "2026",
+        "note": "上手指南·站位思路"
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "baige",
+    "name": "白歌",
+    "type": "经济运营型",
+    "skill": "提升能量获取效率，利于前期稳血滚经济（示例描述，待官方数据核实）",
+    "talent": "经济运营",
+    "desc": "经济运营型棋手，适合需要存能量拿核心的阵容。",
+    "source": {
+      "platform": "王者营地",
+      "author": "王者万象棋官方爆料",
+      "url": "https://camp.qq.com/h5/webdist/info-detail.html?iInfoId=18930010",
+      "date": "2026",
+      "note": "玩法爆料·棋手设定"
+    }
+  },
+  {
+    "id": "qiaoxi",
+    "name": "乔汐",
+    "type": "战斗增益型",
+    "skill": "上阵英雄战斗属性增益（示例描述，待官方核实）",
+    "talent": "战斗增益",
+    "desc": "战斗增益型，适合拼质量的爆发/拉扯阵容。",
+    "source": {
+      "platform": "王者营地",
+      "author": "王者万象棋官方爆料",
+      "url": "https://camp.qq.com/h5/webdist/info-detail.html?iInfoId=18930010",
+      "date": "2026",
+      "note": "玩法爆料·棋手设定"
+    }
+  },
+  {
+    "id": "xiangxiang",
+    "name": "香香",
+    "type": "战斗增益型",
+    "skill": "输出类增益（示例描述，待官方核实）",
+    "desc": "战斗增益型，强化后排输出。",
+    "source": {
+      "platform": "王者营地",
+      "author": "王者万象棋官方爆料",
+      "url": "https://camp.qq.com/h5/webdist/info-detail.html?iInfoId=18930010",
+      "date": "2026",
+      "note": "玩法爆料·棋手设定"
+    }
+  },
+  {
+    "id": "ex_econ",
+    "name": "【示例】运营宗师",
+    "type": "经济运营型",
+    "skill": "示例占位，请替换为官方棋手数据",
+    "desc": "占位示例，标记为待替换。",
+    "source": null,
+    "placeholder": true
+  },
+  {
+    "id": "ex_combat",
+    "name": "【示例】战意统领",
+    "type": "战斗增益型",
+    "skill": "示例占位，请替换为官方棋手数据",
+    "desc": "占位示例，标记为待替换。",
+    "source": null,
+    "placeholder": true
+  }
+]
