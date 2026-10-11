@@ -8,6 +8,7 @@ import { RecommendStep } from './components/RecommendStep';
 import { SourcesPanel } from './components/SourcesPanel';
 import { Footer } from './components/Footer';
 import { useGameData } from './hooks/useGameData';
+import { useFavorites } from './hooks/useFavorites';
 import { recommendLineups } from './lib/recommend';
 
 /**
@@ -20,6 +21,8 @@ export default function App() {
   const [bannedIds, setBannedIds] = useState<string[]>([]);
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sourcesOpen, setSourcesOpen] = useState(false);
+  const favorites = useFavorites();
+  const [favOnly, setFavOnly] = useState(false);
 
   const player = data.chessPlayers.find((p) => p.id === playerId) ?? null;
   const scored = recommendLineups(data.lineups, bannedIds, player);
@@ -33,6 +36,7 @@ export default function App() {
     setStep(1);
     setBannedIds([]);
     setPlayerId(null);
+    setFavOnly(false);
   };
 
   return (
@@ -76,6 +80,10 @@ export default function App() {
                   bannedCount={bannedIds.length}
                   player={player}
                   onRestart={restart}
+                  favoriteIds={favorites.ids}
+                  onToggleFavorite={favorites.toggle}
+                  favOnly={favOnly}
+                  onToggleFavOnly={() => setFavOnly((v) => !v)}
                 />
               )}
             </motion.div>

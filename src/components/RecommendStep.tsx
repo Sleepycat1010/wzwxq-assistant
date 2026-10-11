@@ -1,22 +1,35 @@
 import { motion } from 'framer-motion';
 import type { ChessPlayer } from '../types';
 import type { ScoredLineup } from '../lib/recommend';
+import { cn } from '../lib/cn';
 import { LineupCard } from './LineupCard';
 
 /**
- * Step 3：推荐结果。
+ * Step 3：推荐结果 + 本地收藏。
  */
 export function RecommendStep({
   scored,
   bannedCount,
   player,
   onRestart,
+  favoriteIds,
+  onToggleFavorite,
+  favOnly,
+  onToggleFavOnly,
 }: {
   scored: ScoredLineup[];
   bannedCount: number;
   player: ChessPlayer;
   onRestart: () => void;
+  favoriteIds: string[];
+  onToggleFavorite: (id: string) => void;
+  favOnly: boolean;
+  onToggleFavOnly: () => void;
 }) {
+  const displayed = favOnly
+    ? scored.filter((s) => favoriteIds.includes(s.lineup.id))
+    : scored;
+
   return (
     <section>
       <div className="mb-5">
@@ -27,15 +40,29 @@ export function RecommendStep({
       </div>
 
       {/* 概要条 */}
-      <div className="card-base mb-6 flex flex-wrap items-center justify-between gap-3 p-4">
+      <div className="card-base mb-4 flex flex-wrap items-center justify-between gap-3 p-4">
         <div className="text-sm text-text-dim">
-          已禁用 <span className="font-mono text-crimson">{bannedCount}</span> 套 ·
-          已选棋手{' '}
+          已禁用 <span className="font-mono text-crimson">{bannedCount}</span> 套
+          · 已选棋手{' '}
           <span className="font-mono text-gold">{player?.name ?? '—'}</span>
         </div>
-        <span className="rounded-full bg-jade/15 px-3 py-1 text-sm text-jade">
-          共 {scored.length} 套可用
-        </span>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={onToggleFavOnly}
+            className={cn(
+              'rounded-full border px-3 py-1 text-sm transition-colors',
+              favOnly
+                ? 'border-gold bg-gold/10 text-gold'
+                : 'border-white/10 text-text-dim hover:border-gold/30',
+            )}
+          >
+            ★ 只看收藏{favoriteIds.length > 0 ? ` (${favoriteIds.length})` : ''}
+          </button>
+          <span className="rounded-full bg-jade/15 px-3 py-1 text-sm text-jade">
+            共 {scored.length} 套可用
+          </span>
+        </div>
       </div>
 
       {scored.length === 0 ? (
@@ -45,10 +72,29 @@ export function RecommendStep({
             请返回第一步取消部分禁用，或点击「重新开始」重新选择。
           </p>
         </div>
+      ) : displayed.length === 0 ? (
+        <div className="card-base p-10 text-center text-text-dim">
+          {favOnly ? (
+            <>
+              <p className="font-display text-lg text-text">还没有收藏的阵容</p>
+              <p className="mt-2 text-sm">
+                在卡片右上角点击 ☆ 即可收藏，刷新或重开也会保留。
+              </p>
+            </>
+          ) : (
+            <p className="font-display text-lg text-text">没有可推荐的阵容</p>
+          )}
+        </div>
       ) : (
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          {scored.map((s, i) => (
-            <LineupCard key={s.lineup.id} scored={s} index={i} />
+          {displayed.map((s, i) => (
+            <LineupCard
+              key={s.lineup.id}
+              scored={s}
+              index={i}
+              favorite={favoriteIds.includes(s.lineup.id)}
+              onToggleFavorite={() => onToggleFavorite(s.lineup.id)}
+            />
           ))}
         </div>
       )}

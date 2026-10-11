@@ -64,10 +64,14 @@ export function LineupCard({
   scored,
   index,
   defaultOpen,
+  favorite,
+  onToggleFavorite,
 }: {
   scored: ScoredLineup;
   index: number;
   defaultOpen?: boolean;
+  favorite?: boolean;
+  onToggleFavorite?: () => void;
 }) {
   const [open, setOpen] = useState(defaultOpen ?? index === 0);
   const { lineup, reasons } = scored;
@@ -95,6 +99,24 @@ export function LineupCard({
           </div>
           <p className="mt-1 text-sm text-text-dim">{lineup.tagline}</p>
         </div>
+
+        {/* 收藏星标 */}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleFavorite?.();
+          }}
+          aria-label={favorite ? '取消收藏' : '收藏阵容'}
+          className={cn(
+            'mt-0.5 shrink-0 rounded-lg border px-2 py-1 text-lg leading-none transition-colors',
+            favorite
+              ? 'border-gold/50 bg-gold/10 text-gold'
+              : 'border-white/10 text-text-dim hover:border-gold/40 hover:text-gold',
+          )}
+        >
+          {favorite ? '★' : '☆'}
+        </button>
       </div>
 
       {/* 展开/收起按钮 */}
