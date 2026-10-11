@@ -160,7 +160,7 @@ export function LineupCard({
   /** 点击星级回调（传 0 清除） */
   onRate?: (value: number) => void;
 }) {
-  const [open, setOpen] = useState(defaultOpen ?? index === 0);
+  const [open, setOpen] = useState(defaultOpen ?? false);
   const { lineup, reasons } = scored;
   // 官方评分仅在 >0 时有意义（官方对多数阵容未给分，值为 0）
   const officialScore =
@@ -176,7 +176,10 @@ export function LineupCard({
     >
       {/* 头部：排名 + 名称 + 评级 + 一句话 */}
       <div className="flex items-start gap-3">
-        <div className="flex h-10 w-10 shrink-0 flex-col items-center justify-center rounded-xl bg-gradient-to-br from-gold to-gold-2 font-mono text-bg">
+        <div
+          className="flex h-10 w-10 shrink-0 flex-col items-center justify-center rounded-xl bg-gradient-to-br from-gold to-gold-2 font-mono text-bg"
+          title="推荐名次：按当前排序方式排出的第几名"
+        >
           <span className="text-sm font-bold leading-none">{index + 1}</span>
         </div>
         <div className="min-w-0 flex-1">

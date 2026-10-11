@@ -44,7 +44,7 @@ function LogoMark() {
         stroke="rgba(11,13,18,0.55)"
         strokeWidth="1.6"
       />
-      {/* 「将」字 */}
+      {/* 「帅」字 */}
       <text
         x="24"
         y="22"
@@ -55,7 +55,7 @@ function LogoMark() {
         fontWeight="900"
         fontFamily="'Noto Sans SC', sans-serif"
       >
-        将
+        帅
       </text>
     </motion.svg>
   );
