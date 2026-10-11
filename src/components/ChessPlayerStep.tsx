@@ -25,7 +25,7 @@ export function ChessPlayerStep({
       <div className="mb-5">
         <h2 className="font-display text-xl text-text">第二步 · 选择你的棋手</h2>
         <p className="mt-1 text-sm text-text-dim">
-          单选本局棋手，系统会据此推荐更契合的阵容（示例棋手数据待官方核实）。
+          单选本局棋手（已收录全部 20 位官方棋手），系统会据此推荐更契合的阵容。
         </p>
       </div>
 

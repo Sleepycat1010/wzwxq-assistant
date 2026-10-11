@@ -29,9 +29,11 @@ export type HeroPosition = {
   name: string;
   /** 棋盘列坐标（0 起） */
   x: number | null;
-  /** 棋盘行坐标（0 起；通常越大越靠后） */
+  /** 棋盘行坐标（0 起；z 越小越靠前排） */
   z: number | null;
   level?: number | null;
+  /** 该英雄的推荐装备（官方 per-hero equipList 反推） */
+  equip?: string[];
 };
 
 /** 阵容 */
@@ -85,6 +87,10 @@ export type ChessPlayer = {
   desc: string;
   /** 棋手出处（有则填，无则 null） */
   source?: Source | null;
+  /** 官方头像 / 海报图标（CDN） */
+  icon?: string;
+  /** 官方棋手 id */
+  lordId?: number;
   /** 示例占位（待官方数据替换）标记 */
   placeholder?: boolean;
 };

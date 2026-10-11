@@ -26,18 +26,36 @@ const SOURCES = {
   lineup: (page) => SOURCE_BASE + `598252_oslineupbyrecommend_pro_${page}.js`,
 };
 
-// 棋手名 -> 类型（经济运营型 / 战斗增益型），用于阵容 fitType 标注。
-// 来源：本项目 curated chessPlayers.json（白歌/乔汐/香香等真实棋手）。
+// 棋手名 -> 类型（经济运营型 / 战斗增益型 / 通用），用于阵容 fitType 标注。
+// 覆盖官方全部 20 位棋手（与 chessPlayers.json 保持一致）。
 const LORD_TYPE_MAP = {
   白歌: '经济运营型',
-  乔汐: '战斗增益型',
+  乔汐: '经济运营型',
   香香: '战斗增益型',
   庄小鱼: '经济运营型',
   瑶妹: '战斗增益型',
-  玉环: '战斗增益型',
+  玉环: '经济运营型',
   马可: '经济运营型',
-  弈星: '战斗增益型',
+  弈星: '通用',
+  小妲己: '经济运营型',
+  闹闹: '经济运营型',
+  姜导: '战斗增益型',
+  班叔: '战斗增益型',
+  昭君: '战斗增益型',
+  嬴律: '经济运营型',
+  常小娥: '战斗增益型',
+  明先生: '经济运营型',
+  孙小宾: '通用',
+  镜: '战斗增益型',
+  阿离: '战斗增益型',
+  安琪拉: '战斗增益型',
 };
+
+/** 判定一段描述是否为"废话占位"（如"如图所示"），需要反推补全。 */
+function isJunkText(text) {
+  if (!text) return true;
+  return /如图所示|见上图|如上图|见下图|如左图|如右图|点击查看/.test(text);
+}
 
 const PLATFORM = '王者万象棋官方（营地/官网）';
 
@@ -155,16 +173,53 @@ function tierFromUseNum(useNum, sortedNums) {
   return 'T2';
 }
 
+/**
+ * 出装思路：优先用官方 equipDesc（过滤废话占位），缺失时按每个英雄的
+ * equipList 反推"按英雄列出推荐装备"，保证出装思路永远有内容。
+ */
+function buildEquipment(l) {
+  const desc = cleanDesc(l.equipDesc || '');
+  if (!isJunkText(desc)) return desc;
+  const items = [];
+  for (const h of l.heroList || []) {
+    const eq = (h.equipList || []).map((e) => e.name).filter(Boolean);
+    if (eq.length) items.push(`${h.name}：${eq.join('、')}`);
+  }
+  return items.length ? '推荐出装（按英雄）：' + items.join('；') : '';
+}
+
+/**
+ * 站位思路：优先用官方 positionDesc（过滤"如图所示"废话），缺失时按官方坐标
+ * 反推前后排分布（z 越小越靠前排）。z=0 为前排。
+ */
+function buildPositioning(l) {
+  const desc = cleanDesc(l.positionDesc || '');
+  if (!isJunkText(desc)) return desc;
+  const rows = {};
+  for (const h of l.heroList || []) {
+    const z = h.positionZ;
+    if (typeof z !== 'number') continue;
+    if (!rows[z]) rows[z] = [];
+    rows[z].push(h.name);
+  }
+  const zs = Object.keys(rows).map(Number).sort((a, b) => a - b);
+  if (!zs.length) return '';
+  const parts = zs.map((z, i) => {
+    const label = i === 0 ? '前排' : i === zs.length - 1 ? '后排' : `第${i + 1}排`;
+    return `${label}(${z})：${rows[z].join('、')}`;
+  });
+  return '站位（按坐标反推）：' + parts.join('；');
+}
+
 async function buildLineups(heroFactionIdx) {
   const all = [];
   let page = 1;
-  // 分页抓取，直到拿不到数组或为空（最多 30 页保护）
+  // 分页抓取：遇到空页或非法响应才停止（首末页可能不足 20 条，不再据此提前退出）
   while (page <= 30) {
     const data = await fetchJSON(SOURCES.lineup(page));
     if (!data || !Array.isArray(data) || data.length === 0) break;
     all.push(...data);
     page += 1;
-    if (data.length < 20) break; // 末页通常不足 20
   }
 
   const useNums = all.map((l) => Number(l.useNum) || 0).sort((a, b) => a - b);
@@ -175,6 +230,7 @@ async function buildLineups(heroFactionIdx) {
       x: h.positionX ?? null,
       z: h.positionZ ?? null,
       level: h.level ?? null,
+      equip: (h.equipList || []).map((e) => e.name).filter(Boolean),
     }));
     const recommendedLords = (l.lordList || []).map((x) => x.name);
 
@@ -217,8 +273,8 @@ async function buildLineups(heroFactionIdx) {
       heroPositions: heroes,
       tagline: cleanDesc(l.brief || '').slice(0, 60),
       strategy: cleanDesc(l.brief || ''),
-      positioning: cleanDesc(l.positionDesc || ''),
-      equipment: cleanDesc(l.equipDesc || ''),
+      positioning: buildPositioning(l),
+      equipment: buildEquipment(l),
       operations: ops,
       recommendedLords,
       useNum: Number(l.useNum) || 0,

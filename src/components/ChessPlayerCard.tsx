@@ -31,14 +31,27 @@ export function ChessPlayerCard({
       )}
     >
       <div className="flex items-center justify-between gap-2">
-        <h3
-          className={cn(
-            'font-display text-lg leading-tight',
-            player.placeholder ? 'text-text-dim' : 'text-text',
-          )}
-        >
-          {player.name}
-        </h3>
+        <div className="flex min-w-0 items-center gap-2">
+          {player.icon ? (
+            <img
+              src={player.icon}
+              alt={player.name}
+              loading="lazy"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+              className="h-9 w-9 shrink-0 rounded-lg border border-white/10 object-cover"
+            />
+          ) : null}
+          <h3
+            className={cn(
+              'truncate font-display text-lg leading-tight',
+              player.placeholder ? 'text-text-dim' : 'text-text',
+            )}
+          >
+            {player.name}
+          </h3>
+        </div>
         {player.placeholder ? (
           <span className="rounded bg-white/10 px-2 py-0.5 text-[11px] text-text-dim">
             示例·待核实

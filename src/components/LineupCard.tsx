@@ -58,51 +58,61 @@ function OperationColumn({
   );
 }
 
-/** 站位棋盘：依官方 positionX / positionZ 绘制 7×N 网格 */
+/** 站位棋盘：依官方 positionX / positionZ 绘制网格；z 越小越靠前排，前排置于底部 */
 function PositionBoard({
   positions,
 }: {
-  positions: { name: string; x: number | null; z: number | null }[];
+  positions: { name: string; x: number | null; z: number | null; equip?: string[] }[];
 }) {
   const valid = positions.filter(
     (p) => typeof p.x === 'number' && typeof p.z === 'number',
   );
   if (valid.length === 0) return null;
   const cols = Math.max(6, ...valid.map((p) => (p.x as number) + 1));
-  const rows = Math.max(2, ...valid.map((p) => (p.z as number) + 1));
+  // 后排(z 大)在上，前排(z=0)在下
+  const zs = [...new Set(valid.map((p) => p.z as number))].sort((a, b) => b - a);
+  const rowLabel = (i: number) =>
+    i === zs.length - 1 ? '前排' : i === 0 ? '后排' : `第${i + 1}排`;
 
   return (
     <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
       <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
         站位棋盘
       </div>
-      <div
-        className="grid gap-1"
-        style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
-      >
-        {Array.from({ length: rows }).map((_, r) =>
-          Array.from({ length: cols }).map((__, c) => {
-            const hero = valid.find(
-              (p) => p.x === c && p.z === r,
-            );
-            return (
-              <div
-                key={`${r}-${c}`}
-                className={cn(
-                  'flex aspect-square items-center justify-center rounded-md text-center text-[10px] leading-tight',
-                  hero
-                    ? 'bg-gold/15 text-gold'
-                    : 'bg-white/[0.03] text-text-dim/40',
-                )}
-              >
-                {hero ? hero.name.slice(0, 2) : ''}
-              </div>
-            );
-          }),
-        )}
+      <div className="space-y-1">
+        {zs.map((z, i) => (
+          <div key={z} className="flex items-stretch gap-1">
+            <div className="flex w-8 shrink-0 items-center justify-center rounded bg-white/5 text-[10px] text-text-dim">
+              {rowLabel(i)}
+            </div>
+            <div
+              className="grid flex-1 gap-1"
+              style={{
+                gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
+              }}
+            >
+              {Array.from({ length: cols }).map((__, c) => {
+                const hero = valid.find((p) => p.x === c && p.z === z);
+                return (
+                  <div
+                    key={c}
+                    className={cn(
+                      'flex aspect-square items-center justify-center rounded-md text-center text-[10px] leading-tight',
+                      hero
+                        ? 'bg-gold/15 text-gold'
+                        : 'bg-white/[0.03] text-text-dim/40',
+                    )}
+                  >
+                    {hero ? hero.name.slice(0, 2) : ''}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
       </div>
       <div className="mt-1.5 text-[10px] text-text-dim/70">
-        （上为前排，下为后排）
+        （下为前排 z=0，上为后排）
       </div>
     </div>
   );
@@ -270,6 +280,29 @@ export function LineupCard({
               {/* 站位棋盘 */}
               {lineup.heroPositions && lineup.heroPositions.length > 0 ? (
                 <PositionBoard positions={lineup.heroPositions} />
+              ) : null}
+
+              {/* 出装明细（按英雄） */}
+              {lineup.heroPositions &&
+              lineup.heroPositions.some((h) => h.equip && h.equip.length > 0) ? (
+                <div>
+                  <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-text-dim">
+                    出装明细（按英雄）
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {lineup.heroPositions
+                      .filter((h) => h.equip && h.equip.length > 0)
+                      .map((h) => (
+                        <span
+                          key={h.name}
+                          className="rounded-lg border border-white/10 bg-surface-2 px-2.5 py-1 text-sm text-text-dim"
+                        >
+                          <span className="text-gold">{h.name}</span>：
+                          {h.equip!.join('、')}
+                        </span>
+                      ))}
+                  </div>
+                </div>
               ) : null}
 
               {/* 站位 / 出装 */}

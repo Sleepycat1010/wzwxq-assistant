@@ -42,11 +42,6 @@ export default function App() {
   const player = data.chessPlayers.find((p) => p.id === playerId) ?? null;
   const scored = recommendLineups(data.lineups, bannedIds, player);
 
-  const toggleBan = (id: string) =>
-    setBannedIds((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
-    );
-
   // 阵营一键禁用 / 启用：若该阵营全部已禁用则解除，否则全部禁用
   const toggleFaction = (faction: string) => {
     const inFaction = data.lineups
@@ -101,7 +96,6 @@ export default function App() {
                   lineups={data.lineups}
                   factions={factions}
                   bannedIds={bannedIds}
-                  onToggleBan={toggleBan}
                   onToggleFaction={toggleFaction}
                   onNext={() => setStep(2)}
                 />

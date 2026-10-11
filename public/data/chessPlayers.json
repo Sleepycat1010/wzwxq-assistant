@@ -6,6 +6,8 @@
     "skill": "棋手技【即兴创作】：每完成 4 次英雄合成，获得 1 张即兴创作牌，可随机复制场上 1 名已部署英雄，加速高阶核心英雄成型。",
     "talent": "合成复制",
     "desc": "刷牌/合成向棋手，适合需要快速成型核心、冲击高星的阵容（如三分倒转流）。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/63b4742b5a23950a558afc07e5622296.png",
+    "lordId": 33,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -21,6 +23,8 @@
     "skill": "棋手技【温柔呼唤】：战斗开始时，随机获得 1 张 1-5 阶的转瞬英雄牌，提供独立于刷新池的高阶卡获取途径，可提前锁定核心 C 位。",
     "talent": "收益运营",
     "desc": "收益运营型棋手，稳定补充资源，适合慢节奏规划体系的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/1b87c6a9b387b9a6bd48cefaf2967209.png",
+    "lordId": 22,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -36,6 +40,8 @@
     "skill": "棋手技【武器协同】：战斗开始时，根据场上 1-3 阶且等级不低于 10 的英雄数量，为英雄增加攻击力（基础 20，每满足 1 名 +20），前期过渡与中期压制的重要输出补充。",
     "talent": "战力养成",
     "desc": "战力养成型棋手，直接为棋子提供增益，操作简单、养成线性，适合轻松上分。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ee127a1c111ea90f739f985fb99b0040.png",
+    "lordId": 50,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -51,6 +57,8 @@
     "skill": "棋手技【灵感馈赠】：棋手等级每次提升时，随机获得 1 张效果牌，功能多样，为不同阶段战术选择提供极大灵活性。",
     "talent": "收益运营",
     "desc": "收益运营型棋手，持续补充功能性卡牌，适合雷霆战机嬴政等远程体系。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/93093539e579d83840f98dfb6e200adf.png",
+    "lordId": 31,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -66,6 +74,8 @@
     "skill": "棋手技【灵鹿协战】：召唤一只小鹿参战，其等级随回合数及胜负情况自动成长（每回合 +2，上回合胜利 +4），顺起来越滚越快。",
     "talent": "战力养成",
     "desc": "战力养成型棋手，独立战斗单位增强场面，适合牺牲流李信、大河图腾等。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b70ff9e54e3a0d76fba729a5bbb1c792.png",
+    "lordId": 11,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -81,6 +91,8 @@
     "skill": "棋手技【琵琶三叠】：每打出 3 张非觉醒英雄牌，触发“扫佛”或“吟揉”，轮流为低等级英雄提供增益或给予随机转瞬英雄牌，兼顾战力强化与阵容拓展。",
     "talent": "刷牌成长",
     "desc": "刷牌型棋手，一边补成长一边补储备，适合需要大量出牌滚雪球的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/76faabc5c6c354f8221b789e17058253.png",
+    "lordId": 25,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -96,6 +108,8 @@
     "skill": "棋手技【宝藏猎人】：每打出 4 张 3 阶及以下的英雄牌，获得 1 张宝藏牌，效果多样，为中后期发展提供额外成长维度。",
     "talent": "刷牌成长",
     "desc": "刷牌型棋手，适配多低阶卡牌的体系（如三分倒转流）。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b3fd4e0aa4faaf1c23804e7a554e0ba3.png",
+    "lordId": 32,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
@@ -107,16 +121,222 @@
   {
     "id": "yixing",
     "name": "弈星",
-    "type": "经济运营型",
+    "type": "通用",
     "skill": "棋手技【临摹之术】：战斗开始时，随机复制 1 名敌方英雄加入己方战场，出其不意地克制对手阵容。",
     "talent": "收益运营",
-    "desc": "收益运营型棋手，高风险高回报，适合灵活应对不同对手。",
+    "desc": "通用/容错型棋手，高风险高回报，适合灵活应对不同对手。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/d7b23b766a880df73d7d59f9c679cd40.png",
+    "lordId": 36,
     "source": {
       "platform": "虎牙",
       "author": "虎牙·全18位棋手详解",
       "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
       "date": "2026",
       "note": "棋手技能详解·弈星"
+    }
+  },
+  {
+    "id": "xiaodaji",
+    "name": "小妲己",
+    "type": "经济运营型",
+    "skill": "棋手技【牌库馈赠】：每购买 4 张牌，随机获得 1 张效果牌，稳定补充功能性卡牌，增强中后期战术应变。",
+    "talent": "牌库馈赠",
+    "desc": "经济运营型棋手，适合频繁使用效果牌、打牌流的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/7e00b12adcc7c6a48bf625aa91e2454f.png",
+    "lordId": 10,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·小妲己"
+    }
+  },
+  {
+    "id": "naonao",
+    "name": "闹闹",
+    "type": "经济运营型",
+    "skill": "棋手技【阵营抉择】：开局在两个随机阵营中选择其一，之后每次刷新商店都必定出现一张所选阵营的英雄牌，适合专注单一阵营或双核混搭的稳定运营。",
+    "talent": "阵营抉择",
+    "desc": "经济运营型棋手，稳定获取指定阵营卡，适合单一阵营体系。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b64c5e798a8705e1d0bb4077dde7fc5f.png",
+    "lordId": 40,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·闹闹"
+    }
+  },
+  {
+    "id": "jiangdao",
+    "name": "姜导",
+    "type": "战斗增益型",
+    "skill": "棋手技【主角设定】：指定一名己方英雄为“主角”，之后每打出 2 张牌，该主角等级 +1，鼓励高频出牌，契合快攻流、连携流。",
+    "talent": "主角设定",
+    "desc": "战斗增益型棋手，靠高频出牌喂核心，适合快攻/连携体系。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/434ca597839b623d436a73232fe0619d.png",
+    "lordId": 41,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·姜导"
+    }
+  },
+  {
+    "id": "banshu",
+    "name": "班叔",
+    "type": "战斗增益型",
+    "skill": "棋手技【便携机关】：开局获得 2 张便携机关，并在棋手等级达到 2/3/4 级时分别获得热能陷阱、电磁弹簧或等离子屏障，自动触发提供强大被动控场。",
+    "talent": "便携机关",
+    "desc": "战斗增益型棋手，自动控场能力强，适合需要稳定场面的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ad8947e7d30e55756a7d76896f46ea29.png",
+    "lordId": 35,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·班叔"
+    }
+  },
+  {
+    "id": "zhaojun",
+    "name": "昭君",
+    "type": "战斗增益型",
+    "skill": "棋手技【寒霜转化】：指定一名己方英雄并将其冻结，战斗结束后该英雄有概率提升一阶并继承等级，是突破升阶瓶颈、激活高阶羁绊的关键手段。",
+    "talent": "寒霜转化",
+    "desc": "战斗增益型棋手，突破升阶瓶颈，适合需要高阶羁绊的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/38353de545d3bc7eef4e286b4243faa8.png",
+    "lordId": 34,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·昭君"
+    }
+  },
+  {
+    "id": "yinglü",
+    "name": "嬴律",
+    "type": "经济运营型",
+    "skill": "棋手技【战略决策】：开局获得一张“战略决策”牌，使用后可选择一项全局增益（如能量获取加成、经验转化提升等），属于强大的资源调控技能。",
+    "talent": "战略决策",
+    "desc": "经济运营型棋手，全局资源调控，适合多种体系。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/168aae5e0b3a8a4528ddd89bb14868e7.png",
+    "lordId": 43,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·嬴律"
+    }
+  },
+  {
+    "id": "changxiaoe",
+    "name": "常小娥",
+    "type": "战斗增益型",
+    "skill": "棋手技【随机助力】：使用后随机使一名己方英雄等级 +2，关键时刻迅速提升核心单位的坦度或输出，应对突发战况。",
+    "talent": "随机助力",
+    "desc": "战斗增益型棋手，随机强化核心，适合突击爆发阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/585ca34d534d39608202e4be766a675c.png",
+    "lordId": 24,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·常小娥"
+    }
+  },
+  {
+    "id": "mingxiansheng",
+    "name": "明先生",
+    "type": "经济运营型",
+    "skill": "棋手技【卦象演算】：在“丰”和“节”两种卦象中选择其一，持续 3 回合；“丰”卦适合高频运营，“节”卦适合长线续航，为不同流派提供选择。",
+    "talent": "卦象演算",
+    "desc": "经济运营型棋手，按流派选卦象，适合长线或高频运营。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/6db784af711d4b968c0d407a70360b63.png",
+    "lordId": 39,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·明先生"
+    }
+  },
+  {
+    "id": "sunxiaobin",
+    "name": "孙小宾",
+    "type": "通用",
+    "skill": "棋手技【时光倒流】：可以回溯并再次使用上一回合的英雄牌或效果牌，极大提升操作容错率，适合二次释放关键控制或爆发效果。",
+    "talent": "时光倒流",
+    "desc": "通用/容错型棋手，操作容错高，适合需要精确释放关键牌的玩法。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/b44fa31d1cefd1f812cef5901bb5db0c.png",
+    "lordId": 38,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·孙小宾"
+    }
+  },
+  {
+    "id": "jing",
+    "name": "镜",
+    "type": "战斗增益型",
+    "skill": "棋手技【镜像复刻】：使用后获得一张镜像牌，该牌自动变为上一张打出的英雄牌，可用于复制高价值英雄或临时补全特定羁绊。",
+    "talent": "镜像复刻",
+    "desc": "战斗增益型棋手，复制高价值英雄，适合补全羁绊或爆发。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/aa7d598f183346447345b42eecd99669.png",
+    "lordId": 21,
+    "source": {
+      "platform": "虎牙",
+      "author": "虎牙·全18位棋手详解",
+      "url": "https://np.huya.com/news/articles/74a7375fb5a2bbbcc2bbe803808d34.html",
+      "date": "2026",
+      "note": "棋手技能详解·镜"
+    }
+  },
+  {
+    "id": "ali",
+    "name": "阿离",
+    "type": "战斗增益型",
+    "skill": "棋手技【枫叶舞】：指定 1 名主 C 英雄，主 C 每击败 3/7/11/15 名敌人获得强化牌“翩跃舞步”并解锁特性（恢复 / 追加转移 / 击败成长 / 攻击力成长），越杀越强；秘技【惊鸿游龙】。",
+    "talent": "枫叶舞",
+    "desc": "启动件 / 单核养成型棋手，养一个能打的主 C，越杀越强（当前版本出场率极高）。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/50ad0883c3bc185ffdd198263ab65466.png",
+    "lordId": 20,
+    "source": {
+      "platform": "王者攻略库(ima)",
+      "author": "王者万象棋攻略库",
+      "url": "https://ima.qq.com/wiki/?shareId=1effcf414b7fcd414ceef377a3b9a273eb512fd340060ac1be29adf9ca83dd34",
+      "date": "2026",
+      "note": "阿离棋手详解·枫叶舞单核流"
+    }
+  },
+  {
+    "id": "anqila",
+    "name": "安琪拉",
+    "type": "战斗增益型",
+    "skill": "棋手技【特制灵异追踪器】：比赛开始时获得飞行器与 1 张“顿悟时刻”；3 级拿顿悟时刻选神秘力量天赋；秘技累积神秘力量换“灵异探测大改装”；专属【超级连接】战斗开始时飞行器连接的英雄随机获得自身 10%-40% 等级数的临时等级。",
+    "talent": "超级连接",
+    "desc": "机制新颖的棋手，飞行器连接英雄提供临时等级，适合养高等级核心的阵容。",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/c43f858a6825abf330ce927a5a000aac.png",
+    "lordId": 51,
+    "source": {
+      "platform": "18183游戏网",
+      "author": "18183·新棋手安琪拉介绍",
+      "url": "https://m.18183.com/gonglue/202608/fdnchvcn.html",
+      "date": "2026-08",
+      "note": "安琪拉棋手介绍·飞行器机制"
     }
   }
 ]
