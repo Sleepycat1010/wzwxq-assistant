@@ -44,7 +44,7 @@ export function LordDetailModal({
                 className="h-16 w-16 rounded-xl border border-white/10"
               />
               <div className="min-w-0 flex-1">
-                <h3 className="font-display text-2xl text-text">{lord.name}</h3>
+                <h3 className="font-display text-2xl font-bold text-text">{lord.name}</h3>
                 <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
                   <span
                     className={cn(
@@ -86,7 +86,7 @@ export function LordDetailModal({
                             alt={t.name}
                             className="h-8 w-8 shrink-0 rounded-md border border-white/10"
                           />
-                          <span className="font-display text-base text-text">
+                          <span className="font-display text-base font-bold text-text">
                             {t.name}
                           </span>
                           {t.level ? (

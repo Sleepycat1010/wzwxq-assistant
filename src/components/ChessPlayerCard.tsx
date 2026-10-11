@@ -22,7 +22,7 @@ export function ChessPlayerCard({
       type="button"
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ y: -3 }}
       whileTap={{ scale: 0.98 }}
       onClick={() => onSelect(player.id)}
       aria-pressed={selected}
@@ -32,23 +32,23 @@ export function ChessPlayerCard({
       )}
     >
       <div className="flex items-center justify-between gap-2">
-        <div className="flex min-w-0 items-center gap-2">
+        <div className="flex min-w-0 items-center gap-2.5">
           <ImgIcon
-            src={player.icon}
+            src={player.avatar || player.icon}
             alt={player.name}
-            className="h-9 w-9 shrink-0 rounded-lg border border-white/10"
-            fallbackClassName="text-sm"
+            className="h-11 w-11 shrink-0 rounded-xl border border-white/10"
+            fallbackClassName="text-base"
           />
-          <h3 className="truncate font-display text-lg leading-tight text-text">
+          <h3 className="truncate font-display text-lg font-bold leading-tight text-text">
             {player.name}
           </h3>
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+      <div className="mt-3">
         <span
           className={cn(
-            'rounded-md px-2 py-0.5 font-medium',
+            'chip border-transparent px-2.5 py-0.5 text-xs font-medium',
             player.type === '经济运营型'
               ? 'bg-gold/15 text-gold'
               : player.type === '战斗增益型'
@@ -58,22 +58,21 @@ export function ChessPlayerCard({
         >
           {player.type}
         </span>
-        {player.talent ? (
-          <span className="text-text-dim">天赋 · {player.talent}</span>
-        ) : null}
       </div>
 
-      <p className="mt-2 line-clamp-2 text-sm text-text-dim">{player.skill}</p>
+      <p className="mt-3 line-clamp-2 flex-1 text-sm leading-relaxed text-text-dim">
+        {player.skill}
+      </p>
 
       <div className="mt-3 flex items-center justify-between gap-2">
-        <div
+        <span
           className={cn(
-            'inline-flex w-fit items-center gap-1 rounded-lg px-3 py-1 text-sm font-medium transition-colors',
+            'inline-flex w-fit items-center gap-1 rounded-lg px-3 py-1 text-sm font-semibold transition-colors',
             selected ? 'bg-gold text-bg' : 'bg-surface-2 text-text',
           )}
         >
           {selected ? '已选择' : '选择此棋手'}
-        </div>
+        </span>
         {onShowDetail ? (
           <button
             type="button"

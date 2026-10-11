@@ -65,7 +65,7 @@ export function SourcesPanel({
             className="card-base relative z-10 flex max-h-[85vh] w-full max-w-2xl flex-col overflow-hidden"
           >
             <div className="flex items-center justify-between border-b border-white/5 p-5">
-              <h3 className="font-display text-xl text-gold">数据来源与贡献</h3>
+              <h3 className="font-display text-xl font-bold text-gold">数据来源与贡献</h3>
               <button
                 type="button"
                 onClick={onClose}
@@ -97,7 +97,7 @@ export function SourcesPanel({
                   <div key={platform}>
                     <div className="mb-2 flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-gold" />
-                      <h4 className="font-display text-base text-text">
+                      <h4 className="font-display text-base font-bold text-text">
                         {platform}
                       </h4>
                       <span className="font-mono text-xs text-text-dim">

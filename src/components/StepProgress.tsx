@@ -2,14 +2,13 @@ import { motion } from 'framer-motion';
 import { cn } from '../lib/cn';
 
 const STEPS = [
-  { id: 1, label: '禁用阵容' },
+  { id: 1, label: '禁用阵营' },
   { id: 2, label: '选择棋手' },
   { id: 3, label: '查看推荐' },
 ] as const;
 
 /**
  * 三步进度指示。已完成步骤（id < 当前）可点击回退。
- * 设计：连接线居中穿过节点，激活节点带金边辉光，状态语义清晰。
  */
 export function StepProgress({
   current,
@@ -25,7 +24,9 @@ export function StepProgress({
       <motion.div
         className="absolute left-0 top-5 mx-6 h-px bg-gradient-to-r from-gold-2 to-gold"
         initial={false}
-        animate={{ width: `calc(${((current - 1) / (STEPS.length - 1)) * 100}% - ${(current - 1) === 0 ? 0 : 3}rem)` }}
+        animate={{
+          width: `calc(${((current - 1) / (STEPS.length - 1)) * 100}% - ${(current - 1) === 0 ? 0 : 3}rem)`,
+        }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
       />
 
@@ -47,11 +48,11 @@ export function StepProgress({
             >
               <motion.span
                 animate={{
-                  scale: active ? 1.1 : 1,
+                  scale: active ? 1.08 : 1,
                   borderColor: active
                     ? 'rgba(245,197,66,1)'
                     : done
-                      ? 'rgba(245,197,66,0.55)'
+                      ? 'rgba(245,197,66,0.5)'
                       : 'rgba(255,255,255,0.14)',
                 }}
                 className={cn(

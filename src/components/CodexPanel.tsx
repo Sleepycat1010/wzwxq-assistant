@@ -26,7 +26,7 @@ function CardItem({ card }: { card: CardBase }) {
         />
         <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <span className="truncate font-display text-base text-text">
+            <span className="truncate font-display text-base font-bold text-text">
               {card.name}
             </span>
             {qualityLabel(card.quality) ? (
@@ -65,7 +65,7 @@ function HeroItem({ hero, onClick }: { hero: Hero; onClick: () => void }) {
         />
         <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <span className="truncate font-display text-base text-text">
+            <span className="truncate font-display text-base font-bold text-text">
               {hero.name}
             </span>
             {typeof hero.cost === 'number' ? (
@@ -104,7 +104,7 @@ function LordItem({ lord, onClick }: { lord: ChessPlayer; onClick: () => void })
         />
         <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <span className="truncate font-display text-base text-text">
+            <span className="truncate font-display text-base font-bold text-text">
               {lord.name}
             </span>
           </div>
@@ -200,7 +200,7 @@ export function CodexPanel({
             className="card-base relative z-10 flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden"
           >
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/5 p-5">
-              <h3 className="font-display text-xl text-gold">基础数据库 · 图鉴</h3>
+              <h3 className="font-display text-xl font-bold text-gold">基础数据库 · 图鉴</h3>
               <button
                 type="button"
                 onClick={onClose}
@@ -262,7 +262,7 @@ export function CodexPanel({
             <div className="overflow-y-auto p-5">
               {!database && tab !== '棋手' ? (
                 <div className="card-base p-10 text-center text-text-dim">
-                  <p className="font-display text-lg text-text">
+                  <p className="font-display text-lg font-bold text-text">
                     图鉴数据加载中…
                   </p>
                   <p className="mt-2 text-sm">
@@ -274,7 +274,7 @@ export function CodexPanel({
                   {factions.map((f) => (
                     <div key={f.name} className="card-base p-4">
                       <div className="mb-2 flex items-center gap-2">
-                        <span className="font-display text-lg text-gold">
+                        <span className="font-display text-lg font-bold text-gold">
                           {f.name}
                         </span>
                         <span className="font-mono text-xs text-text-dim">

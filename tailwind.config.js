@@ -17,17 +17,18 @@ export default {
       borderRadius: {
         lg: '10px',
         xl: '12px',
-        '2xl': '18px',
+        '2xl': '16px',
+        '3xl': '20px',
       },
       fontFamily: {
-        display: ['"ZCOOL KuaiLe"', 'cursive'],
+        display: ['"Noto Sans SC"', 'sans-serif'],
         sans: ['"Noto Sans SC"', 'sans-serif'],
         mono: ['Rajdhani', 'ui-monospace', 'monospace'],
       },
       boxShadow: {
-        gold: '0 0 0 1px rgba(245,197,66,0.45), 0 12px 34px -12px rgba(245,197,66,0.40)',
-        crimson: '0 0 0 1px rgba(226,59,59,0.55), 0 12px 30px -12px rgba(226,59,59,0.45)',
-        lift: '0 18px 40px -18px rgba(0,0,0,0.75)',
+        gold: '0 0 0 1px rgba(245,197,66,0.45), 0 14px 40px -16px rgba(245,197,66,0.35)',
+        crimson: '0 0 0 1px rgba(229,72,77,0.5), 0 12px 30px -14px rgba(229,72,77,0.40)',
+        lift: '0 20px 48px -22px rgba(0,0,0,0.80)',
       },
       keyframes: {
         floaty: {

@@ -43,7 +43,7 @@ export function HeroDetailModal({
                 className="h-16 w-16 rounded-xl border border-white/10"
               />
               <div className="min-w-0 flex-1">
-                <h3 className="font-display text-2xl text-text">{hero.name}</h3>
+                <h3 className="font-display text-2xl font-bold text-text">{hero.name}</h3>
                 <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
                   {hero.relationName ? (
                     <span className="rounded-md bg-gold/15 px-2 py-0.5 text-gold">
@@ -97,7 +97,7 @@ export function HeroDetailModal({
                       className="h-12 w-12 shrink-0 rounded-lg border border-white/10"
                     />
                     <div className="min-w-0">
-                      <div className="font-display text-base text-text">
+                      <div className="font-display text-base font-bold text-text">
                         {hero.evolution.name}
                       </div>
                       <p className="whitespace-pre-line text-xs leading-relaxed text-text-dim">

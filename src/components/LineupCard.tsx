@@ -43,7 +43,7 @@ function OperationColumn({
   accent: string;
 }) {
   return (
-    <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
+    <div className="panel p-3">
       <div
         className={cn(
           'mb-1.5 font-mono text-xs font-semibold uppercase tracking-wide',
@@ -79,7 +79,7 @@ function PositionBoard({
     i === zs.length - 1 ? '前排' : i === 0 ? '后排' : `第${i + 1}排`;
 
   return (
-    <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
+    <div className="panel p-3">
       <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
         站位棋盘
       </div>
@@ -171,7 +171,7 @@ export function LineupCard({
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <h3 className="font-display text-lg text-text">{lineup.name}</h3>
+            <h3 className="font-display text-lg font-bold text-text">{lineup.name}</h3>
             <TierBadge tier={lineup.tier} />
             <span className="rounded-md bg-white/10 px-2 py-0.5 text-xs text-text-dim">
               {lineup.fitType}
@@ -331,7 +331,7 @@ export function LineupCard({
 
               {/* 站位 / 出装 */}
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
+                <div className="panel p-3">
                   <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
                     站位思路
                   </div>
@@ -339,7 +339,7 @@ export function LineupCard({
                     {lineup.positioning}
                   </p>
                 </div>
-                <div className="rounded-xl border border-white/5 bg-surface-2/50 p-3">
+                <div className="panel p-3">
                   <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
                     出装思路
                   </div>

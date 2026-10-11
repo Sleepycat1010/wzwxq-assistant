@@ -36,7 +36,7 @@ function Entry({ entry }: { entry: ChangelogEntry }) {
     return (
       <div className="card-base p-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="font-display text-lg text-gold">{entry.title}</span>
+          <span className="font-display text-lg font-bold text-gold">{entry.title}</span>
           <span className="font-mono text-xs text-text-dim">{entry.date}</span>
         </div>
         <p className="mt-2 text-sm text-text-dim">
@@ -61,7 +61,7 @@ function Entry({ entry }: { entry: ChangelogEntry }) {
   return (
     <div className="card-base p-4">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="font-display text-lg text-text">{entry.title}</span>
+        <span className="font-display text-lg font-bold text-text">{entry.title}</span>
         <span className="font-mono text-xs text-text-dim">{entry.date}</span>
         <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px] text-text-dim">
           版本 {entry.version}
@@ -152,7 +152,7 @@ export function ChangelogPage({
           >
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/5 p-5">
               <div>
-                <h3 className="font-display text-xl text-gold">版本更新日志</h3>
+                <h3 className="font-display text-xl font-bold text-gold">版本更新日志</h3>
                 <p className="mt-1 text-xs text-text-dim">
                   由定时抓取自动对比官方数据生成，记录英雄 / 棋手 / 装备的改动
                 </p>
@@ -170,7 +170,7 @@ export function ChangelogPage({
             <div className="space-y-3 overflow-y-auto p-5">
               {entries.length === 0 ? (
                 <div className="card-base p-10 text-center text-text-dim">
-                  <p className="font-display text-lg text-text">
+                  <p className="font-display text-lg font-bold text-text">
                     暂无版本更新记录
                   </p>
                   <p className="mt-2 text-sm">

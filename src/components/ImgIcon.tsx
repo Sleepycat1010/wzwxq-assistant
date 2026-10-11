@@ -22,7 +22,7 @@ export function ImgIcon({
     return (
       <div
         className={cn(
-          'flex items-center justify-center rounded-lg bg-white/10 font-display text-text-dim',
+          'flex items-center justify-center rounded-lg bg-white/10 font-display font-bold text-text-dim',
           className,
           fallbackClassName,
         )}

@@ -4,7 +4,7 @@ import { cn } from '../lib/cn';
 
 /**
  * Step 1：仅按阵营选择（可多选禁用）。
- * 阵营以切换卡片呈现：未禁用为中性、悬停金边；已禁用为绯红语义（禁用 = 负面动作）。
+ * 阵营以指挥式切换卡呈现：未禁用为中性、悬停金边；已禁用为绯红语义（禁用 = 负面动作）。
  */
 export function BanStep({
   lineups,
@@ -19,7 +19,6 @@ export function BanStep({
   onToggleFaction: (faction: string) => void;
   onNext: () => void;
 }) {
-  // 统计每个阵营被禁用 / 总数
   const factionStat = useMemo(() => {
     const map = new Map<string, { total: number; banned: number }>();
     for (const f of factions) {
@@ -42,13 +41,15 @@ export function BanStep({
   return (
     <section>
       <div className="mb-5">
-        <h2 className="font-display text-xl text-text">第一步 · 选择禁用的阵营</h2>
-        <p className="mt-1 text-sm text-text-dim">
-          勾选本局不玩的羁绊（可多选），系统将在第三步推荐中自动排除对应阵容。
+        <h2 className="font-display text-2xl font-black tracking-tight text-text">
+          第一步 · 禁用阵营
+        </h2>
+        <p className="mt-1.5 text-sm text-text-dim">
+          勾选本局不玩的羁绊（可多选），第三步推荐会自动排除对应阵容。
         </p>
       </div>
 
-      {/* 阵营切换卡片 */}
+      {/* 阵营切换卡 */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         {factions.map((f) => {
           const s = factionStat.get(f.name);
@@ -60,15 +61,15 @@ export function BanStep({
               onClick={() => onToggleFaction(f.name)}
               aria-pressed={allBanned}
               className={cn(
-                'focusable group flex flex-col items-start gap-1 rounded-2xl border p-3 text-left transition-all duration-200',
+                'focusable group relative flex flex-col items-start gap-2 overflow-hidden rounded-2xl border p-4 text-left transition-all duration-200',
                 allBanned
                   ? 'border-crimson/60 bg-crimson/10 shadow-crimson'
-                  : 'border-white/[0.06] bg-surface/70 hover:border-gold/40',
+                  : 'border-white/[0.07] bg-surface/70 hover:border-gold/40 hover:bg-surface',
               )}
             >
               <span
                 className={cn(
-                  'font-display text-base leading-tight',
+                  'font-display text-lg font-black leading-tight',
                   allBanned ? 'text-crimson' : 'text-text',
                 )}
               >
@@ -80,7 +81,25 @@ export function BanStep({
                   allBanned ? 'text-crimson/80' : 'text-text-dim',
                 )}
               >
-                {s ? `${s.banned}/${s.total} 套已禁用` : '点击禁用'}
+                {f.heroCount} 名英雄
+              </span>
+              <span
+                className={cn(
+                  'mt-auto inline-flex items-center gap-1.5 pt-2 text-xs font-medium',
+                  allBanned ? 'text-crimson' : 'text-text-dim/70',
+                )}
+              >
+                <span
+                  className={cn(
+                    'flex h-4 w-4 items-center justify-center rounded-full border text-[10px]',
+                    allBanned
+                      ? 'border-crimson bg-crimson text-white'
+                      : 'border-white/25 text-transparent group-hover:border-gold/50',
+                  )}
+                >
+                  {allBanned ? '✓' : ''}
+                </span>
+                {allBanned ? '已禁用' : '点击禁用'}
               </span>
             </button>
           );
@@ -88,11 +107,14 @@ export function BanStep({
       </div>
 
       {/* 状态提示 */}
-      <div className="mt-4">
+      <div className="mt-5">
         {bannedFactions.length > 0 ? (
-          <div className="rounded-xl border border-crimson/30 bg-crimson/10 px-4 py-3 text-sm text-crimson">
-            已禁用阵营：{bannedFactions.map((f) => f.name).join('、')}
-            <span className="text-crimson/80">（共排除 {bannedIds.length} 套阵容）</span>
+          <div className="panel flex flex-wrap items-center gap-2 border-crimson/30 bg-crimson/10 px-4 py-3 text-sm text-crimson">
+            <span className="font-semibold">已禁用：</span>
+            {bannedFactions.map((f) => f.name).join('、')}
+            <span className="text-crimson/80">
+              （共排除 {bannedIds.length} 套阵容）
+            </span>
           </div>
         ) : (
           <div className="text-sm text-text-dim/70">
@@ -104,7 +126,7 @@ export function BanStep({
       <div className="mt-6 flex items-center justify-between">
         <span className="text-sm text-text-dim">
           已选禁用：
-          <span className="font-mono text-crimson">{bannedIds.length}</span> 套
+          <span className="stat-num text-crimson">{bannedIds.length}</span> 套
           <span className="text-text-dim/70">（{bannedFactions.length} 个阵营）</span>
         </span>
         <button className="btn-gold" onClick={onNext}>

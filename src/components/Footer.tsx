@@ -3,7 +3,7 @@
  */
 export function Footer() {
   return (
-    <footer className="mt-10 border-t border-white/5 pt-6 text-center text-xs text-text-dim">
+    <footer className="mt-12 border-t border-white/[0.07] pt-6 text-center text-xs leading-relaxed text-text-dim">
       <p>
         数据来源：王者营地 · 玩一玩 · 王者攻略库(ima) · Bilibili 等公开攻略，
         编辑 <code className="font-mono text-gold/80">public/data/*.json</code> 即可动态更新，无需重新构建。

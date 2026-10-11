@@ -45,6 +45,27 @@ export default function App() {
   const player = data.chessPlayers.find((p) => p.id === playerId) ?? null;
   const scored = recommendLineups(data.lineups, bannedIds, player);
 
+  const counts = data.database?.meta.counts;
+  const stats = {
+    heroes: counts?.heroes ?? 0,
+    equipments: counts?.equipments ?? 0,
+    effectCards: counts?.effectCards ?? 0,
+    talents: counts?.talents ?? 0,
+    lords: data.chessPlayers.length,
+  };
+
+  // 近期（30 天内）有非基线更新 → 顶栏显示「新」角标
+  const hasNewUpdate = (() => {
+    const list = (data.changelog ?? [])
+      .filter((e) => !e.baseline)
+      .sort((a, b) => b.date.localeCompare(a.date));
+    const latest = list[0];
+    if (!latest) return false;
+    const days =
+      (Date.now() - new Date(latest.date).getTime()) / (1000 * 60 * 60 * 24);
+    return days <= 30;
+  })();
+
   // 阵营一键禁用 / 启用：若该阵营全部已禁用则解除，否则全部禁用
   const toggleFaction = (faction: string) => {
     const inFaction = data.lineups
@@ -82,10 +103,15 @@ export default function App() {
           onOpenCodex={() => setCodexOpen(true)}
           onOpenChangelog={() => setChangelogOpen(true)}
           status={status}
+          hasNewUpdate={hasNewUpdate}
         />
 
         <main className="flex-1 py-8">
-          <Hero />
+          <Hero
+            stats={stats}
+            changelog={data.changelog}
+            onOpenChangelog={() => setChangelogOpen(true)}
+          />
 
           <StepProgress current={step} onStepClick={setStep} />
 

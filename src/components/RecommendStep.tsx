@@ -50,14 +50,16 @@ export function RecommendStep({
   return (
     <section>
       <div className="mb-5">
-        <h2 className="font-display text-xl text-text">第三步 · 可用阵容推荐</h2>
-        <p className="mt-1 text-sm text-text-dim">
+        <h2 className="font-display text-2xl font-black tracking-tight text-text">
+          第三步 · 可用阵容推荐
+        </h2>
+        <p className="mt-1.5 text-sm text-text-dim">
           已为你排除禁用阵容，并按强度、棋手契合度与克制关系综合排序。
         </p>
       </div>
 
       {/* 概要条 */}
-      <div className="card-base mb-4 flex flex-wrap items-center justify-between gap-3 p-4">
+      <div className="panel mb-4 flex flex-wrap items-center justify-between gap-3 p-4">
         <div className="text-sm text-text-dim">
           已禁用 <span className="font-mono text-crimson">{bannedCount}</span> 套
           · 已选棋手{' '}
@@ -84,7 +86,7 @@ export function RecommendStep({
 
       {scored.length === 0 ? (
         <div className="card-base p-10 text-center text-text-dim">
-          <p className="font-display text-lg text-text">所有阵容都被禁用了</p>
+          <p className="font-display text-lg font-bold text-text">所有阵容都被禁用了</p>
           <p className="mt-2 text-sm">
             请返回第一步取消部分禁用，或点击「重新开始」重新选择。
           </p>
@@ -93,13 +95,13 @@ export function RecommendStep({
         <div className="card-base p-10 text-center text-text-dim">
           {favOnly ? (
             <>
-              <p className="font-display text-lg text-text">还没有收藏的阵容</p>
+              <p className="font-display text-lg font-bold text-text">还没有收藏的阵容</p>
               <p className="mt-2 text-sm">
                 在卡片右上角点击 ☆ 即可收藏，刷新或重开也会保留。
               </p>
             </>
           ) : (
-            <p className="font-display text-lg text-text">没有可推荐的阵容</p>
+            <p className="font-display text-lg font-bold text-text">没有可推荐的阵容</p>
           )}
         </div>
       ) : (

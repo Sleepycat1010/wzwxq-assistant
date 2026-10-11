@@ -4,18 +4,18 @@
 
 :root {
   /* 品牌色（RGB 通道，供 Tailwind 透明度修饰符 rgb(var(--x) / <alpha-value>)） */
-  --bg-rgb: 8 10 14;            /* 近黑竞技场底 */
-  --surface-rgb: 17 20 28;      /* 卡片表层 */
-  --surface-2-rgb: 24 28 38;    /* 内层/区块 */
-  --text-rgb: 240 238 230;      /* 主文字（暖白） */
-  --text-dim-rgb: 148 156 170;  /* 次要文字（去饱和） */
+  --bg-rgb: 8 10 14;            /* 近黑战术底 */
+  --surface-rgb: 16 19 26;      /* 卡片表层（冷调） */
+  --surface-2-rgb: 23 27 36;    /* 内层/区块 */
+  --text-rgb: 236 238 243;      /* 主文字（中性近白） */
+  --text-dim-rgb: 138 147 166;  /* 次要文字（冷灰） */
   --gold-rgb: 245 197 66;       /* 唯一品牌强调色 */
   --gold-2-rgb: 214 165 45;
-  --crimson-rgb: 229 72 77;     /* 语义色：禁用/危险 */
-  --jade-rgb: 54 199 140;       /* 语义色：可用/成功 */
+  --crimson-rgb: 229 72 77;     /* 语义色：禁用 / 移除 */
+  --jade-rgb: 54 199 140;       /* 语义色：可用 / 新增 */
 
-  /* 统一圆角系统 */
-  --r-card: 18px;
+  /* 统一形状语言：卡片 16 / 按钮 12 / 内层 10 / 胶囊全圆 */
+  --r-card: 16px;
   --r-btn: 12px;
   --r-inner: 10px;
 }
@@ -30,12 +30,12 @@ body {
   background-color: rgb(var(--bg-rgb));
   color: rgb(var(--text-rgb));
   font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-/* 竞技场氛围：定向双辉光（左上金、右下绯）+ 极淡战术网格，固定不随滚动。
-   刻意做成非对称，避免「居中暗色网格 + AI 紫」的套路感。 */
+/* 战术氛围：定向双辉光（左上金、右下绯），刻意非对称，避开「居中暗色网格 + AI 紫」套路 */
 body::before {
   content: '';
   position: fixed;
@@ -43,36 +43,42 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(58% 48% at 12% -4%, rgba(245, 197, 66, 0.14), transparent 58%),
-    radial-gradient(52% 46% at 104% 8%, rgba(229, 72, 77, 0.12), transparent 60%),
-    radial-gradient(90% 70% at 50% 116%, rgba(24, 28, 38, 0.8), transparent 72%);
+    radial-gradient(54% 44% at 8% -6%, rgba(245, 197, 66, 0.12), transparent 58%),
+    radial-gradient(48% 42% at 104% 4%, rgba(229, 72, 77, 0.10), transparent 60%),
+    radial-gradient(90% 70% at 50% 118%, rgba(23, 27, 36, 0.9), transparent 72%);
 }
 
+/* 极淡战术网格，仅顶部隐约可见，避免满屏网格的廉价感 */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.4;
   background-image:
-    linear-gradient(rgba(245, 197, 66, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(245, 197, 66, 0.04) 1px, transparent 1px);
-  background-size: 46px 46px;
-  mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 80%);
-  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 80%);
+    linear-gradient(rgba(245, 197, 66, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 197, 66, 0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(120% 80% at 50% -10%, #000 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(120% 80% at 50% -10%, #000 30%, transparent 78%);
 }
 
 @layer components {
-  /* 通用卡片：暗色 surface + 细描边 + 悬停金边 + 一致圆角 */
+  /* 通用卡片：暗色 surface + 细描边 + 悬停金边 + 一致圆角（16px） */
   .card-base {
-    @apply rounded-2xl border border-white/[0.06] bg-surface/85 shadow-lift backdrop-blur-sm;
+    @apply rounded-2xl border border-white/[0.07] bg-surface/85 shadow-lift backdrop-blur-sm;
+  }
+
+  /* 内层分区面板（10px 圆角，弱描边） */
+  .panel {
+    @apply rounded-xl border border-white/[0.06] bg-surface-2/55;
   }
 
   /* 主金按钮（唯一品牌强调） */
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-5 py-2.5
-      text-sm font-semibold text-bg transition-all duration-200
+      text-sm font-bold text-bg transition-all duration-200
       hover:bg-gold-2 hover:shadow-gold active:scale-[0.98]
       disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none;
   }
@@ -85,14 +91,24 @@ body::after {
       disabled:cursor-not-allowed disabled:opacity-40;
   }
 
-  /* 微标签（eyebrow / 小说明）：统一的字距与大小，避免滥用 */
-  .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.22em] text-gold/80;
+  /* 胶囊 chip：搜索/筛选/标签统一全圆 */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-sm transition-colors;
   }
 
-  /* 区隔的小节标题 */
+  /* 微标签（eyebrow / 小说明）：克制的字距与大小，避免滥用 */
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80;
+  }
+
+  /* 区隔的小节标题（仅在确实需要时用，避免每段都加 eyebrow） */
   .section-label {
-    @apply text-xs font-semibold uppercase tracking-[0.16em] text-text-dim;
+    @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-text-dim;
+  }
+
+  /* 大号数字（Rajdhani，战术感） */
+  .stat-num {
+    @apply font-mono font-bold tabular-nums tracking-tight;
   }
 
   /* 焦点可见环（无障碍）：键盘可达时高亮，不破坏鼠标体验 */
