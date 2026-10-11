@@ -200,9 +200,10 @@ export function RecommendStep({
         </div>
       )}
 
-      {/* 吸底操作栏：滚动时始终可见「重新开始」 */}
-      <div className="sticky bottom-4 z-30 mt-8 flex justify-center">
-        <div className="rounded-full border border-white/10 bg-surface/85 p-1.5 shadow-lift backdrop-blur-md">
+      {/* 吸底操作栏：滚动时始终可见「重新开始」。
+          容器 pointer-events-none，只让内部胶囊接收点击，避免遮挡下方卡片的「展开详情」按钮。 */}
+      <div className="pointer-events-none sticky bottom-4 z-30 mt-8 flex justify-center">
+        <div className="pointer-events-auto rounded-full border border-white/10 bg-surface/85 p-1.5 shadow-lift backdrop-blur-md">
           <motion.button
             className="btn-ghost rounded-full px-6"
             onClick={onRestart}

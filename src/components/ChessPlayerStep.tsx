@@ -46,13 +46,17 @@ export function ChessPlayerStep({
         ))}
       </div>
 
-      {/* 吸底操作栏：滚动时「生成推荐」始终可见 */}
-      <div className="sticky bottom-4 z-30 mt-6 flex items-center justify-between gap-3 rounded-full border border-white/10 bg-surface/85 p-1.5 pl-4 shadow-lift backdrop-blur-md">
-        <button className="btn-ghost rounded-full px-5" onClick={onPrev}>
+      {/* 吸底操作栏：滚动时「生成推荐」始终可见。
+          容器 pointer-events-none，仅两个按钮接收点击，避免遮挡卡片。 */}
+      <div className="pointer-events-none sticky bottom-4 z-30 mt-6 flex items-center justify-between gap-3 rounded-full border border-white/10 bg-surface/85 p-1.5 pl-4 shadow-lift backdrop-blur-md">
+        <button
+          className="btn-ghost pointer-events-auto rounded-full px-5"
+          onClick={onPrev}
+        >
           ← 上一步
         </button>
         <motion.button
-          className="btn-gold rounded-full px-6"
+          className="btn-gold pointer-events-auto rounded-full px-6"
           onClick={onNext}
           disabled={!selected}
           whileTap={{ scale: 0.98 }}

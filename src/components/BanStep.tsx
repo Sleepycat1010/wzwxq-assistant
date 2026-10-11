@@ -123,14 +123,18 @@ export function BanStep({
         )}
       </div>
 
-      {/* 吸底操作栏：滚动时「下一步」始终可见 */}
-      <div className="sticky bottom-4 z-30 mt-6 flex items-center justify-between gap-3 rounded-full border border-white/10 bg-surface/85 p-1.5 pl-4 shadow-lift backdrop-blur-md">
+      {/* 吸底操作栏：滚动时「下一步」始终可见。
+          容器 pointer-events-none，仅按钮接收点击，避免遮挡上方阵营卡。 */}
+      <div className="pointer-events-none sticky bottom-4 z-30 mt-6 flex items-center justify-between gap-3 rounded-full border border-white/10 bg-surface/85 p-1.5 pl-4 shadow-lift backdrop-blur-md">
         <span className="text-sm text-text-dim">
           已选禁用：
           <span className="stat-num text-crimson">{bannedIds.length}</span> 套
           <span className="text-text-dim/70">（{bannedFactions.length} 个阵营）</span>
         </span>
-        <button className="btn-gold rounded-full px-6" onClick={onNext}>
+        <button
+          className="btn-gold pointer-events-auto rounded-full px-6"
+          onClick={onNext}
+        >
           下一步：选择棋手 →
         </button>
       </div>
