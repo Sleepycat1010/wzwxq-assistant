@@ -1,5 +1,58 @@
 [
   {
+    "version": "2026-10-15",
+    "date": "2026-10-15",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "talents": 3
+      },
+      "removed": {},
+      "changed": {
+        "heroes": 1,
+        "talents": 2
+      }
+    },
+    "changes": [
+      {
+        "cat": "heroes",
+        "type": "changed",
+        "name": "苍",
+        "id": "1771"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "干将·强化",
+        "id": "635604"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "丢盔弃甲",
+        "id": "681030"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "技能突破：亚瑟",
+        "id": "636118"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "强力小弟",
+        "id": "636409"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "全域共鸣",
+        "id": "636112"
+      }
+    ]
+  },
+  {
     "version": "2026-10-11",
     "date": "2026-10-11",
     "title": "数据库初始化 · 全量同步官方数据",

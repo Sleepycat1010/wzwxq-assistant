@@ -419,12 +419,12 @@
         "name": "专属",
         "level": 6,
         "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-        "desc": "开战时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。",
+        "desc": "战斗开始时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。",
         "cards": [
           {
             "name": "潮起潮落",
             "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-            "desc": "开战时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。"
+            "desc": "战斗开始时，随机传送1个临时等级100级的英雄进入战场（不含卡牌效果），该等级每回合+40。"
           }
         ]
       }
