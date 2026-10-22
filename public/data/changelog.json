@@ -1,5 +1,96 @@
 [
   {
+    "version": "2026-10-22",
+    "date": "2026-10-22",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "equipments": 4
+      },
+      "removed": {},
+      "changed": {
+        "heroes": 2,
+        "equipments": 2,
+        "talents": 3,
+        "lords": 1
+      }
+    },
+    "changes": [
+      {
+        "cat": "heroes",
+        "type": "changed",
+        "name": "虞姬",
+        "id": "1741"
+      },
+      {
+        "cat": "heroes",
+        "type": "changed",
+        "name": "大乔",
+        "id": "1911"
+      },
+      {
+        "cat": "equipments",
+        "type": "added",
+        "name": "强敌克星",
+        "id": "644112"
+      },
+      {
+        "cat": "equipments",
+        "type": "added",
+        "name": "根源之力",
+        "id": "644108"
+      },
+      {
+        "cat": "equipments",
+        "type": "added",
+        "name": "热血拳套",
+        "id": "641007"
+      },
+      {
+        "cat": "equipments",
+        "type": "added",
+        "name": "套娃枪",
+        "id": "644118"
+      },
+      {
+        "cat": "equipments",
+        "type": "changed",
+        "name": "魔律之刃",
+        "id": "643705"
+      },
+      {
+        "cat": "equipments",
+        "type": "changed",
+        "name": "日渊",
+        "id": "641015"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "限制性进化",
+        "id": "634012"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "光棱塔",
+        "id": "636103"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "暴君归来",
+        "id": "636220"
+      },
+      {
+        "cat": "lords",
+        "type": "changed",
+        "name": "班叔",
+        "id": "35"
+      }
+    ]
+  },
+  {
     "version": "2026-10-15",
     "date": "2026-10-15",
     "title": "官方数据更新",
