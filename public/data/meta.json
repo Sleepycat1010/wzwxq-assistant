@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T21:45:53.837Z",
+  "fetchedAt": "2026-10-26T23:07:20.648Z",
   "source": "腾讯王者万象棋官方 CDN（营地/官网）",
   "sourceUrls": {
     "heroes": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_1.js",
@@ -11,12 +11,12 @@
   },
   "counts": {
     "heroes": 85,
-    "talents": 261,
+    "talents": 287,
     "equipments": 77,
     "effectCards": 98,
     "lords": 20,
     "factions": 6,
-    "lineups": 499
+    "lineups": 497
   },
   "note": "本数据库由官方公开 CDN 接口抓取并归一化，所有内容版权归腾讯及原作者所有。定时任务会自动刷新。"
 }

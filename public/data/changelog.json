@@ -1,5 +1,175 @@
 [
   {
+    "version": "2026-10-26",
+    "date": "2026-10-26",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "talents": 26
+      },
+      "removed": {},
+      "changed": {}
+    },
+    "changes": [
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "打成一片",
+        "id": "664009"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "冰雪秘藏",
+        "id": "663405"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "惊才绝艳",
+        "id": "663307"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "特权决策",
+        "id": "610006"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "寒潮之势",
+        "id": "663402"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "超级连接",
+        "id": "665105"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "顿悟时刻",
+        "id": "665104"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "重点照顾",
+        "id": "663208"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "不朽坚冰",
+        "id": "663403"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "火力全开",
+        "id": "665005"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "飞龙在天",
+        "id": "663905"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "即刻起舞",
+        "id": "610010"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "瓜分宝藏",
+        "id": "610013"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "完美演出",
+        "id": "664108"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "时光宝藏",
+        "id": "663805"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "阳光普照",
+        "id": "663207"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "引擎升级",
+        "id": "663108"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "余音绕梁",
+        "id": "662502"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "月之特调",
+        "id": "662407"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "神之一手",
+        "id": "663607"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "潮起潮落",
+        "id": "662206"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "镜花影",
+        "id": "662107"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "巨型玩偶",
+        "id": "661106"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "狂欢时刻",
+        "id": "664005"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "魅力无限",
+        "id": "661009"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "雪暴时刻",
+        "id": "663404"
+      }
+    ]
+  },
+  {
     "version": "2026-10-22",
     "date": "2026-10-22",
     "title": "官方数据更新",

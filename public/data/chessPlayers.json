@@ -207,44 +207,40 @@
     ],
     "relatedCards": [
       {
+        "name": "枫影无拘",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8dc4a4c99f79b1c8ae7f23b6e5d26e41.png"
+      },
+      {
         "name": "枫华之刃",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a333eb3d31e2a0288ac28a682673cfc3.png"
-      },
-      {
-        "name": "有叶新生",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0a9e67f18bc4e5180b50e4c8c42aa4e0.png"
-      },
-      {
-        "name": "枫佑永驻",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/02134412ea175852515a177ced66ee28.png"
-      },
-      {
-        "name": "拈花一指",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ec80828d2bbf00915f017759b5df4c70.png"
-      },
-      {
-        "name": "红枫疾舞",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/57a3989e14cd316cae543e1648d36c07.png"
-      },
-      {
-        "name": "红叶染锋",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/49836f994c4eabc946d9607e7a8799c4.png"
       },
       {
         "name": "枫灵涌动",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0f8716354ccbe623d236779196da6294.png"
       },
       {
-        "name": "枫影无拘",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8dc4a4c99f79b1c8ae7f23b6e5d26e41.png"
+        "name": "红枫疾舞",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/57a3989e14cd316cae543e1648d36c07.png"
       },
       {
         "name": "枫舞扶摇",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ce085ffa45c3e9938ab7342f4c0a4689.png"
       },
       {
-        "name": "翩跹馈赠",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b8169b8a5de0d54b2a804ef7dd99ccf8.png"
+        "name": "拈花一指",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ec80828d2bbf00915f017759b5df4c70.png"
+      },
+      {
+        "name": "枫佑永驻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/02134412ea175852515a177ced66ee28.png"
+      },
+      {
+        "name": "有叶新生",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/0a9e67f18bc4e5180b50e4c8c42aa4e0.png"
+      },
+      {
+        "name": "红叶染锋",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/49836f994c4eabc946d9607e7a8799c4.png"
       },
       {
         "name": "枫之洪流",
@@ -297,6 +293,10 @@
       {
         "name": "翩跹舞步·蓄势",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c0b00ee7df8bffb4b5e6999a6d63e3e8.png"
+      },
+      {
+        "name": "翩跹馈赠",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b8169b8a5de0d54b2a804ef7dd99ccf8.png"
       }
     ],
     "placeholder": false
@@ -563,24 +563,24 @@
     ],
     "relatedCards": [
       {
-        "name": "轮指",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d7d46e0e47e7617195e4f0cdca3569b8.png"
-      },
-      {
-        "name": "扫拂",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1fd6b4dde286a6003a0bbe15f24931e1.png"
-      },
-      {
-        "name": "吟揉",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b6e0d6fec8ec83542b1d429f6d63f0e2.png"
+        "name": "惊鸿调",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d8862322ad83d823af6351224ccec495.png"
       },
       {
         "name": "绞弦",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4a78c7f4eaaae45dd094b34e98e6dc41.png"
       },
       {
-        "name": "惊鸿调",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d8862322ad83d823af6351224ccec495.png"
+        "name": "吟揉",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b6e0d6fec8ec83542b1d429f6d63f0e2.png"
+      },
+      {
+        "name": "扫拂",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1fd6b4dde286a6003a0bbe15f24931e1.png"
+      },
+      {
+        "name": "轮指",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d7d46e0e47e7617195e4f0cdca3569b8.png"
       }
     ],
     "placeholder": false
@@ -715,12 +715,20 @@
     ],
     "relatedCards": [
       {
-        "name": "重点照顾",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png"
+        "name": "冰曜宝石镜",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9907c150d5de119bd5e3d307c3bfc5c4.png"
       },
       {
-        "name": "阳光普照",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c1d61ec0919e129f7c73a58f5cb52c36.png"
+        "name": "神树彩陶",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5618396f4eeaaaee987e3ffab90e561f.png"
+      },
+      {
+        "name": "人鱼之泪",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1471737723485dada537feec42cdd695.png"
+      },
+      {
+        "name": "沙海甘泉",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/53809eb3a92608ad01982b71ea3c8d1c.png"
       },
       {
         "name": "狼牙部落的图腾雕像",
@@ -731,48 +739,32 @@
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/620914d76394e253d69cf0c5fc5038d5.png"
       },
       {
-        "name": "沙海甘泉",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/53809eb3a92608ad01982b71ea3c8d1c.png"
-      },
-      {
-        "name": "人鱼之泪",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1471737723485dada537feec42cdd695.png"
-      },
-      {
-        "name": "神树彩陶",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5618396f4eeaaaee987e3ffab90e561f.png"
-      },
-      {
-        "name": "冰曜宝石镜",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9907c150d5de119bd5e3d307c3bfc5c4.png"
-      },
-      {
-        "name": "马可的随身信物",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/fd405f4f2f9a9cca14b0650044521a1b.png"
-      },
-      {
-        "name": "马可的时差信笺",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/6d25c4be2ba5d8f0e78c23ebaa4e0c4f.png"
-      },
-      {
-        "name": "马可的魅力飞吻",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a09b7c370b739bb31d0cd7bd9ec1d971.png"
-      },
-      {
-        "name": "马可的限量亲签",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cd7bec4c11af9a7df510299d81410e86.png"
-      },
-      {
-        "name": "马可的吸睛自拍",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4bb50f808353a75f2584ec5496db71a6.png"
+        "name": "终极宝藏正是在下",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4ba54b932eb2c707b11182da4034e6ec.png"
       },
       {
         "name": "马可的招牌微笑",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/95051eb551ddf87039d722795480350f.png"
       },
       {
-        "name": "终极宝藏正是在下",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4ba54b932eb2c707b11182da4034e6ec.png"
+        "name": "马可的吸睛自拍",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/4bb50f808353a75f2584ec5496db71a6.png"
+      },
+      {
+        "name": "马可的限量亲签",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/cd7bec4c11af9a7df510299d81410e86.png"
+      },
+      {
+        "name": "马可的魅力飞吻",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a09b7c370b739bb31d0cd7bd9ec1d971.png"
+      },
+      {
+        "name": "马可的时差信笺",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/6d25c4be2ba5d8f0e78c23ebaa4e0c4f.png"
+      },
+      {
+        "name": "马可的随身信物",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/fd405f4f2f9a9cca14b0650044521a1b.png"
       }
     ],
     "placeholder": false
@@ -911,16 +903,16 @@
     ],
     "relatedCards": [
       {
-        "name": "雪暴时刻",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png"
+        "name": "深度冻结",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4099a8d6d427195297f84c145531ecb7.png"
       },
       {
-        "name": "不朽坚冰",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png"
+        "name": "升华",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b9dc0a01c04554cca1e1f6a3dd01544b.png"
       },
       {
-        "name": "寒潮之势",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png"
+        "name": "霜寒进化",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/10367ef6b3424300134534dcc3e68b8a.png"
       },
       {
         "name": "破冰裂变",
@@ -949,18 +941,6 @@
       {
         "name": "寒冰觉醒",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/91a0b90c00a7e6dde261b553b88fbd25.png"
-      },
-      {
-        "name": "升华",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b9dc0a01c04554cca1e1f6a3dd01544b.png"
-      },
-      {
-        "name": "深度冻结",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4099a8d6d427195297f84c145531ecb7.png"
-      },
-      {
-        "name": "霜寒进化",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/10367ef6b3424300134534dcc3e68b8a.png"
       }
     ],
     "placeholder": false
@@ -1025,14 +1005,6 @@
     ],
     "relatedCards": [
       {
-        "name": "便携式机关",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4f88435cc127891f7aa9a7ea880ec577.png"
-      },
-      {
-        "name": "热能陷阱",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ef2dac171ac2832fa4831112c59c6f.png"
-      },
-      {
         "name": "等离子屏障强化",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/42cd06aca4bace948b7e484f339a23d2.png"
       },
@@ -1051,6 +1023,10 @@
       {
         "name": "电磁弹簧",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7077f7bcaa1aa16bf4b6c1f7251c7bf8.png"
+      },
+      {
+        "name": "热能陷阱",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ef2dac171ac2832fa4831112c59c6f.png"
       },
       {
         "name": "构筑升级",
@@ -1328,10 +1304,6 @@
       }
     ],
     "relatedCards": [
-      {
-        "name": "打成一片",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5741cf3a63081735d235fae82c435479.png"
-      },
       {
         "name": "朋友多多",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328975d01796797f943c51b427f8a3d8.png"
@@ -1643,8 +1615,12 @@
     ],
     "relatedCards": [
       {
-        "name": "补给弹匣",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/05b8d33e3df819c319e3ae35acab03e5.png"
+        "name": "战术·砺刃",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9d8193a31def785e02007b32df229277.png"
+      },
+      {
+        "name": "贯穿弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e3491cb46671e0e0c06c2275bd5bfba2.png"
       },
       {
         "name": "武器改造",
@@ -1669,10 +1645,6 @@
       {
         "name": "战术·歼灭",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b3aac940965e6b86eeed6e6b312f0cc4.png"
-      },
-      {
-        "name": "战术·砺刃",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9d8193a31def785e02007b32df229277.png"
       },
       {
         "name": "战术·暴击",
@@ -1723,12 +1695,12 @@
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a7d200e3ea4612ee6f286bf3655ddece.png"
       },
       {
-        "name": "干扰弹",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/bb7596b751e0672e649dbb5d6fb045ff.png"
+        "name": "补给弹匣",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/05b8d33e3df819c319e3ae35acab03e5.png"
       },
       {
-        "name": "贯穿弹头",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e3491cb46671e0e0c06c2275bd5bfba2.png"
+        "name": "干扰弹",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/bb7596b751e0672e649dbb5d6fb045ff.png"
       },
       {
         "name": "大号弹头",
@@ -1833,14 +1805,6 @@
     ],
     "relatedCards": [
       {
-        "name": "顿悟时刻",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1f1151a19463ccce92c95cdb63693388.png"
-      },
-      {
-        "name": "“紧急救命”模块",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a856483b4fec31edf646f182758390e1.png"
-      },
-      {
         "name": "奇想·效果牌",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/25d9cf4879ff0d84847984e76fe1d695.png"
       },
@@ -1899,6 +1863,10 @@
       {
         "name": "“壮胆”模块",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/ebf13a066683dccdc9b2cf8a00497073.png"
+      },
+      {
+        "name": "“紧急救命”模块",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/a856483b4fec31edf646f182758390e1.png"
       },
       {
         "name": "灵异探测大改装",
