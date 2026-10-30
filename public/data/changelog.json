@@ -1,5 +1,58 @@
 [
   {
+    "version": "2026-10-30",
+    "date": "2026-10-30",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "talents": 3
+      },
+      "removed": {},
+      "changed": {
+        "equipments": 1,
+        "talents": 2
+      }
+    },
+    "changes": [
+      {
+        "cat": "equipments",
+        "type": "changed",
+        "name": "三分旗帜",
+        "id": "6363182"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "孙尚香·强化",
+        "id": "635605"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "勇冠三军",
+        "id": "636310"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "帝临",
+        "id": "637018"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "三分领袖",
+        "id": "636318"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "潮起潮落",
+        "id": "662206"
+      }
+    ]
+  },
+  {
     "version": "2026-10-26",
     "date": "2026-10-26",
     "title": "官方数据更新",
