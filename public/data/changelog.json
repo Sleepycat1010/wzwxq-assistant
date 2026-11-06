@@ -1,5 +1,79 @@
 [
   {
+    "version": "2026-11-06",
+    "date": "2026-11-06",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "talents": 1,
+        "lords": 1
+      },
+      "removed": {},
+      "changed": {
+        "heroes": 1,
+        "effectCards": 1,
+        "talents": 4,
+        "lords": 1
+      }
+    },
+    "changes": [
+      {
+        "cat": "heroes",
+        "type": "changed",
+        "name": "马可波罗",
+        "id": "1321"
+      },
+      {
+        "cat": "effectCards",
+        "type": "changed",
+        "name": "四人同行",
+        "id": "7105"
+      },
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "万鸟朝凤",
+        "id": "610005"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "厉兵秣马",
+        "id": "671020"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "乘胜追击",
+        "id": "636413"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "控制感应",
+        "id": "636313"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "潮起潮落",
+        "id": "662206"
+      },
+      {
+        "cat": "lords",
+        "type": "added",
+        "name": "武凤",
+        "id": "8"
+      },
+      {
+        "cat": "lords",
+        "type": "changed",
+        "name": "乔汐",
+        "id": "22"
+      }
+    ]
+  },
+  {
     "version": "2026-10-30",
     "date": "2026-10-30",
     "title": "官方数据更新",

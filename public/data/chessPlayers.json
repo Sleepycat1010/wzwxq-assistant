@@ -1,5 +1,71 @@
 [
   {
+    "id": "8",
+    "name": "武凤",
+    "type": "通用",
+    "skill": "武凤在比赛开始时，额外拥有3能量，每次拍卖后，再次获得3能量。",
+    "talent": "技能",
+    "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/ec889eb712700084082b38004774d136.png",
+    "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/9ec4de4e3ac22cd14abb1107e2d8d622.png",
+    "portrait": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_banshen_auto/07ab4830ba9ea4e4cdea089b352c87ac.png",
+    "lordId": 8,
+    "source": {
+      "platform": "王者万象棋官方（营地/官网）",
+      "author": "官方",
+      "url": "https://wxq.qq.com/",
+      "date": "",
+      "note": "官方棋手数据（技能/关联卡取自官方接口）"
+    },
+    "talents": [
+      {
+        "name": "技能",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/f15e9820fffeca299395fcea73c339ab.png",
+        "desc": "武凤在比赛开始时，额外拥有3能量，每次拍卖后，再次获得3能量。",
+        "cards": [
+          {
+            "name": "门庭赫奕",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/f15e9820fffeca299395fcea73c339ab.png",
+            "desc": "武凤在比赛开始时，额外拥有3能量，每次拍卖后，再次获得3能量。"
+          }
+        ]
+      },
+      {
+        "name": "秘技",
+        "level": 1,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+        "desc": "每使用45能量，获得1张秘技牌为我所用。",
+        "cards": [
+          {
+            "name": "众心所归",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5a4364e3ab865be844e8fc0d18b91ae9.png",
+            "desc": "每使用45能量，获得1张秘技牌为我所用。"
+          }
+        ]
+      },
+      {
+        "name": "专属",
+        "level": 6,
+        "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
+        "desc": "随机从3个棋手的秘技卡中选1张。",
+        "cards": [
+          {
+            "name": "万鸟朝凤",
+            "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
+            "desc": "随机从3个棋手的秘技卡中选1张。"
+          }
+        ]
+      }
+    ],
+    "relatedCards": [
+      {
+        "name": "为我所用",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/217538e1dca4abfff1543044cfec272d.png"
+      }
+    ],
+    "placeholder": false
+  },
+  {
     "id": "10",
     "name": "小妲己",
     "type": "经济运营型",
@@ -243,10 +309,6 @@
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/49836f994c4eabc946d9607e7a8799c4.png"
       },
       {
-        "name": "枫之洪流",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/600eae950981f9f2919fe43888f262bf.png"
-      },
-      {
         "name": "落英汲取",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/1e4913ad1ff9e80945a0dc7ca10b4c7e.png"
       },
@@ -293,6 +355,10 @@
       {
         "name": "翩跹舞步·蓄势",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c0b00ee7df8bffb4b5e6999a6d63e3e8.png"
+      },
+      {
+        "name": "枫之洪流",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/600eae950981f9f2919fe43888f262bf.png"
       },
       {
         "name": "翩跹馈赠",
@@ -375,7 +441,7 @@
     "id": "22",
     "name": "乔汐",
     "type": "经济运营型",
-    "skill": "使用技能，随机获得1张2-5阶的转瞬英雄牌。",
+    "skill": "使用技能，随机获得1张3-5阶的转瞬英雄牌。",
     "talent": "技能",
     "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_haibao_auto/1b87c6a9b387b9a6bd48cefaf2967209.png",
     "avatar": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_touxiang_auto/0b5f332f7fab409231b1ea4383b3491c.png",
@@ -393,12 +459,12 @@
         "name": "技能",
         "level": 1,
         "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3cbd047ed370bd5f9e720ee63e6be04c.png",
-        "desc": "使用技能，随机获得1张2-5阶的转瞬英雄牌。",
+        "desc": "使用技能，随机获得1张3-5阶的转瞬英雄牌。",
         "cards": [
           {
             "name": "温柔呼唤",
             "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/3cbd047ed370bd5f9e720ee63e6be04c.png",
-            "desc": "使用技能，随机获得1张2-5阶的转瞬英雄牌。"
+            "desc": "使用技能，随机获得1张3-5阶的转瞬英雄牌。"
           }
         ]
       },
@@ -419,12 +485,12 @@
         "name": "专属",
         "level": 6,
         "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-        "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×12的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
+        "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×16的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
         "cards": [
           {
             "name": "潮起潮落",
             "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-            "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×12的英雄进入战场（不含卡牌效果），并携带3件适配装备。"
+            "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×16的英雄进入战场（不含卡牌效果），并携带3件适配装备。"
           }
         ]
       }
@@ -903,6 +969,10 @@
     ],
     "relatedCards": [
       {
+        "name": "寒冰王座",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d94d46d5635672ca3640d08ae7d41cfc.png"
+      },
+      {
         "name": "深度冻结",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/4099a8d6d427195297f84c145531ecb7.png"
       },
@@ -917,10 +987,6 @@
       {
         "name": "破冰裂变",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/8f19cdead8ad38f1f80b2c8d43f47f3a.png"
-      },
-      {
-        "name": "寒冰王座",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d94d46d5635672ca3640d08ae7d41cfc.png"
       },
       {
         "name": "冰封结晶",
@@ -1615,12 +1681,16 @@
     ],
     "relatedCards": [
       {
-        "name": "战术·砺刃",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9d8193a31def785e02007b32df229277.png"
+        "name": "战术·暴击",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/41d9646f44237bed3d339050c14ba47b.png"
       },
       {
         "name": "贯穿弹头",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/e3491cb46671e0e0c06c2275bd5bfba2.png"
+      },
+      {
+        "name": "大号弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d57d0cfa8be999992283ce37215b2758.png"
       },
       {
         "name": "武器改造",
@@ -1647,8 +1717,8 @@
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/b3aac940965e6b86eeed6e6b312f0cc4.png"
       },
       {
-        "name": "战术·暴击",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/41d9646f44237bed3d339050c14ba47b.png"
+        "name": "战术·砺刃",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/9d8193a31def785e02007b32df229277.png"
       },
       {
         "name": "战术·追击",
@@ -1703,14 +1773,6 @@
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/bb7596b751e0672e649dbb5d6fb045ff.png"
       },
       {
-        "name": "大号弹头",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/d57d0cfa8be999992283ce37215b2758.png"
-      },
-      {
-        "name": "凝滞弹头",
-        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/927e1a6789ec20ee2b1b3e9458c55bda.png"
-      },
-      {
         "name": "歼灭补给",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/09cac9886467b96b4880f7f4c7c0dd56.png"
       },
@@ -1741,6 +1803,10 @@
       {
         "name": "战术·百战",
         "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/616b7d5c87c5dca8b4a8ba5eac556d40.png"
+      },
+      {
+        "name": "凝滞弹头",
+        "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_lord_jineng_auto/927e1a6789ec20ee2b1b3e9458c55bda.png"
       }
     ],
     "placeholder": false

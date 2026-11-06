@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-05T00:22:32.098Z",
+    "fetchedAt": "2026-11-06T00:14:17.533Z",
     "source": "腾讯王者万象棋官方 CDN（营地/官网）",
     "sourceUrls": {
       "heroes": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_1.js",
@@ -12,10 +12,10 @@
     },
     "counts": {
       "heroes": 85,
-      "talents": 290,
+      "talents": 291,
       "equipments": 77,
       "effectCards": 98,
-      "lords": 20,
+      "lords": 21,
       "factions": 6,
       "lineups": 487
     },
@@ -530,7 +530,7 @@
       "quality": 2,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/fbafea05b877426d1cc3646941801e2b.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_hero_touxiang_auto/88705f544b5d4492d0a129a47115ffd1.png",
-      "desc": "登场：自身及阿科米亚核心等级+2。",
+      "desc": "登场：自身及阿科米亚核心等级+3。",
       "relationId": 314,
       "relationName": "日落海",
       "cost": 3,
@@ -538,7 +538,7 @@
       "evolution": {
         "name": "马可波罗",
         "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_cardhero_kamian_auto/fbafea05b877426d1cc3646941801e2b.png",
-        "desc": "登场：自身及阿科米亚核心等级+4。"
+        "desc": "登场：自身及阿科米亚核心等级+6。"
       },
       "relatedCards": [
         "崛起"
@@ -603,8 +603,8 @@
       },
       "relatedCards": [
         "旋刃",
-        "控魂",
         "摄人心魄",
+        "控魂",
         "箭雨"
       ]
     },
@@ -983,8 +983,8 @@
         "desc": "夺取\n每当3阶及以下英雄合成时，与其同阶的英雄等级+2。"
       },
       "relatedCards": [
-        "控魂",
-        "摄人心魄"
+        "摄人心魄",
+        "控魂"
       ]
     },
     {
@@ -1403,10 +1403,10 @@
         "desc": "闪现，夺取\n整备：拥有闪现效果的英雄等级+4。"
       },
       "relatedCards": [
-        "控魂",
+        "身外身",
         "宝盒",
         "摄人心魄",
-        "身外身"
+        "控魂"
       ]
     },
     {
@@ -1802,8 +1802,8 @@
         "desc": "闪现\n登场：阿科米亚核心等级+4，并且随机触发4名英雄的整备效果。"
       },
       "relatedCards": [
-        "宝盒",
-        "兄妹"
+        "兄妹",
+        "宝盒"
       ]
     },
     {
@@ -1847,13 +1847,24 @@
   ],
   "talents": [
     {
-      "id": 671003,
-      "name": "存款利息",
+      "id": 613007,
+      "name": "防御领域",
       "type": 6,
       "quality": 1,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c7481df5d77c8c9a8f422deb17d8f31.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c7481df5d77c8c9a8f422deb17d8f31.png",
-      "desc": "获得3能量。回合结束时，你每有7能量，额外获得1能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/83d63d8637d1b66aa704f2262f308d42.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/83d63d8637d1b66aa704f2262f308d42.png",
+      "desc": "棋手每次受到的伤害减少2点。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 681028,
+      "name": "破格",
+      "type": 6,
+      "quality": 1,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0a43d6a7390a70300d38350a141154ed.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0a43d6a7390a70300d38350a141154ed.png",
+      "desc": "回合开始商店自动刷新时，会出现1个高1阶英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -1942,6 +1953,39 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c19fa4d18965a3c4eda2f92be0980d2.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c19fa4d18965a3c4eda2f92be0980d2.png",
       "desc": "战斗开始时，敌方2名随机英雄变为小猪，持续3秒。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 671012,
+      "name": "预言家",
+      "type": 6,
+      "quality": 1,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b59379749602c119c5310c16425860c8.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b59379749602c119c5310c16425860c8.png",
+      "desc": "分别获得1张天赋牌胜利预言与失败预言：预测战斗结果，正确可获得奖励。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 671010,
+      "name": "二象性",
+      "type": 6,
+      "quality": 1,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1118abe237316d3db2dac2c6636f4f8c.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1118abe237316d3db2dac2c6636f4f8c.png",
+      "desc": "获得1张天赋牌二象坍缩：随机生效1个获取英雄牌的效果（详情查看关联卡牌）。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 671003,
+      "name": "存款利息",
+      "type": 6,
+      "quality": 1,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c7481df5d77c8c9a8f422deb17d8f31.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2c7481df5d77c8c9a8f422deb17d8f31.png",
+      "desc": "获得3能量。回合结束时，你每有7能量，额外获得1能量。",
       "relationId": 0,
       "relationName": null
     },
@@ -2056,17 +2100,6 @@
       "relationName": null
     },
     {
-      "id": 681028,
-      "name": "破格",
-      "type": 6,
-      "quality": 1,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0a43d6a7390a70300d38350a141154ed.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0a43d6a7390a70300d38350a141154ed.png",
-      "desc": "回合开始商店自动刷新时，会出现1个高1阶英雄牌。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 632008,
       "name": "专注射击",
       "type": 6,
@@ -2100,17 +2133,6 @@
       "relationName": null
     },
     {
-      "id": 671012,
-      "name": "预言家",
-      "type": 6,
-      "quality": 1,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b59379749602c119c5310c16425860c8.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b59379749602c119c5310c16425860c8.png",
-      "desc": "分别获得1张天赋牌胜利预言与失败预言：预测战斗结果，正确可获得奖励。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 632001,
       "name": "小电池包",
       "type": 6,
@@ -2118,17 +2140,6 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/268e1abbc6be26ab900372dd0e0ed51e.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/268e1abbc6be26ab900372dd0e0ed51e.png",
       "desc": "获得5能量。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 671010,
-      "name": "二象性",
-      "type": 6,
-      "quality": 1,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1118abe237316d3db2dac2c6636f4f8c.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1118abe237316d3db2dac2c6636f4f8c.png",
-      "desc": "获得1张天赋牌二象坍缩：随机生效1个获取英雄牌的效果（详情查看关联卡牌）。",
       "relationId": 0,
       "relationName": null
     },
@@ -2210,35 +2221,35 @@
       "relationName": null
     },
     {
-      "id": 613007,
-      "name": "防御领域",
-      "type": 6,
-      "quality": 1,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/83d63d8637d1b66aa704f2262f308d42.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/83d63d8637d1b66aa704f2262f308d42.png",
-      "desc": "棋手每次受到的伤害减少2点。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 632013,
-      "name": "金算盘",
+      "id": 636201,
+      "name": "多彩古币",
       "type": 6,
       "quality": 2,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
-      "desc": "出售场上英雄时，随机1名英雄等级+3。",
+      "desc": "获得1张古币。古币只能对非【河洛】英雄主动使用：随机变成其他同阶非【河洛】英雄，等级额外+7。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 634025,
-      "name": "强者自强",
+      "id": 636115,
+      "name": "动能灌注",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6dd55c83f98bf13912aed8771b7832c4.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6dd55c83f98bf13912aed8771b7832c4.png",
-      "desc": "战斗开始时，已觉醒英雄获得40点物理攻击力和40点法术攻击力。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5e28ae5cb83f8bacfd65f5ac13b991d3.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5e28ae5cb83f8bacfd65f5ac13b991d3.png",
+      "desc": "阿科米亚核心等级+10。你的英雄每合计攻击10次，核心等级+1。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 613009,
+      "name": "卧薪尝胆",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7e62947cb4eaa0e90ccde0eeea459a15.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7e62947cb4eaa0e90ccde0eeea459a15.png",
+      "desc": "选取天赋后，当你输掉2场战斗时，获得9棋手经验。",
       "relationId": 0,
       "relationName": null
     },
@@ -2254,24 +2265,24 @@
       "relationName": null
     },
     {
-      "id": 671006,
-      "name": "小小的助力",
+      "id": 681030,
+      "name": "丢盔弃甲",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeb0667f92a3741ba9ed4f9221f37dab.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeb0667f92a3741ba9ed4f9221f37dab.png",
-      "desc": "战斗开始时，你场上有不少于4名1-3阶英雄，则4-5阶英雄获得30%伤害加成和60%攻速。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/94ca18fd135b74d13e822230371da4c3.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
+      "desc": "获得1张天赋牌空手道：指定一名英雄，取消装备槽位。战斗开始时，该英雄获得等同于其真实等级的临时等级。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 613008,
-      "name": "重大里程碑",
+      "id": 636224,
+      "name": "红豆之托",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/22d4d77f50614d27a2ecd783990c1361.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/22d4d77f50614d27a2ecd783990c1361.png",
-      "desc": "棋手到达5级时，获得8能量、1张装备箱和1张高阶效果牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd4e04dd8e1d06ea61aab24058fb0708.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd4e04dd8e1d06ea61aab24058fb0708.png",
+      "desc": "获得1张【河洛】英雄王维。备战阶段，场上英雄总等级分别达到100/200/400级时，再获得1张王维。",
       "relationId": 0,
       "relationName": null
     },
@@ -2320,24 +2331,24 @@
       "relationName": null
     },
     {
-      "id": 671002,
-      "name": "小身体大能量",
+      "id": 681027,
+      "name": "大买卖",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c221103d03f686d480ca1f4219d66829.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c221103d03f686d480ca1f4219d66829.png",
-      "desc": "战斗开始时，英雄模型缩小，攻速+60%，暴击率+40%，生命值上限-20%。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/94ca18fd135b74d13e822230371da4c3.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
+      "desc": "商店购买额外花费1能量，出售英雄牌额外获得1能量。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 671001,
-      "name": "一分钱一分货",
+      "id": 681014,
+      "name": "补给线：开团",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3ff6b69195f0f720500ee23512b0f988.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3ff6b69195f0f720500ee23512b0f988.png",
-      "desc": "获得1张天赋牌等价交换：扣除当前所有能量。根据扣除数量获得不同资源奖励。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/247c8bc7c6a0971e16f22441547fd42f.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/247c8bc7c6a0971e16f22441547fd42f.png",
+      "desc": "获得3张开团效果英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -2353,24 +2364,24 @@
       "relationName": null
     },
     {
-      "id": 646011,
-      "name": "怒神项链",
+      "id": 681010,
+      "name": "扩编名额",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/36d372e25258a7270bc52e585b3de979.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/36d372e25258a7270bc52e585b3de979.png",
-      "desc": "获得怒神项链：增加暴击率以及法术伤害可以暴击。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/287b56917b07a847fc1b1f80308dca7b.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/287b56917b07a847fc1b1f80308dca7b.png",
+      "desc": "获得1个可购买天赋：花费8能量，可上阵人数+1。可购买2次。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 646004,
-      "name": "法潮灵杖",
+      "id": 681008,
+      "name": "战前叫阵",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b3fbe27aa060ac3c3bd4094dd6d99f0f.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b3fbe27aa060ac3c3bd4094dd6d99f0f.png",
-      "desc": "获得法潮灵杖：获取左右1格英雄法术攻击力。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/179da1d3804e1dea56cff16d289a0ef0.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/179da1d3804e1dea56cff16d289a0ef0.png",
+      "desc": "战斗开始时，敌我双方等级最高英雄比拼等级：我方胜利，其英雄获得1次完美复生；我方失败，其变为猪猪3秒，获得30%最大生命值护盾。",
       "relationId": 0,
       "relationName": null
     },
@@ -2386,13 +2397,13 @@
       "relationName": null
     },
     {
-      "id": 646003,
-      "name": "断念",
+      "id": 681006,
+      "name": "前线堡垒",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a9104c614ef692ba47ba30064c2309ff.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a9104c614ef692ba47ba30064c2309ff.png",
-      "desc": "获得断念：造成伤害时降低敌方最大生命值。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f060628b7db6f2c925402c7e77644cbd.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f060628b7db6f2c925402c7e77644cbd.png",
+      "desc": "战斗开始时，你第一排的英雄获得20点物理及法术防御。",
       "relationId": 0,
       "relationName": null
     },
@@ -2419,13 +2430,13 @@
       "relationName": null
     },
     {
-      "id": 646002,
-      "name": "破阵战芒",
+      "id": 681004,
+      "name": "群英荟萃",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db6c401986d1688ce552439524260839.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db6c401986d1688ce552439524260839.png",
-      "desc": "获得破阵战芒：增加攻速及伤害提升（1-3阶英雄限定）。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
+      "desc": "回合中每打出3张不同品阶的英雄牌，全体英雄等级+3。",
       "relationId": 0,
       "relationName": null
     },
@@ -2452,13 +2463,13 @@
       "relationName": null
     },
     {
-      "id": 646001,
-      "name": "破妄之刃",
+      "id": 681003,
+      "name": "抢攻",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f1f645217086a518c8d417f6c6ac4e64.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f1f645217086a518c8d417f6c6ac4e64.png",
-      "desc": "获得破妄之刃：获得真实伤害能力并提升移速且免疫减速效果。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bbe37188994cf425f6702d103adb33fc.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bbe37188994cf425f6702d103adb33fc.png",
+      "desc": "获得1张普通装备牌。之后5回合内，若对其他棋手累计造成20点伤害，获得10能量。",
       "relationId": 0,
       "relationName": null
     },
@@ -2474,46 +2485,46 @@
       "relationName": null
     },
     {
-      "id": 638008,
-      "name": "瞬影连斩",
+      "id": 681002,
+      "name": "神秘英雄",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/71bf0189ed7f1e50a579ad1cac96a386.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/71bf0189ed7f1e50a579ad1cac96a386.png",
-      "desc": "闪现英雄击败敌方单位时，会立刻闪现至最近的敌人处，并无敌0.5秒。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bf8c0b48c596b8912eb04ae481a4c89b.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bf8c0b48c596b8912eb04ae481a4c89b.png",
+      "desc": "获得2张神秘英雄牌。手动刷新时，随机变为不低于当前棋手对应品阶的英雄牌。每回合有15%概率自动销毁并获得3能量。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 638003,
-      "name": "胜之不武",
+      "id": 671020,
+      "name": "厉兵秣马",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d78c51ae9c9faf69f09c44d76b8fa13a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d78c51ae9c9faf69f09c44d76b8fa13a.png",
-      "desc": "获得3张天赋牌胜之不武：下场战斗你的英雄+20临时等级，但对敌方棋手造成的伤害-10。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb62520f20bd634dbbffd16ea49a2842.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb62520f20bd634dbbffd16ea49a2842.png",
+      "desc": "随机获得1张基础装备牌。接下来4个回合若你的棋手等级没有变化，再获得1个珍品宝箱。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 671007,
-      "name": "逆袭之路",
+      "id": 671017,
+      "name": "一个响指",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/511274e7af66e590b2aeb5ca848c2e0e.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/511274e7af66e590b2aeb5ca848c2e0e.png",
-      "desc": "当你排名不是第1或第2名时，你的所有单位伤害+10%，最大生命值+20%。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cc455a244d1a6c4522a33ab472bbf592.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cc455a244d1a6c4522a33ab472bbf592.png",
+      "desc": "获得1张天赋牌听天由命：消除等级最低的4个英雄，每名英雄会提供一定资源。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 671009,
-      "name": "富贵险中求",
+      "id": 671016,
+      "name": "拍卖专家",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/082225556c21869ef26b54cdcdd0117c.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/082225556c21869ef26b54cdcdd0117c.png",
-      "desc": "获得1张天赋牌一刀穷一刀富：打出后，获得1张基础装备牌及1张险中求富（持有时获胜累积奖励，失败则消失）。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7c68a59fef98b5f52949790db0951f.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7c68a59fef98b5f52949790db0951f.png",
+      "desc": "每次拍卖后，获得1张天赋牌拍卖重现：选择获得1张拍卖中你未获得的卡牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -2540,17 +2551,6 @@
       "relationName": null
     },
     {
-      "id": 671011,
-      "name": "祝你好运",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f3d95a7af4d7c4f85dad4acab3c3891a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f3d95a7af4d7c4f85dad4acab3c3891a.png",
-      "desc": "棋手升级时，获得1张天赋牌碰碰运气：指定1名英雄提升5-20等级，随机消耗1-5能量。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 671015,
       "name": "透支",
       "type": 6,
@@ -2562,24 +2562,35 @@
       "relationName": null
     },
     {
-      "id": 671016,
-      "name": "拍卖专家",
+      "id": 671011,
+      "name": "祝你好运",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7c68a59fef98b5f52949790db0951f.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7c68a59fef98b5f52949790db0951f.png",
-      "desc": "每次拍卖后，获得1张天赋牌拍卖重现：选择获得1张拍卖中你未获得的卡牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f3d95a7af4d7c4f85dad4acab3c3891a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f3d95a7af4d7c4f85dad4acab3c3891a.png",
+      "desc": "棋手升级时，获得1张天赋牌碰碰运气：指定1名英雄提升5-20等级，随机消耗1-5能量。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 671017,
-      "name": "一个响指",
+      "id": 671009,
+      "name": "富贵险中求",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cc455a244d1a6c4522a33ab472bbf592.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cc455a244d1a6c4522a33ab472bbf592.png",
-      "desc": "获得1张天赋牌听天由命：消除等级最低的4个英雄，每名英雄会提供一定资源。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/082225556c21869ef26b54cdcdd0117c.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/082225556c21869ef26b54cdcdd0117c.png",
+      "desc": "获得1张天赋牌一刀穷一刀富：打出后，获得1张基础装备牌及1张险中求富（持有时获胜累积奖励，失败则消失）。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 671007,
+      "name": "逆袭之路",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/511274e7af66e590b2aeb5ca848c2e0e.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/511274e7af66e590b2aeb5ca848c2e0e.png",
+      "desc": "当你排名不是第1或第2名时，你的所有单位伤害+10%，最大生命值+20%。",
       "relationId": 0,
       "relationName": null
     },
@@ -2606,24 +2617,24 @@
       "relationName": null
     },
     {
-      "id": 63700801,
-      "name": "崛起",
+      "id": 671006,
+      "name": "小小的助力",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e98ebedc230de729d6033305c859b0f5.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e98ebedc230de729d6033305c859b0f5.png",
-      "desc": "获得1张马可波罗和1张百里守约。共战时，获得3临时等级。若战斗胜利，至多保留他们获得的20临时等级。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeb0667f92a3741ba9ed4f9221f37dab.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeb0667f92a3741ba9ed4f9221f37dab.png",
+      "desc": "战斗开始时，你场上有不少于4名1-3阶英雄，则4-5阶英雄获得30%伤害加成和60%攻速。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 671020,
-      "name": "厉兵秣马",
+      "id": 632013,
+      "name": "金算盘",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb62520f20bd634dbbffd16ea49a2842.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb62520f20bd634dbbffd16ea49a2842.png",
-      "desc": "随机获得1张普通装备牌。接下来5个回合若你的棋手等级没有变化，再获得2张。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
+      "desc": "出售场上英雄时，随机1名英雄等级+3。",
       "relationId": 0,
       "relationName": null
     },
@@ -2661,13 +2672,13 @@
       "relationName": null
     },
     {
-      "id": 681002,
-      "name": "神秘英雄",
+      "id": 671002,
+      "name": "小身体大能量",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bf8c0b48c596b8912eb04ae481a4c89b.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bf8c0b48c596b8912eb04ae481a4c89b.png",
-      "desc": "获得2张神秘英雄牌。手动刷新时，随机变为不低于当前棋手对应品阶的英雄牌。每回合有15%概率自动销毁并获得3能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c221103d03f686d480ca1f4219d66829.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c221103d03f686d480ca1f4219d66829.png",
+      "desc": "战斗开始时，英雄模型缩小，攻速+60%，暴击率+40%，生命值上限-20%。",
       "relationId": 0,
       "relationName": null
     },
@@ -2683,13 +2694,13 @@
       "relationName": null
     },
     {
-      "id": 636601,
-      "name": "协同一致",
+      "id": 671001,
+      "name": "一分钱一分货",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e2c0bcda9f83d97b82449a7ebd870192.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e2c0bcda9f83d97b82449a7ebd870192.png",
-      "desc": "回合开始时，无阵营英雄获得等于当前棋手等级的等级。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3ff6b69195f0f720500ee23512b0f988.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3ff6b69195f0f720500ee23512b0f988.png",
+      "desc": "获得1张天赋牌等价交换：扣除当前所有能量。根据扣除数量获得不同资源奖励。",
       "relationId": 0,
       "relationName": null
     },
@@ -2716,13 +2727,13 @@
       "relationName": null
     },
     {
-      "id": 636516,
-      "name": "荆棘牢笼",
+      "id": 646011,
+      "name": "怒神项链",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c096938d737bb43db4242679ddf8f150.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c096938d737bb43db4242679ddf8f150.png",
-      "desc": "先知图腾获得额外效果：每5秒眩晕最远的1个敌人，持续2秒。如果敌人在眩晕期间阵亡，召唤1只与其等级相同的熊灵。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/36d372e25258a7270bc52e585b3de979.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/36d372e25258a7270bc52e585b3de979.png",
+      "desc": "获得怒神项链：增加暴击率以及法术伤害可以暴击。",
       "relationId": 0,
       "relationName": null
     },
@@ -2760,13 +2771,13 @@
       "relationName": null
     },
     {
-      "id": 636514,
-      "name": "因缘际会",
+      "id": 646004,
+      "name": "法潮灵杖",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/65a0381f856a0613ab4c93ed4889c50e.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/65a0381f856a0613ab4c93ed4889c50e.png",
-      "desc": "召唤1个1级的因缘图腾。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b3fbe27aa060ac3c3bd4094dd6d99f0f.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/b3fbe27aa060ac3c3bd4094dd6d99f0f.png",
+      "desc": "获得法潮灵杖：获取左右1格英雄法术攻击力。",
       "relationId": 0,
       "relationName": null
     },
@@ -2804,13 +2815,13 @@
       "relationName": null
     },
     {
-      "id": 681003,
-      "name": "抢攻",
+      "id": 646003,
+      "name": "断念",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bbe37188994cf425f6702d103adb33fc.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bbe37188994cf425f6702d103adb33fc.png",
-      "desc": "获得1张普通装备牌。之后5回合内，若对其他棋手累计造成20点伤害，获得10能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a9104c614ef692ba47ba30064c2309ff.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a9104c614ef692ba47ba30064c2309ff.png",
+      "desc": "获得断念：造成伤害时降低敌方最大生命值。",
       "relationId": 0,
       "relationName": null
     },
@@ -2826,13 +2837,13 @@
       "relationName": null
     },
     {
-      "id": 613009,
-      "name": "卧薪尝胆",
+      "id": 634025,
+      "name": "强者自强",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7e62947cb4eaa0e90ccde0eeea459a15.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7e62947cb4eaa0e90ccde0eeea459a15.png",
-      "desc": "选取天赋后，当你输掉2场战斗时，获得9棋手经验。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6dd55c83f98bf13912aed8771b7832c4.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6dd55c83f98bf13912aed8771b7832c4.png",
+      "desc": "战斗开始时，已觉醒英雄获得40点物理攻击力和40点法术攻击力。",
       "relationId": 0,
       "relationName": null
     },
@@ -2844,6 +2855,127 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/af9e1fee6c3b30be7964dece477b6db8.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/af9e1fee6c3b30be7964dece477b6db8.png",
       "desc": "战斗开始时，你的英雄普攻附带敌人最大生命值2%的法术伤害。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 646002,
+      "name": "破阵战芒",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db6c401986d1688ce552439524260839.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db6c401986d1688ce552439524260839.png",
+      "desc": "获得破阵战芒：增加攻速及伤害提升（1-3阶英雄限定）。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 646001,
+      "name": "破妄之刃",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f1f645217086a518c8d417f6c6ac4e64.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f1f645217086a518c8d417f6c6ac4e64.png",
+      "desc": "获得破妄之刃：获得真实伤害能力并提升移速且免疫减速效果。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 634031,
+      "name": "随机进化",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9c782a4af4fa23fe6f2fdd589c5c16a0.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9c782a4af4fa23fe6f2fdd589c5c16a0.png",
+      "desc": "战斗开始时，你品阶最高的1名英雄等级永久+6。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 638008,
+      "name": "瞬影连斩",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/71bf0189ed7f1e50a579ad1cac96a386.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/71bf0189ed7f1e50a579ad1cac96a386.png",
+      "desc": "闪现英雄击败敌方单位时，会立刻闪现至最近的敌人处，并无敌0.5秒。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 613008,
+      "name": "重大里程碑",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/22d4d77f50614d27a2ecd783990c1361.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/22d4d77f50614d27a2ecd783990c1361.png",
+      "desc": "棋手到达5级时，获得8能量、1张装备箱和1张高阶效果牌。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 638003,
+      "name": "胜之不武",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d78c51ae9c9faf69f09c44d76b8fa13a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d78c51ae9c9faf69f09c44d76b8fa13a.png",
+      "desc": "获得3张天赋牌胜之不武：下场战斗你的英雄+20临时等级，但对敌方棋手造成的伤害-10。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 63700801,
+      "name": "崛起",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e98ebedc230de729d6033305c859b0f5.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e98ebedc230de729d6033305c859b0f5.png",
+      "desc": "获得1张马可波罗和1张百里守约。共战时，获得3临时等级。若战斗胜利，至多保留他们获得的20临时等级。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 636601,
+      "name": "协同一致",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e2c0bcda9f83d97b82449a7ebd870192.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e2c0bcda9f83d97b82449a7ebd870192.png",
+      "desc": "回合开始时，无阵营英雄获得等于当前棋手等级的等级。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 636516,
+      "name": "荆棘牢笼",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c096938d737bb43db4242679ddf8f150.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c096938d737bb43db4242679ddf8f150.png",
+      "desc": "先知图腾获得额外效果：每5秒眩晕最远的1个敌人，持续2秒。如果敌人在眩晕期间阵亡，召唤1只与其等级相同的熊灵。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 636514,
+      "name": "因缘际会",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/65a0381f856a0613ab4c93ed4889c50e.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/65a0381f856a0613ab4c93ed4889c50e.png",
+      "desc": "召唤1个1级的因缘图腾。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 635002,
+      "name": "超速成长",
+      "type": 6,
+      "quality": 2,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15972e38b36cc202d1b6916179f258aa.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15972e38b36cc202d1b6916179f258aa.png",
+      "desc": "获得1张天赋牌超速成长：指定1名英雄等级+15。",
       "relationId": 0,
       "relationName": null
     },
@@ -2870,17 +3002,6 @@
       "relationName": null
     },
     {
-      "id": 634031,
-      "name": "随机进化",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9c782a4af4fa23fe6f2fdd589c5c16a0.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9c782a4af4fa23fe6f2fdd589c5c16a0.png",
-      "desc": "战斗开始时，你品阶最高的1名英雄等级永久+6。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 636509,
       "name": "化为熊灵",
       "type": 6,
@@ -2888,116 +3009,6 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e63e1979aedba66f287a38be436ced9.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e63e1979aedba66f287a38be436ced9.png",
       "desc": "战斗中首名【大河】英雄阵亡时，召唤1只场上大河英雄等级之和的熊灵（不计算临时等级），并嘲讽周围2格敌人，持续4秒。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 636506,
-      "name": "生命绽放",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d6665771601822c75bfdcab3827ffbc8.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d6665771601822c75bfdcab3827ffbc8.png",
-      "desc": "获得1张鬼谷子，玄微之种获得额外效果：每秒回复穿戴者3%生命值。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 636415,
-      "name": "贤士登门",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6e66a42d047af0ec7c6ed2e660416eb6.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6e66a42d047af0ec7c6ed2e660416eb6.png",
-      "desc": "随机获得1张【逐鹿】英雄牌。回合开始时，再获得1张。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681004,
-      "name": "群英荟萃",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
-      "desc": "回合中每打出3张不同品阶的英雄牌，全体英雄等级+3。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681006,
-      "name": "前线堡垒",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f060628b7db6f2c925402c7e77644cbd.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/f060628b7db6f2c925402c7e77644cbd.png",
-      "desc": "战斗开始时，你第一排的英雄获得20点物理及法术防御。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681008,
-      "name": "战前叫阵",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/179da1d3804e1dea56cff16d289a0ef0.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/179da1d3804e1dea56cff16d289a0ef0.png",
-      "desc": "战斗开始时，敌我双方等级最高英雄比拼等级：我方胜利，其英雄获得1次完美复生；我方失败，其变为猪猪3秒，获得30%最大生命值护盾。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 636413,
-      "name": "乘胜追击",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd389f97f1f56c070a12eaa5d3acc48c.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd389f97f1f56c070a12eaa5d3acc48c.png",
-      "desc": "战斗胜利时，获得1张高阶推演战术。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 635002,
-      "name": "超速成长",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15972e38b36cc202d1b6916179f258aa.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15972e38b36cc202d1b6916179f258aa.png",
-      "desc": "获得1张天赋牌超速成长：指定1名英雄等级+15。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 636412,
-      "name": "鲸吞",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/fe7c90bbbbb942adaf3cd3a84abdad2d.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/fe7c90bbbbb942adaf3cd3a84abdad2d.png",
-      "desc": "获得1张庄周，【逐鹿】英雄每释放6次技能，庄周会吞噬敌方等级最低的1名英雄，永久获得其30%的生命值上限（每场战斗最多吞噬1次）。若庄周觉醒，吞噬上限变为3次。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 636409,
-      "name": "强力小弟",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/859e4b9cc8f173dcf8910025b06582c9.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/859e4b9cc8f173dcf8910025b06582c9.png",
-      "desc": "你的召唤单位等级+6。每回合开始时，再+6。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681010,
-      "name": "扩编名额",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/287b56917b07a847fc1b1f80308dca7b.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/287b56917b07a847fc1b1f80308dca7b.png",
-      "desc": "获得1个可购买天赋：花费8能量，可上阵人数+1。可购买2次。",
       "relationId": 0,
       "relationName": null
     },
@@ -3013,13 +3024,13 @@
       "relationName": null
     },
     {
-      "id": 636401,
-      "name": "技高一筹",
+      "id": 636506,
+      "name": "生命绽放",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/23953071d332b129b059b3082e20ec52.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/23953071d332b129b059b3082e20ec52.png",
-      "desc": "【逐鹿】英雄每释放6次技能，获得1能量，上限5能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d6665771601822c75bfdcab3827ffbc8.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d6665771601822c75bfdcab3827ffbc8.png",
+      "desc": "获得1张鬼谷子，玄微之种获得额外效果：每秒回复穿戴者3%生命值。",
       "relationId": 0,
       "relationName": null
     },
@@ -3035,13 +3046,13 @@
       "relationName": null
     },
     {
-      "id": 636317,
-      "name": "膨化生命",
+      "id": 636415,
+      "name": "贤士登门",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0765ca7f237da5eebf2cf56c37a10850.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0765ca7f237da5eebf2cf56c37a10850.png",
-      "desc": "战斗开始时，你的【三分】英雄额外获得100%生命值上限（仅提升上限），且生命恢复和护盾效果提升20%。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6e66a42d047af0ec7c6ed2e660416eb6.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6e66a42d047af0ec7c6ed2e660416eb6.png",
+      "desc": "随机获得1张【逐鹿】英雄牌。回合开始时，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
@@ -3068,13 +3079,13 @@
       "relationName": null
     },
     {
-      "id": 681014,
-      "name": "补给线：开团",
+      "id": 636413,
+      "name": "乘胜追击",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/247c8bc7c6a0971e16f22441547fd42f.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/247c8bc7c6a0971e16f22441547fd42f.png",
-      "desc": "获得3张开团效果英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd389f97f1f56c070a12eaa5d3acc48c.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd389f97f1f56c070a12eaa5d3acc48c.png",
+      "desc": "回合开始时，获得1张推演战术。战斗胜利时，改为获得1张高阶推演战术。",
       "relationId": 0,
       "relationName": null
     },
@@ -3090,13 +3101,13 @@
       "relationName": null
     },
     {
-      "id": 636314,
-      "name": "锦囊妙计",
+      "id": 636412,
+      "name": "鲸吞",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3c2cc90237812b54314b3d967483aee7.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3c2cc90237812b54314b3d967483aee7.png",
-      "desc": "获得1张锦囊：使用后，本回合打出的登场英雄牌，会额外触发1次登场效果。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/fe7c90bbbbb942adaf3cd3a84abdad2d.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/fe7c90bbbbb942adaf3cd3a84abdad2d.png",
+      "desc": "获得1张庄周，【逐鹿】英雄每释放6次技能，庄周会吞噬敌方等级最低的1名英雄，永久获得其30%的生命值上限（每场战斗最多吞噬1次）。若庄周觉醒，吞噬上限变为3次。",
       "relationId": 0,
       "relationName": null
     },
@@ -3112,24 +3123,24 @@
       "relationName": null
     },
     {
-      "id": 636312,
-      "name": "擂台猛虎",
+      "id": 636409,
+      "name": "强力小弟",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ce747dae57195b75f427700d12b85c81.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ce747dae57195b75f427700d12b85c81.png",
-      "desc": "获得1个猛虎擂台，擂台中的【三分】英雄获得30点物攻和法攻。每当敌人于擂台范围内被击败时，擂台吸收其灵魂，永久额外提供10点物攻和法攻。每吸收5次，擂台范围永久扩大1格，最多扩大3次。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/859e4b9cc8f173dcf8910025b06582c9.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/859e4b9cc8f173dcf8910025b06582c9.png",
+      "desc": "你的召唤单位等级+6。每回合开始时，再+6。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 681027,
-      "name": "大买卖",
+      "id": 636401,
+      "name": "技高一筹",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/94ca18fd135b74d13e822230371da4c3.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
-      "desc": "商店购买额外花费1能量，出售英雄牌额外获得1能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/23953071d332b129b059b3082e20ec52.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/23953071d332b129b059b3082e20ec52.png",
+      "desc": "【逐鹿】英雄每释放6次技能，获得1能量，上限5能量。",
       "relationId": 0,
       "relationName": null
     },
@@ -3145,13 +3156,13 @@
       "relationName": null
     },
     {
-      "id": 636310,
-      "name": "勇冠三军",
+      "id": 636317,
+      "name": "膨化生命",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7b2a60d689733cbf30c421eef3966a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7b2a60d689733cbf30c421eef3966a.png",
-      "desc": "获得1张马超，战斗中，马超的暴击率始终会分享给友军。马超暴击率达到100%时，所有友军的法术伤害可以暴击。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0765ca7f237da5eebf2cf56c37a10850.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0765ca7f237da5eebf2cf56c37a10850.png",
+      "desc": "战斗开始时，你的【三分】英雄额外获得100%生命值上限（仅提升上限），且生命恢复和护盾效果提升20%。",
       "relationId": 0,
       "relationName": null
     },
@@ -3167,24 +3178,24 @@
       "relationName": null
     },
     {
-      "id": 636307,
-      "name": "卧龙威势",
+      "id": 636314,
+      "name": "锦囊妙计",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/31bbd6133c8b6e83a82741eac39afa5b.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/31bbd6133c8b6e83a82741eac39afa5b.png",
-      "desc": "获得1张诸葛亮，你的英雄释放技能时，诸葛亮周围1格的其他【三分】英雄获得10点法力值。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3c2cc90237812b54314b3d967483aee7.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3c2cc90237812b54314b3d967483aee7.png",
+      "desc": "获得1张锦囊：使用后，本回合打出的登场英雄牌，会额外触发1次登场效果。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 681030,
-      "name": "丢盔弃甲",
+      "id": 636312,
+      "name": "擂台猛虎",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/94ca18fd135b74d13e822230371da4c3.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cf704834c8b022700b6c92f971c7d6c6.png",
-      "desc": "获得1张天赋牌空手道：指定一名英雄，取消装备槽位。战斗开始时，该英雄获得等同于其真实等级的临时等级。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ce747dae57195b75f427700d12b85c81.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ce747dae57195b75f427700d12b85c81.png",
+      "desc": "获得1个猛虎擂台，擂台中的【三分】英雄获得30点物攻和法攻。每当敌人于擂台范围内被击败时，擂台吸收其灵魂，永久额外提供10点物攻和法攻。每吸收5次，擂台范围永久扩大1格，最多扩大3次。",
       "relationId": 0,
       "relationName": null
     },
@@ -3200,13 +3211,13 @@
       "relationName": null
     },
     {
-      "id": 636306,
-      "name": "一身是胆",
+      "id": 636310,
+      "name": "勇冠三军",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/58f9d25ee3085f3d8dab490292cc6d53.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/58f9d25ee3085f3d8dab490292cc6d53.png",
-      "desc": "获得1张赵云，赵云在释放技能前，会额外释放1个技能惊雷之龙，且赵云生命值每次经过70%/30%档位时，会恢复全部法力值。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7b2a60d689733cbf30c421eef3966a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ab7b2a60d689733cbf30c421eef3966a.png",
+      "desc": "获得1张马超，战斗中，马超的暴击率始终会分享给友军。马超暴击率达到100%时，所有友军的法术伤害可以暴击。",
       "relationId": 0,
       "relationName": null
     },
@@ -3222,24 +3233,24 @@
       "relationName": null
     },
     {
-      "id": 636304,
-      "name": "乐善好施",
+      "id": 636307,
+      "name": "卧龙威势",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5cae30c6b79af06456b9458fa80ba446.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5cae30c6b79af06456b9458fa80ba446.png",
-      "desc": "你的英雄触发登场效果时，随机2名【三分】英雄等级+2。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/31bbd6133c8b6e83a82741eac39afa5b.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/31bbd6133c8b6e83a82741eac39afa5b.png",
+      "desc": "获得1张诸葛亮，你的英雄释放技能时，诸葛亮周围1格的其他【三分】英雄获得10点法力值。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 636115,
-      "name": "动能灌注",
+      "id": 636306,
+      "name": "一身是胆",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5e28ae5cb83f8bacfd65f5ac13b991d3.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5e28ae5cb83f8bacfd65f5ac13b991d3.png",
-      "desc": "阿科米亚核心等级+10。你的英雄每合计攻击10次，核心等级+1。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/58f9d25ee3085f3d8dab490292cc6d53.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/58f9d25ee3085f3d8dab490292cc6d53.png",
+      "desc": "获得1张赵云，赵云在释放技能前，会额外释放1个技能惊雷之龙，且赵云生命值每次经过70%/30%档位时，会恢复全部法力值。",
       "relationId": 0,
       "relationName": null
     },
@@ -3255,13 +3266,13 @@
       "relationName": null
     },
     {
-      "id": 636224,
-      "name": "红豆之托",
+      "id": 636304,
+      "name": "乐善好施",
       "type": 6,
       "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd4e04dd8e1d06ea61aab24058fb0708.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/bd4e04dd8e1d06ea61aab24058fb0708.png",
-      "desc": "获得1张【河洛】英雄王维。备战阶段，场上英雄总等级分别达到100/200/400级时，再获得1张王维。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5cae30c6b79af06456b9458fa80ba446.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5cae30c6b79af06456b9458fa80ba446.png",
+      "desc": "你的英雄触发登场效果时，随机2名【三分】英雄等级+2。",
       "relationId": 0,
       "relationName": null
     },
@@ -3398,17 +3409,6 @@
       "relationName": null
     },
     {
-      "id": 636201,
-      "name": "多彩古币",
-      "type": 6,
-      "quality": 2,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/15ef91962547a15983636090bfe2fb50.png",
-      "desc": "获得1张古币。古币只能对非【河洛】英雄主动使用：随机变成其他同阶非【河洛】英雄，等级额外+7。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 636117,
       "name": "智能装甲",
       "type": 6,
@@ -3420,13 +3420,13 @@
       "relationName": null
     },
     {
-      "id": 636118,
-      "name": "技能突破：亚瑟",
+      "id": 638004,
+      "name": "超级蓄能",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeda68d327792c9dfc90b064b514640e.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeda68d327792c9dfc90b064b514640e.png",
-      "desc": "获得1张亚瑟，战斗开始时，亚瑟周围一格的友方英雄变身为圣殿骑士。亚瑟的普攻变为为血量最低的圣殿骑士回复生命值；技能改为指挥全体圣殿骑士朝敌人冲锋。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a21bd2b2ed32d78a4bb11126323cf5d.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a21bd2b2ed32d78a4bb11126323cf5d.png",
+      "desc": "回合开始时，你的整备效果英雄会提升场上整备效果英雄数x2的等级。",
       "relationId": 0,
       "relationName": null
     },
@@ -3449,6 +3449,17 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/587fc4f9e16db2b6cb1e72b33d5d368b.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/587fc4f9e16db2b6cb1e72b33d5d368b.png",
       "desc": "回合开始时，阿科米亚核心失去20级，获得10能量。每回合最多触发1次。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 636118,
+      "name": "技能突破：亚瑟",
+      "type": 6,
+      "quality": 3,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeda68d327792c9dfc90b064b514640e.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/eeda68d327792c9dfc90b064b514640e.png",
+      "desc": "获得1张亚瑟，战斗开始时，亚瑟周围一格的友方英雄变身为圣殿骑士。亚瑟的普攻变为为血量最低的圣殿骑士回复生命值；技能改为指挥全体圣殿骑士朝敌人冲锋。",
       "relationId": 0,
       "relationName": null
     },
@@ -3596,17 +3607,6 @@
       "relationName": null
     },
     {
-      "id": 636220,
-      "name": "暴君归来",
-      "type": 6,
-      "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d476e8c9b119a6f869bab7028b64f32e.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d476e8c9b119a6f869bab7028b64f32e.png",
-      "desc": "你在战斗过程中复生的英雄，获得200%攻速、100%暴击率和70%伤害减免，持续1.5秒。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
       "id": 635045,
       "name": "三分强援",
       "type": 6,
@@ -3618,13 +3618,13 @@
       "relationName": null
     },
     {
-      "id": 635043,
-      "name": "三分增援",
+      "id": 636220,
+      "name": "暴君归来",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "随机获得3张3-4阶【三分】英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d476e8c9b119a6f869bab7028b64f32e.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d476e8c9b119a6f869bab7028b64f32e.png",
+      "desc": "你在战斗过程中复生的英雄，获得200%攻速、100%暴击率和70%伤害减免，持续1.5秒。",
       "relationId": 0,
       "relationName": null
     },
@@ -3640,6 +3640,17 @@
       "relationName": null
     },
     {
+      "id": 613011,
+      "name": "无限进步",
+      "type": 6,
+      "quality": 3,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/88524946ef82788ce4c08038847b1a18.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/88524946ef82788ce4c08038847b1a18.png",
+      "desc": "获得1张3阶兑换券。回合开始时，获得2棋手经验。满级后，改为获得2能量。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
       "id": 636303,
       "name": "四重奏",
       "type": 6,
@@ -3651,13 +3662,13 @@
       "relationName": null
     },
     {
-      "id": 635040,
-      "name": "日落海强援",
+      "id": 635043,
+      "name": "三分增援",
       "type": 6,
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "获得5能量和随机3张4-5阶【日落海】英雄牌。",
+      "desc": "随机获得3张3-4阶【三分】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3673,24 +3684,24 @@
       "relationName": null
     },
     {
-      "id": 635038,
-      "name": "日落海增援",
+      "id": 614001,
+      "name": "资深猎头",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "随机获得3张3-4阶【日落海】英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/64da45fb0b891bb2b996c6b87e699bda.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/64da45fb0b891bb2b996c6b87e699bda.png",
+      "desc": "棋手4级时，获得1张天赋牌资深猎头：4阶卡牌2选1，并将选中的卡牌一分为四。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 635035,
-      "name": "大河强援",
+      "id": 635040,
+      "name": "日落海强援",
       "type": 6,
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "获得5能量和随机3张4-5阶【大河流域】英雄牌。",
+      "desc": "获得5能量和随机3张4-5阶【日落海】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3706,24 +3717,24 @@
       "relationName": null
     },
     {
-      "id": 635033,
-      "name": "大河增援",
+      "id": 635038,
+      "name": "日落海增援",
       "type": 6,
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "随机获得3张3-4阶【大河流域】英雄牌。",
+      "desc": "随机获得3张3-4阶【日落海】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 635030,
-      "name": "逐鹿强援",
+      "id": 614006,
+      "name": "有舍有得",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "获得5能量和随机3张4-5阶【逐鹿】英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/dea4abd4b82055d81e2d9ef3679d7964.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/dea4abd4b82055d81e2d9ef3679d7964.png",
+      "desc": "回合开始时，随机1名英雄觉醒进度+1，但英雄合成提升的等级-1。",
       "relationId": 0,
       "relationName": null
     },
@@ -3734,18 +3745,18 @@
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c002c0dd304e4440e750f4463a85e644.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c002c0dd304e4440e750f4463a85e644.png",
-      "desc": "你的英雄施加控制效果时，你的【三分】英雄获得20点法术攻击力。",
+      "desc": "你的英雄施加控制效果时，你的【三分】英雄获得20点法术攻击力且临时等级+1。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 635028,
-      "name": "逐鹿增援",
+      "id": 635035,
+      "name": "大河强援",
       "type": 6,
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "随机获得3张3-4阶【逐鹿】英雄牌。",
+      "desc": "获得5能量和随机3张4-5阶【大河流域】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3772,13 +3783,13 @@
       "relationName": null
     },
     {
-      "id": 635018,
-      "name": "河洛强援",
+      "id": 635033,
+      "name": "大河增援",
       "type": 6,
       "quality": 3,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "获得5能量和3张随机4-5阶【河洛】英雄牌。",
+      "desc": "随机获得3张3-4阶【大河流域】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3794,13 +3805,13 @@
       "relationName": null
     },
     {
-      "id": 635016,
-      "name": "河洛增援",
+      "id": 681023,
+      "name": "危险数字",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
-      "desc": "随机获得3张3-4阶【河洛】英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/97c4c18749c62b40e157e9405ab23701.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/97c4c18749c62b40e157e9405ab23701.png",
+      "desc": "在商店每买3张牌，获得1能量；若其品阶相加等于10，随机再获得其中1张。",
       "relationId": 0,
       "relationName": null
     },
@@ -3849,13 +3860,13 @@
       "relationName": null
     },
     {
-      "id": 635013,
-      "name": "天兵",
+      "id": 635030,
+      "name": "逐鹿强援",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
-      "desc": "获得1张5阶英雄牌。回合开始时，再获得1张。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "desc": "获得5能量和随机3张4-5阶【逐鹿】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3882,35 +3893,35 @@
       "relationName": null
     },
     {
-      "id": 635012,
-      "name": "守护灵",
+      "id": 635028,
+      "name": "逐鹿增援",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e3ba1b315573b08f3050d42423480380.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e3ba1b315573b08f3050d42423480380.png",
-      "desc": "当你在战斗中仅剩1名英雄时，随机召唤1名满装备的5阶英雄（无卡牌效果）出战，并使之获得回合数x10的等级（至少为80级）。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "desc": "随机获得3张3-4阶【逐鹿】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 635001,
-      "name": "特大电池包",
+      "id": 681016,
+      "name": "混沌次元",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9dceb5af954bb45632ee5fdf74369f6b.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9dceb5af954bb45632ee5fdf74369f6b.png",
-      "desc": "获得12能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6fda6deb3cccd116325f22fc4c9eae13.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6fda6deb3cccd116325f22fc4c9eae13.png",
+      "desc": "获得混沌裂隙：指定阵位召唤裂隙，开战前吞噬英雄，永久获得其双倍等级。开战时，召唤1名品阶≥商店等级的满装备英雄。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 634037,
-      "name": "强者恒强",
+      "id": 635018,
+      "name": "河洛强援",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8ebc2f964655de7557f6aa5b91f47529.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8ebc2f964655de7557f6aa5b91f47529.png",
-      "desc": "战斗开始时，你的已觉醒英雄获得50点物理攻击力和50点法术攻击力。若所有己方英雄已觉醒，则再获得20%物理及法术吸血。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "desc": "获得5能量和3张随机4-5阶【河洛】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -3981,13 +3992,13 @@
       "relationName": null
     },
     {
-      "id": 634035,
-      "name": "随机强化",
+      "id": 635016,
+      "name": "河洛增援",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ca46fb5bb5dcfc0d7c8cb46253bad0.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ca46fb5bb5dcfc0d7c8cb46253bad0.png",
-      "desc": "战斗开始时，你品阶最高的1名英雄等级永久+9。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/62eb094e22114785d113f2758dfd8695.png",
+      "desc": "随机获得3张3-4阶【河洛】英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -4014,24 +4025,24 @@
       "relationName": null
     },
     {
-      "id": 634032,
-      "name": "破败神威",
+      "id": 681015,
+      "name": "补给线：登场",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ead3e11b38c7a4ee34b2216a5222c246.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ead3e11b38c7a4ee34b2216a5222c246.png",
-      "desc": "战斗开始时，你的英雄普攻附带敌人最大生命值3%的法术伤害。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/943bb7d4f72a325077d6613d2a11d5c7.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/943bb7d4f72a325077d6613d2a11d5c7.png",
+      "desc": "获得1张登场效果英雄牌。回合开始时，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 634030,
-      "name": "战略中枢",
+      "id": 635013,
+      "name": "天兵",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a8b2f6dbe605d71faf317e942f5067cf.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a8b2f6dbe605d71faf317e942f5067cf.png",
-      "desc": "可上阵人数+1，同时获得2张有福同享。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
+      "desc": "获得1张5阶英雄牌。回合开始时，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
@@ -4047,13 +4058,13 @@
       "relationName": null
     },
     {
-      "id": 634028,
-      "name": "虚构武装",
+      "id": 635012,
+      "name": "守护灵",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/074fe9f64b92b90d26a9f79ed8b858b0.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/074fe9f64b92b90d26a9f79ed8b858b0.png",
-      "desc": "战斗开始时，随机3名己方英雄临时获得2件普通装备及300点生命上限。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e3ba1b315573b08f3050d42423480380.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e3ba1b315573b08f3050d42423480380.png",
+      "desc": "当你在战斗中仅剩1名英雄时，随机召唤1名满装备的5阶英雄（无卡牌效果）出战，并使之获得回合数x10的等级（至少为80级）。",
       "relationId": 0,
       "relationName": null
     },
@@ -4069,24 +4080,24 @@
       "relationName": null
     },
     {
-      "id": 634014,
-      "name": "延迟满足",
+      "id": 635001,
+      "name": "特大电池包",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a86e8fe4e758684e0af136e4056e2f70.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a86e8fe4e758684e0af136e4056e2f70.png",
-      "desc": "获得1张天赋牌延迟满足：指定1名英雄等级+10。3回合后，再+25。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9dceb5af954bb45632ee5fdf74369f6b.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9dceb5af954bb45632ee5fdf74369f6b.png",
+      "desc": "获得12能量。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 633020,
-      "name": "全副武装",
+      "id": 614007,
+      "name": "王牌部队",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7977d831e698465a99f90a184fa4d869.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7977d831e698465a99f90a184fa4d869.png",
-      "desc": "获得1张基础装备牌。战斗开始时，你至少穿戴2件装备的英雄获得15%伤害加成和减免。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a26611c135f7276eb5f86f300ae2f81a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a26611c135f7276eb5f86f300ae2f81a.png",
+      "desc": "战斗开始时，若你至少有3名4-5阶英雄，获得1张4-5阶效果锦囊。",
       "relationId": 0,
       "relationName": null
     },
@@ -4102,13 +4113,13 @@
       "relationName": null
     },
     {
-      "id": 633014,
-      "name": "同心协力",
+      "id": 681013,
+      "name": "补给线：牺牲",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5c8b9502a3699f284d88d36134ee233e.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5c8b9502a3699f284d88d36134ee233e.png",
-      "desc": "战斗开始时，若你至少有6名同阵营英雄，其获得50点物攻和法攻以及50%攻速。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/85c4428df8e330b3f30bd18eee1b9431.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/85c4428df8e330b3f30bd18eee1b9431.png",
+      "desc": "获得1张牺牲效果英雄牌。回合开始时，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
@@ -4128,8 +4139,8 @@
       "name": "千里相聚",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/614cae67b3364c72a88e55b3a1238e0d.png",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e4d1ff926ed6aa327ddace97aec5d888.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/e4d1ff926ed6aa327ddace97aec5d888.png",
       "desc": "每打出3张无阵营英雄牌时，全体英雄等级+4。",
       "relationId": 0,
       "relationName": null
@@ -4223,13 +4234,13 @@
       "relationName": null
     },
     {
-      "id": 632012,
-      "name": "泉水",
+      "id": 681012,
+      "name": "补给线：整备",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/32b057049acb29776569b33d837fa232.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/32b057049acb29776569b33d837fa232.png",
-      "desc": "回合开始时，恢复3棋手生命值；若棋手生命值已满，改为获得4棋手经验。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6bec26f7fd55ed8392f8862c4a0a9e8b.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6bec26f7fd55ed8392f8862c4a0a9e8b.png",
+      "desc": "获得1张整备效果英雄牌。回合开始时，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
@@ -4311,24 +4322,24 @@
       "relationName": null
     },
     {
-      "id": 623001,
-      "name": "三人游",
+      "id": 634037,
+      "name": "强者恒强",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/55e1035d61af6495579906bd63cc5176.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/55e1035d61af6495579906bd63cc5176.png",
-      "desc": "随机获得3张4-5阶英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8ebc2f964655de7557f6aa5b91f47529.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8ebc2f964655de7557f6aa5b91f47529.png",
+      "desc": "战斗开始时，你的已觉醒英雄获得50点物理攻击力和50点法术攻击力。若所有己方英雄已觉醒，则再获得20%物理及法术吸血。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 638004,
-      "name": "超级蓄能",
+      "id": 634035,
+      "name": "随机强化",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a21bd2b2ed32d78a4bb11126323cf5d.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a21bd2b2ed32d78a4bb11126323cf5d.png",
-      "desc": "回合开始时，你的整备效果英雄会提升场上整备效果英雄数x2的等级。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ca46fb5bb5dcfc0d7c8cb46253bad0.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c9ca46fb5bb5dcfc0d7c8cb46253bad0.png",
+      "desc": "战斗开始时，你品阶最高的1名英雄等级永久+9。",
       "relationId": 0,
       "relationName": null
     },
@@ -4366,13 +4377,13 @@
       "relationName": null
     },
     {
-      "id": 622010,
-      "name": "中流砥柱",
+      "id": 634032,
+      "name": "破败神威",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9e7df6138aa8ad19d490bda97d785116.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9e7df6138aa8ad19d490bda97d785116.png",
-      "desc": "打出3阶英雄牌，额外+6级。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ead3e11b38c7a4ee34b2216a5222c246.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/ead3e11b38c7a4ee34b2216a5222c246.png",
+      "desc": "战斗开始时，你的英雄普攻附带敌人最大生命值3%的法术伤害。",
       "relationId": 0,
       "relationName": null
     },
@@ -4399,46 +4410,46 @@
       "relationName": null
     },
     {
-      "id": 622008,
-      "name": "小咖秀",
+      "id": 634030,
+      "name": "战略中枢",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/645a85811ac3cf4b563b84b7e7c80977.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/645a85811ac3cf4b563b84b7e7c80977.png",
-      "desc": "战斗开始时，若你只有1-3阶英雄，随机获得1张场上的英雄牌。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a8b2f6dbe605d71faf317e942f5067cf.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a8b2f6dbe605d71faf317e942f5067cf.png",
+      "desc": "可上阵人数+1，同时获得2张有福同享。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 622003,
-      "name": "永不独行",
+      "id": 634028,
+      "name": "虚构武装",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0b9f02ceaf9d9e673b2512991b46c665.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0b9f02ceaf9d9e673b2512991b46c665.png",
-      "desc": "获得1张双人同行。回合开始时，若棋手不超过3级，再获得1张。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/074fe9f64b92b90d26a9f79ed8b858b0.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/074fe9f64b92b90d26a9f79ed8b858b0.png",
+      "desc": "战斗开始时，随机3名己方英雄临时获得2件普通装备及300点生命上限。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 615006,
-      "name": "搏命",
+      "id": 681011,
+      "name": "扩编高峰",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db68d14f08ae8464eb456ac5f293a489.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db68d14f08ae8464eb456ac5f293a489.png",
-      "desc": "棋手生命值-20，获得25能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328adfa9c5b0d0fe8df01ab35a9374c9.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328adfa9c5b0d0fe8df01ab35a9374c9.png",
+      "desc": "获得1个可购买天赋：花费8能量，可上阵人数+1。可购买3次。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 615002,
-      "name": "紧急救援",
+      "id": 634014,
+      "name": "延迟满足",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0cb57eea09ec2cf65270ffc896a96f46.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0cb57eea09ec2cf65270ffc896a96f46.png",
-      "desc": "获得15棋手生命值、1张装备箱、1张5阶兑换券。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a86e8fe4e758684e0af136e4056e2f70.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a86e8fe4e758684e0af136e4056e2f70.png",
+      "desc": "获得1张天赋牌延迟满足：指定1名英雄等级+10。3回合后，再+25。",
       "relationId": 0,
       "relationName": null
     },
@@ -4509,13 +4520,13 @@
       "relationName": null
     },
     {
-      "id": 615001,
-      "name": "大明星",
+      "id": 633020,
+      "name": "全副武装",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e91ec01b5997b8476178a4fd9a8f756.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e91ec01b5997b8476178a4fd9a8f756.png",
-      "desc": "获得1张大明星：随机上阵1名不在场的等级为棋手等级x7的5阶英雄，其觉醒进度为1，此后每经过2回合则额外+1。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7977d831e698465a99f90a184fa4d869.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7977d831e698465a99f90a184fa4d869.png",
+      "desc": "获得1张基础装备牌。战斗开始时，你至少穿戴2件装备的英雄获得15%伤害加成和减免。",
       "relationId": 0,
       "relationName": null
     },
@@ -4575,57 +4586,57 @@
       "relationName": null
     },
     {
-      "id": 614007,
-      "name": "王牌部队",
+      "id": 633014,
+      "name": "同心协力",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a26611c135f7276eb5f86f300ae2f81a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a26611c135f7276eb5f86f300ae2f81a.png",
-      "desc": "战斗开始时，若你至少有3名4-5阶英雄，获得1张4-5阶效果锦囊。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5c8b9502a3699f284d88d36134ee233e.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5c8b9502a3699f284d88d36134ee233e.png",
+      "desc": "战斗开始时，若你至少有6名同阵营英雄，其获得50点物攻和法攻以及50%攻速。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 614006,
-      "name": "有舍有得",
+      "id": 615001,
+      "name": "大明星",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/dea4abd4b82055d81e2d9ef3679d7964.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/dea4abd4b82055d81e2d9ef3679d7964.png",
-      "desc": "回合开始时，随机1名英雄觉醒进度+1，但英雄合成提升的等级-1。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e91ec01b5997b8476178a4fd9a8f756.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e91ec01b5997b8476178a4fd9a8f756.png",
+      "desc": "获得1张大明星：随机上阵1名不在场的等级为棋手等级x7的5阶英雄，其觉醒进度为1，此后每经过2回合则额外+1。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 614001,
-      "name": "资深猎头",
+      "id": 615002,
+      "name": "紧急救援",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/64da45fb0b891bb2b996c6b87e699bda.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/64da45fb0b891bb2b996c6b87e699bda.png",
-      "desc": "棋手4级时，获得1张天赋牌资深猎头：4阶卡牌2选1，并将选中的卡牌一分为四。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0cb57eea09ec2cf65270ffc896a96f46.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0cb57eea09ec2cf65270ffc896a96f46.png",
+      "desc": "获得15棋手生命值、1张装备箱、1张5阶兑换券。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 613011,
-      "name": "无限进步",
+      "id": 632012,
+      "name": "泉水",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/88524946ef82788ce4c08038847b1a18.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/88524946ef82788ce4c08038847b1a18.png",
-      "desc": "获得1张3阶兑换券。回合开始时，获得2棋手经验。满级后，改为获得2能量。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/32b057049acb29776569b33d837fa232.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/32b057049acb29776569b33d837fa232.png",
+      "desc": "回合开始时，恢复3棋手生命值；若棋手生命值已满，改为获得4棋手经验。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 681023,
-      "name": "危险数字",
+      "id": 615006,
+      "name": "搏命",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/97c4c18749c62b40e157e9405ab23701.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/97c4c18749c62b40e157e9405ab23701.png",
-      "desc": "在商店每买3张牌，获得1能量；若其品阶相加等于10，随机再获得其中1张。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db68d14f08ae8464eb456ac5f293a489.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/db68d14f08ae8464eb456ac5f293a489.png",
+      "desc": "棋手生命值-20，获得25能量。",
       "relationId": 0,
       "relationName": null
     },
@@ -4641,68 +4652,35 @@
       "relationName": null
     },
     {
-      "id": 681016,
-      "name": "混沌次元",
+      "id": 622003,
+      "name": "永不独行",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6fda6deb3cccd116325f22fc4c9eae13.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6fda6deb3cccd116325f22fc4c9eae13.png",
-      "desc": "获得混沌裂隙：指定阵位召唤裂隙，开战前吞噬英雄，永久获得其双倍等级。开战时，召唤1名品阶≥商店等级的满装备英雄。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0b9f02ceaf9d9e673b2512991b46c665.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/0b9f02ceaf9d9e673b2512991b46c665.png",
+      "desc": "获得1张双人同行。回合开始时，若棋手不超过3级，再获得1张。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 681015,
-      "name": "补给线：登场",
+      "id": 622008,
+      "name": "小咖秀",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/943bb7d4f72a325077d6613d2a11d5c7.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/943bb7d4f72a325077d6613d2a11d5c7.png",
-      "desc": "获得1张登场效果英雄牌。回合开始时，再获得1张。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/645a85811ac3cf4b563b84b7e7c80977.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/645a85811ac3cf4b563b84b7e7c80977.png",
+      "desc": "战斗开始时，若你只有1-3阶英雄，随机获得1张场上的英雄牌。",
       "relationId": 0,
       "relationName": null
     },
     {
-      "id": 681013,
-      "name": "补给线：牺牲",
+      "id": 622010,
+      "name": "中流砥柱",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/85c4428df8e330b3f30bd18eee1b9431.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/85c4428df8e330b3f30bd18eee1b9431.png",
-      "desc": "获得1张牺牲效果英雄牌。回合开始时，再获得1张。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681012,
-      "name": "补给线：整备",
-      "type": 6,
-      "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6bec26f7fd55ed8392f8862c4a0a9e8b.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/6bec26f7fd55ed8392f8862c4a0a9e8b.png",
-      "desc": "获得1张整备效果英雄牌。回合开始时，再获得1张。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 671013,
-      "name": "群星璀璨",
-      "type": 6,
-      "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/acfc540d2c111f37ac864a7bcb7f7897.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/acfc540d2c111f37ac864a7bcb7f7897.png",
-      "desc": "获得2张4-5阶英雄兑换券。当你场上至少有5名4-5阶英雄时，所有4-5阶英雄获得20临时等级。",
-      "relationId": 0,
-      "relationName": null
-    },
-    {
-      "id": 681011,
-      "name": "扩编高峰",
-      "type": 6,
-      "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328adfa9c5b0d0fe8df01ab35a9374c9.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/328adfa9c5b0d0fe8df01ab35a9374c9.png",
-      "desc": "获得1个可购买天赋：花费8能量，可上阵人数+1。可购买3次。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9e7df6138aa8ad19d490bda97d785116.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/9e7df6138aa8ad19d490bda97d785116.png",
+      "desc": "打出3阶英雄牌，额外+6级。",
       "relationId": 0,
       "relationName": null
     },
@@ -4718,6 +4696,17 @@
       "relationName": null
     },
     {
+      "id": 671013,
+      "name": "群星璀璨",
+      "type": 6,
+      "quality": 3,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/acfc540d2c111f37ac864a7bcb7f7897.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/acfc540d2c111f37ac864a7bcb7f7897.png",
+      "desc": "获得2张4-5阶英雄兑换券。当你场上至少有5名4-5阶英雄时，所有4-5阶英雄获得20临时等级。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
       "id": 671021,
       "name": "绝境逆袭",
       "type": 6,
@@ -4729,13 +4718,13 @@
       "relationName": null
     },
     {
-      "id": 671018,
-      "name": "无影手",
+      "id": 623001,
+      "name": "三人游",
       "type": 6,
       "quality": 3,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/aa6333aed2ca549c818cbabf6a0044f3.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/aa6333aed2ca549c818cbabf6a0044f3.png",
-      "desc": "回合开始时，获得3次仅本回合可用的免费商店刷新。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/55e1035d61af6495579906bd63cc5176.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/55e1035d61af6495579906bd63cc5176.png",
+      "desc": "随机获得3张4-5阶英雄牌。",
       "relationId": 0,
       "relationName": null
     },
@@ -4751,6 +4740,28 @@
       "relationName": null
     },
     {
+      "id": 671018,
+      "name": "无影手",
+      "type": 6,
+      "quality": 3,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/aa6333aed2ca549c818cbabf6a0044f3.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/aa6333aed2ca549c818cbabf6a0044f3.png",
+      "desc": "回合开始时，获得3次仅本回合可用的免费商店刷新。",
+      "relationId": 0,
+      "relationName": null
+    },
+    {
+      "id": 664005,
+      "name": "狂欢时刻",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
+      "desc": "获得1张打成一片。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
       "id": 662107,
       "name": "镜花影",
       "type": 6,
@@ -4758,6 +4769,94 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a4ac6aceaccb7b1539e48d2f2a209eb7.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/a4ac6aceaccb7b1539e48d2f2a209eb7.png",
       "desc": "商店里的英雄牌在购买后会留下1个镜像复制（不计入秘技任务）。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 610006,
+      "name": "特权决策",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/48ae48ae26a5bcd0db5569438ce880d5.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/19c90230d5451669f5b6fb63220f7a84.png",
+      "desc": "选择1个特权决策颁布，对所有玩家生效，并且自己额外享受特权效果。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663307,
+      "name": "惊才绝艳",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
+      "desc": "获得1张奇才：指定1名英雄，获得4张该英雄牌。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 610013,
+      "name": "瓜分宝藏",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
+      "desc": "从2种英雄强化效果中选择1个。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663402,
+      "name": "寒潮之势",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png",
+      "desc": "战斗开始时，你等级最高的英雄获得1200点生命值、120点物理和法术攻击力。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 665105,
+      "name": "超级连接",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
+      "desc": "获得一张灵异探测大改装。战斗开始时，飞行器连接的英雄会随机获得自身10%-30%等级数的临时等级。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663403,
+      "name": "不朽坚冰",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png",
+      "desc": "战斗开始时，你的全体英雄获得500点最大生命值、60点物理和法术攻击力。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663208,
+      "name": "重点照顾",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png",
+      "desc": "战斗开始时，你的人数最多的同品阶英雄获得1%×已打出宝藏牌数量的伤害提升。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 665104,
+      "name": "顿悟时刻",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_magic_auto/2c63a6b3cbe324634538139f1257cbc2.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1f1151a19463ccce92c95cdb63693388.png",
+      "desc": "选择1个获取神秘力量的天赋。",
       "relationId": 307,
       "relationName": "无阵营"
     },
@@ -4773,13 +4872,35 @@
       "relationName": "无阵营"
     },
     {
-      "id": 664005,
-      "name": "狂欢时刻",
+      "id": 610010,
+      "name": "即刻起舞",
       "type": 6,
       "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/34ee14c857b9a1f29f90f49b57808d84.png",
-      "desc": "获得1张打成一片。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
+      "desc": "从3个枫叶舞强化中选择1项。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 664108,
+      "name": "完美演出",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
+      "desc": "封神一瞬指定的英雄在战斗开始时获得30%物理和法术吸血，并在15秒内免疫控制效果（压制除外）。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 610005,
+      "name": "万鸟朝凤",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
+      "desc": "随机从3个棋手的秘技卡中选1张。",
       "relationId": 307,
       "relationName": "无阵营"
     },
@@ -4806,138 +4927,6 @@
       "relationName": "无阵营"
     },
     {
-      "id": 663607,
-      "name": "神之一手",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
-      "desc": "战斗开始时，将敌方等级最高的英雄复制，临时加入我方战场。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 663405,
-      "name": "冰雪秘藏",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
-      "desc": "从3个增益效果中选择1个。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 663404,
-      "name": "雪暴时刻",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png",
-      "desc": "冻结的英雄，解冻后等级永久+20。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 663403,
-      "name": "不朽坚冰",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/67818c7787956ee0bd440df347f5fd88.png",
-      "desc": "战斗开始时，你的全体英雄获得500点最大生命值、60点物理和法术攻击力。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 665104,
-      "name": "顿悟时刻",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_magic_auto/2c63a6b3cbe324634538139f1257cbc2.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/1f1151a19463ccce92c95cdb63693388.png",
-      "desc": "选择1个获取神秘力量的天赋。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 610006,
-      "name": "特权决策",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/48ae48ae26a5bcd0db5569438ce880d5.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/19c90230d5451669f5b6fb63220f7a84.png",
-      "desc": "选择1个特权决策颁布，对所有玩家生效，并且自己额外享受特权效果。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 664108,
-      "name": "完美演出",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/92aecc9e4e94535f80957e9b17c7fd12.png",
-      "desc": "封神一瞬指定的英雄在战斗开始时获得30%物理和法术吸血，并在15秒内免疫控制效果（压制除外）。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 664009,
-      "name": "打成一片",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_magic_auto/6da49b760289d589894c02bca4174102.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5741cf3a63081735d235fae82c435479.png",
-      "desc": "天赋3选1（技能选择阵营相关的天赋）。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 665105,
-      "name": "超级连接",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/d75b08627e47b7e8c563d7f77d28138a.png",
-      "desc": "获得一张灵异探测大改装。战斗开始时，飞行器连接的英雄会随机获得自身10%-30%等级数的临时等级。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 610010,
-      "name": "即刻起舞",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/3778505292dbeb09d1bb12bba4a48b95.png",
-      "desc": "从3个枫叶舞强化中选择1项。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 663307,
-      "name": "惊才绝艳",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/8013b9badd357ac8a7b55757149e1428.png",
-      "desc": "获得1张奇才：指定1名英雄，获得4张该英雄牌。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 663208,
-      "name": "重点照顾",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2d2cb6ee61857a888630748330e40c6d.png",
-      "desc": "战斗开始时，你的人数最多的同品阶英雄获得1%×已打出宝藏牌数量的伤害提升。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
       "id": 663207,
       "name": "阳光普照",
       "type": 6,
@@ -4956,17 +4945,6 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb5eedf580967893e6f4ea787b20e2c8.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/cb5eedf580967893e6f4ea787b20e2c8.png",
       "desc": "获得1张梦幻引擎：将商店替换为梦幻商店。若在棋手生命值≤30时战斗失败，则重复获得。",
-      "relationId": 307,
-      "relationName": "无阵营"
-    },
-    {
-      "id": 610013,
-      "name": "瓜分宝藏",
-      "type": 6,
-      "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/74101a4d5cb08b865bfb5b8d9b393429.png",
-      "desc": "从2种英雄强化效果中选择1个。",
       "relationId": 307,
       "relationName": "无阵营"
     },
@@ -4993,24 +4971,35 @@
       "relationName": "无阵营"
     },
     {
+      "id": 663607,
+      "name": "神之一手",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/2e179f748486d73caa15d6d2427157f2.png",
+      "desc": "战斗开始时，将敌方等级最高的英雄复制，临时加入我方战场。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
       "id": 662206,
       "name": "潮起潮落",
       "type": 6,
       "quality": 5,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-      "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×12的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
+      "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×16的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
       "relationId": 307,
       "relationName": "无阵营"
     },
     {
-      "id": 663402,
-      "name": "寒潮之势",
+      "id": 664009,
+      "name": "打成一片",
       "type": 6,
       "quality": 5,
-      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png",
-      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/359be2c356e47d5336a72a87b172a51a.png",
-      "desc": "战斗开始时，你等级最高的英雄获得1200点生命值、120点物理和法术攻击力。",
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_magic_auto/6da49b760289d589894c02bca4174102.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/5741cf3a63081735d235fae82c435479.png",
+      "desc": "天赋3选1（技能选择阵营相关的天赋）。",
       "relationId": 307,
       "relationName": "无阵营"
     },
@@ -5022,6 +5011,28 @@
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c245dcd7d02580a31df7077c93cc249e.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/c245dcd7d02580a31df7077c93cc249e.png",
       "desc": "小鹿等级+30，并获得1件小鹿的庇护。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663405,
+      "name": "冰雪秘藏",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/39e0c8120f5c05173cd98d382f01f848.png",
+      "desc": "从3个增益效果中选择1个。",
+      "relationId": 307,
+      "relationName": "无阵营"
+    },
+    {
+      "id": 663404,
+      "name": "雪暴时刻",
+      "type": 6,
+      "quality": 5,
+      "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png",
+      "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7a77308b04b094d5c4e5cb29d9810924.png",
+      "desc": "冻结的英雄，解冻后等级永久+20。",
       "relationId": 307,
       "relationName": "无阵营"
     },
@@ -6939,7 +6950,7 @@
       "quality": 6,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_magic_auto/fc9c3c78be1b3ccb84084fa2d9c2329f.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_squarehud_auto/f595acd009c6b4bcf96d7ce4a98e7246.png",
-      "desc": "卡牌5选1，并将选中的卡牌一分为四。",
+      "desc": "3-5阶英雄牌5选1，并将选中的卡牌一分为四。",
       "relationId": 0,
       "relationName": "通用"
     },
