@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-06T23:43:32.614Z",
+    "fetchedAt": "2026-11-07T22:44:08.258Z",
     "source": "腾讯王者万象棋官方 CDN（营地/官网）",
     "sourceUrls": {
       "heroes": "https://game.gtimg.cn/images/amside/ide_timer/589094_oscard_new_1.js",
@@ -602,10 +602,10 @@
         "desc": "夺取\n开团：场上每有1名已觉醒英雄，攻击速度+30%。"
       },
       "relatedCards": [
-        "旋刃",
-        "控魂",
+        "摄人心魄",
         "箭雨",
-        "摄人心魄"
+        "控魂",
+        "旋刃"
       ]
     },
     {
@@ -983,8 +983,8 @@
         "desc": "夺取\n每当3阶及以下英雄合成时，与其同阶的英雄等级+2。"
       },
       "relatedCards": [
-        "控魂",
-        "摄人心魄"
+        "摄人心魄",
+        "控魂"
       ]
     },
     {
@@ -1341,8 +1341,8 @@
         "desc": "闪现\n古币牌会额外提供8临时等级。若目标为李白，该临时等级会额外+6。"
       },
       "relatedCards": [
-        "千金换酒",
-        "逐星"
+        "逐星",
+        "千金换酒"
       ]
     },
     {
@@ -1403,10 +1403,10 @@
         "desc": "闪现，夺取\n整备：拥有闪现效果的英雄等级+4。"
       },
       "relatedCards": [
-        "身外身",
+        "摄人心魄",
         "宝盒",
-        "控魂",
-        "摄人心魄"
+        "身外身",
+        "控魂"
       ]
     },
     {
@@ -1802,8 +1802,8 @@
         "desc": "闪现\n登场：阿科米亚核心等级+4，并且随机触发4名英雄的整备效果。"
       },
       "relatedCards": [
-        "兄妹",
-        "宝盒"
+        "宝盒",
+        "兄妹"
       ]
     },
     {
@@ -4988,7 +4988,7 @@
       "quality": 5,
       "image": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
       "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/7177ec46b855ed09f95be35885e84f48.png",
-      "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×16的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
+      "desc": "战斗开始时，随机传送1个4-5阶临时等级为回合数×12的英雄进入战场（不含卡牌效果），并携带3件适配装备。",
       "relationId": 307,
       "relationName": "无阵营"
     },
