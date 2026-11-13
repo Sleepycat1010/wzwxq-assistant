@@ -47,12 +47,12 @@
         "name": "专属",
         "level": 6,
         "icon": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
-        "desc": "随机从3个棋手的秘技卡中选1张。",
+        "desc": "随机从3个棋手的秘技牌中选1张。",
         "cards": [
           {
             "name": "万鸟朝凤",
             "thumb": "https://game-os-cos.kohsocialapp.qq.com/manage/custom_os_talent_auto/331a607e53226af66e6704ff82e8ba62.png",
-            "desc": "随机从3个棋手的秘技卡中选1张。"
+            "desc": "随机从3个棋手的秘技牌中选1张。"
           }
         ]
       }

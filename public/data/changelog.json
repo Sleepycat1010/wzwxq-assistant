@@ -1,5 +1,45 @@
 [
   {
+    "version": "2026-11-13",
+    "date": "2026-11-13",
+    "title": "官方数据更新",
+    "summary": {
+      "added": {
+        "talents": 1
+      },
+      "removed": {},
+      "changed": {
+        "talents": 3
+      }
+    },
+    "changes": [
+      {
+        "cat": "talents",
+        "type": "added",
+        "name": "以物易物",
+        "id": "636202"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "熊魂附甲",
+        "id": "636508"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "帝临",
+        "id": "637018"
+      },
+      {
+        "cat": "talents",
+        "type": "changed",
+        "name": "万鸟朝凤",
+        "id": "610005"
+      }
+    ]
+  },
+  {
     "version": "2026-11-07",
     "date": "2026-11-07",
     "title": "官方数据更新",
