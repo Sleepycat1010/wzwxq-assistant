@@ -31,7 +31,8 @@ export function Hero({
   onOpenChangelog: () => void;
 }) {
   const sorted = (changelog ?? [])
-    .filter((e) => !e.baseline)
+    // 官方公告条目没有 diff 计数，不能作为「最近更新」动态条的数据源
+    .filter((e) => !e.baseline && e.kind !== 'announcement')
     .sort((a, b) => b.date.localeCompare(a.date));
   const upd = latestUpdate(sorted[0]);
 

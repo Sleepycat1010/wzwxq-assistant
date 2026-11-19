@@ -1,5 +1,11 @@
+import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import type { ChangelogCat, ChangelogEntry, ChangelogChange } from '../types';
+import type {
+  ChangelogCat,
+  ChangelogEntry,
+  ChangelogChange,
+  AnnouncementHighlight,
+} from '../types';
 import { cn } from '../lib/cn';
 
 const CAT_LABEL: Record<ChangelogCat, string> = {
@@ -30,7 +36,101 @@ function ChangeBadge({ type }: { type: ChangelogChange['type'] }) {
   );
 }
 
+const TAG_STYLE: Record<string, string> = {
+  棋手: 'bg-gold/15 text-gold',
+  天赋: 'bg-jade/15 text-jade',
+  英雄: 'bg-gold/15 text-gold',
+  装备: 'bg-jade/15 text-jade',
+  修复: 'bg-white/10 text-text-dim',
+  活动: 'bg-crimson/15 text-crimson',
+  优化: 'bg-white/10 text-text-dim',
+  其他: 'bg-white/10 text-text-dim',
+};
+
+/** 官方公告条目卡片：徽标 + 版本号 + 摘要 + 分组要点 + 原文链接 + 版权标注 */
+function AnnouncementCard({ entry }: { entry: ChangelogEntry }) {
+  const [expanded, setExpanded] = useState(false);
+  const highlights = (entry.highlights ?? []).slice().sort((a, b) => a.order - b.order);
+  const shown = expanded ? highlights : highlights.slice(0, 3);
+
+  return (
+    <div className="card-base relative overflow-hidden p-4">
+      <span className="absolute left-0 top-0 h-full w-0.5 bg-gold/70" aria-hidden />
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="rounded-md bg-gold/15 px-2 py-0.5 text-[10px] font-medium text-gold">
+          官方公告
+        </span>
+        <span className="font-display text-lg font-bold text-text">{entry.title}</span>
+      </div>
+      <div className="mt-1.5 flex flex-wrap items-center gap-2 font-mono text-xs text-text-dim">
+        <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px]">版本 {entry.version}</span>
+        <span>{entry.date}</span>
+        {entry.publishedAt ? (
+          <span className="text-[10px]">发布于 {entry.publishedAt.slice(5, 16)}</span>
+        ) : null}
+      </div>
+
+      {entry.digest ? (
+        <p className="mt-2.5 text-sm leading-relaxed text-text-dim">{entry.digest}</p>
+      ) : null}
+
+      {highlights.length > 0 ? (
+        <>
+          <div className="mt-3 space-y-1.5">
+            {shown.map((h: AnnouncementHighlight, i) => (
+              <div key={`${h.order}-${i}`} className="flex gap-2 text-sm leading-relaxed">
+                <span
+                  className={cn(
+                    'mt-0.5 h-fit shrink-0 rounded px-1.5 py-0.5 text-[10px] font-medium',
+                    TAG_STYLE[h.tag] ?? TAG_STYLE['其他'],
+                  )}
+                >
+                  {h.tag}
+                </span>
+                <div className="min-w-0">
+                  <span className="text-text">{h.section}</span>
+                  <span className="mx-1.5 text-text-dim/50">·</span>
+                  <span className="text-text-dim">{h.text}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          {highlights.length > 3 ? (
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              className="mt-2.5 text-xs text-gold transition-opacity hover:opacity-80"
+            >
+              {expanded ? '收起' : `展开全部 ${highlights.length} 条更新要点`}
+            </button>
+          ) : null}
+        </>
+      ) : null}
+
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-white/5 pt-2.5">
+        {entry.sourceUrl ? (
+          <a
+            href={entry.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-gold transition-opacity hover:opacity-80"
+          >
+            查看官方原文 ↗
+          </a>
+        ) : (
+          <span />
+        )}
+        <span className="text-[10px] text-text-dim">
+          {entry.source ?? '腾讯《王者万象棋》官方公告'} · 内容版权归腾讯所有，详情请以官方原文为准
+        </span>
+      </div>
+    </div>
+  );
+}
+
 function Entry({ entry }: { entry: ChangelogEntry }) {
+  // 官方公告走独立渲染分支，现有 diff / baseline 渲染逻辑保持零改动
+  if (entry.kind === 'announcement') return <AnnouncementCard entry={entry} />;
   if (entry.baseline) {
     const counts = entry.summary?.counts ?? {};
     return (
@@ -124,9 +224,14 @@ export function ChangelogPage({
   onClose: () => void;
   changelog?: ChangelogEntry[];
 }) {
-  const entries = (changelog ?? []).slice().sort((a, b) =>
-    b.date.localeCompare(a.date),
-  );
+  const entries = (changelog ?? []).slice().sort((a, b) => {
+    const byDate = b.date.localeCompare(a.date);
+    if (byDate !== 0) return byDate;
+    // 同一天：官方公告排在数据 diff 之前
+    const ak = a.kind === 'announcement' ? 0 : 1;
+    const bk = b.kind === 'announcement' ? 0 : 1;
+    return ak - bk;
+  });
 
   return (
     <AnimatePresence>
@@ -154,7 +259,7 @@ export function ChangelogPage({
               <div>
                 <h3 className="font-display text-xl font-bold text-gold">版本更新日志</h3>
                 <p className="mt-1 text-xs text-text-dim">
-                  由定时抓取自动对比官方数据生成，记录英雄 / 棋手 / 装备的改动
+                  官方版本公告 + 每日数据对比，记录英雄 / 棋手 / 装备改动与版本更新内容
                 </p>
               </div>
               <button

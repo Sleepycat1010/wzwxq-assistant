@@ -199,10 +199,18 @@ export type ChangelogChange = {
   id: string | number;
 };
 
+/** 官方公告解析出的单条要点 */
+export type AnnouncementHighlight = {
+  section: string;
+  tag: string;
+  text: string;
+  order: number;
+};
+
 export type ChangelogEntry = {
-  /** 版本标签（通常为日期 YYYY-MM-DD） */
+  /** 版本标签：diff 条目为日期；公告条目为官方版本号（如 v1.11.1） */
   version: string;
-  /** 日期 YYYY-MM-DD */
+  /** 日期 YYYY-MM-DD（公告取官方发布时间 sIdxTime） */
   date: string;
   /** 标题，如「官方数据更新」「数据库初始化」 */
   title: string;
@@ -215,8 +223,23 @@ export type ChangelogEntry = {
     changed?: Partial<Record<ChangelogCat, number>>;
     counts?: Partial<Record<ChangelogCat, number>>;
   };
-  /** 逐条改动（基线为空） */
+  /** 逐条改动（基线 / 公告为空数组） */
   changes: ChangelogChange[];
+
+  /* ---- 官方公告条目专属（kind==='announcement' 时有效）---- */
+  /** 条目类型：undefined = CDN 数据 diff；'announcement' = 官方公告 */
+  kind?: 'announcement';
+  newsId?: string;
+  /** 官方摘要（一句话） */
+  digest?: string;
+  highlights?: AnnouncementHighlight[];
+  sourceUrl?: string;
+  source?: string;
+  publishedAt?: string;
+  fetchedAt?: string;
+  createdAt?: string;
+  isBackfill?: boolean;
+  parseWarning?: boolean;
 };
 
 /** 一次完整的数据加载结果 */

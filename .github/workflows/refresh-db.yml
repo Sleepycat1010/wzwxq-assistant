@@ -39,6 +39,11 @@ jobs:
       - name: 抓取并生成基础数据库
         run: node scripts/build-db.mjs
 
+      - name: 抓取官方版本更新公告
+        # best-effort：公告接口异常时不影响主数据库、不阻断部署
+        continue-on-error: true
+        run: node scripts/build-announcements.mjs
+
       - name: 提交数据变更（若有）
         id: commit
         run: |

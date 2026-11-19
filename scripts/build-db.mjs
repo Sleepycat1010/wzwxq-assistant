@@ -557,7 +557,9 @@ async function main() {
       existing.unshift(entry);
     } else {
       // 同一天多次抓取：合并到当天最新条目
-      if (existing[0] && existing[0].date === today) {
+      // 但首条若是官方公告（kind==='announcement'）则不能合并——公告条目会被
+      // build-announcements.mjs 剔除重注入，合并进去的 diff 记录会随之丢失。
+      if (existing[0] && existing[0].date === today && existing[0].kind !== 'announcement') {
         const base = existing[0];
         base.changes = [...entry.changes, ...(base.changes || [])];
         const merged = { added: {}, removed: {}, changed: {} };
