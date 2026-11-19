@@ -7,10 +7,26 @@ const TEASER = [
   { n: '03', label: '查看推荐', desc: '即时筛出可用阵容' },
 ] as const;
 
-function latestUpdate(entry?: ChangelogEntry): { date: string; added: number; changed: number; removed: number } | null {
-  if (!entry || entry.baseline || !entry.changes) return null;
+type UpdateTicker =
+  | { kind: 'diff'; date: string; added: number; changed: number; removed: number }
+  | { kind: 'announcement'; date: string; version: string; title: string; highlights: number };
+
+function latestUpdate(entry?: ChangelogEntry): UpdateTicker | null {
+  if (!entry || entry.baseline) return null;
+  // 官方公告：动态条展示版本号 + 公告标题 + 要点数
+  if (entry.kind === 'announcement') {
+    return {
+      kind: 'announcement',
+      date: entry.date,
+      version: entry.version,
+      title: entry.title,
+      highlights: entry.highlights?.length ?? 0,
+    };
+  }
+  if (!entry.changes) return null;
   const s = entry.summary ?? {};
   return {
+    kind: 'diff',
     date: entry.date,
     added: Object.values(s.added ?? {}).reduce((a, b) => a + b, 0),
     changed: Object.values(s.changed ?? {}).reduce((a, b) => a + b, 0),
@@ -31,8 +47,7 @@ export function Hero({
   onOpenChangelog: () => void;
 }) {
   const sorted = (changelog ?? [])
-    // 官方公告条目没有 diff 计数，不能作为「最近更新」动态条的数据源
-    .filter((e) => !e.baseline && e.kind !== 'announcement')
+    .filter((e) => !e.baseline)
     .sort((a, b) => b.date.localeCompare(a.date));
   const upd = latestUpdate(sorted[0]);
 
@@ -134,13 +149,25 @@ export function Hero({
           <span className="rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
             版本动态
           </span>
-          <span className="stat-num text-sm text-text">{upd.date}</span>
-          <span className="text-sm text-text-dim">
-            {upd.added > 0 ? `新增 ${upd.added} ` : ''}
-            {upd.changed > 0 ? `改动 ${upd.changed} ` : ''}
-            {upd.removed > 0 ? `移除 ${upd.removed} ` : ''}
-            项内容已同步官方
-          </span>
+          {upd.kind === 'announcement' ? (
+            <>
+              <span className="stat-num text-sm text-gold">{upd.version}</span>
+              <span className="text-sm text-text-dim">
+                {upd.title.replace(/^\d+月\d+日版本更新公告/, '官方版本更新公告')}
+                {upd.highlights > 0 ? ` · ${upd.highlights} 项调整` : ''}
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="stat-num text-sm text-text">{upd.date}</span>
+              <span className="text-sm text-text-dim">
+                {upd.added > 0 ? `新增 ${upd.added} ` : ''}
+                {upd.changed > 0 ? `改动 ${upd.changed} ` : ''}
+                {upd.removed > 0 ? `移除 ${upd.removed} ` : ''}
+                项内容已同步官方
+              </span>
+            </>
+          )}
           <span className="ml-auto text-sm font-medium text-gold">查看日志 ›</span>
         </motion.button>
       ) : null}
